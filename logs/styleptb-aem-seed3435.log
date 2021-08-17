@@ -1,0 +1,601 @@
+Num sents: 1254, Vocab Size Before prune: 1975, After prune: 847
+Starting epoch: 1
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 500/627, |EncParam|: 74.2646, |DecParam|: 140.1264, |ParserParam|: 56.3264, LR: 0.0005, SrcPPL: 571.0661, PPL: 17.8211, ValPPL: 100000.0000, Throughput: 3.88 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> <unk> often are the <unk>
+Target: the <unk> are often <unk> who are <unk>
+Source Tree: (((<unk> (<unk> often)) (are the)) <unk>)
+
+QCFG Tree: (((the ((<unk> are) often)) ((<unk> who) are)) <unk>)
+
+('the', 'the', 'N7')
+('<unk>', 'the', 'N0')
+('are', 'are', 'N7')
+('often', 'often', 'N7')
+('<unk>', '<unk>', 'N7')
+('who', 'often', 'N5')
+('are', '<unk>', 'N1')
+('<unk>', '<unk>', 'N7')
+('<unk> are', '<unk> <unk> often are the <unk>', 'N6')
+('<unk> who', '<unk> <unk> often', 'N6')
+('<unk> are often', '<unk> <unk> often are the <unk>', 'N3')
+('<unk> who are', '<unk> <unk> often', 'N2')
+('the <unk> are often', '<unk> <unk> often are the <unk>', 'N6')
+('the <unk> are often <unk> who are', '<unk> <unk> often are the <unk>', 'N2')
+('the <unk> are often <unk> who are <unk>', '<unk> <unk> often are the <unk>', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 13.8280
+--------------------------------
+Saving checkpoint to styleptb-aem-seed3435.pt
+Starting epoch: 2
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 1000/627, |EncParam|: 73.8479, |DecParam|: 139.8097, |ParserParam|: 56.4913, LR: 0.0005, SrcPPL: 362.0017, PPL: 11.1423, ValPPL: 13.8280, Throughput: 3.92 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i <unk> this a second <unk> he said
+Target: i <unk> this <unk> my second he said
+Source Tree: (((i <unk>) (((this (a second)) <unk>) he)) said)
+
+QCFG Tree: (((((i <unk>) this) <unk>) (my second)) (he said))
+
+('i', 'i', 'N0')
+('<unk>', 'i', 'N0')
+('this', 'this', 'N7')
+('<unk>', '<unk>', 'N7')
+('my', 'a', 'N6')
+('second', 'second', 'N7')
+('he', 'he', 'N7')
+('said', 'said', 'N7')
+('i <unk>', 'i <unk>', 'N7')
+('my second', 'a second', 'N0')
+('he said', 'i <unk> this a second <unk> he said', 'N6')
+('i <unk> this', 'i <unk> this a second <unk> he', 'N6')
+('i <unk> this <unk>', 'i <unk> this a second <unk> he', 'N2')
+('i <unk> this <unk> my second', 'i <unk> this a second <unk> he', 'N4')
+('i <unk> this <unk> my second he said', 'i <unk> this a second <unk> he said', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 12.1750
+--------------------------------
+Saving checkpoint to styleptb-aem-seed3435.pt
+Starting epoch: 3
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 1500/627, |EncParam|: 73.9290, |DecParam|: 139.9717, |ParserParam|: 56.9940, LR: 0.0005, SrcPPL: 459.6587, PPL: 9.8237, ValPPL: 12.1750, Throughput: 3.91 examples/sec
+--------------------------------------------------------------------------------
+
+Source: one such company is bankers <unk> <unk>
+Target: bankers <unk> <unk> is one company as such
+Source Tree: (((one (such company)) is) (bankers (<unk> <unk>)))
+
+QCFG Tree: (((bankers (<unk> <unk>)) ((is (one company)) as)) such)
+
+('bankers', 'bankers', 'N7')
+('<unk>', 'one', 'N0')
+('<unk>', 'one', 'N0')
+('is', 'is', 'N7')
+('one', 'one', 'N7')
+('company', 'company', 'N7')
+('as', 'is', 'N1')
+('such', 'such', 'N7')
+('<unk> <unk>', '<unk> <unk>', 'N7')
+('one company', 'one such company', 'N6')
+('bankers <unk> <unk>', 'one such company is bankers <unk> <unk>', 'N6')
+('is one company', 'one such company is bankers <unk> <unk>', 'N6')
+('is one company as', 'one such company is bankers <unk> <unk>', 'N3')
+('bankers <unk> <unk> is one company as', 'one such company is bankers <unk> <unk>', 'N2')
+('bankers <unk> <unk> is one company as such', 'one such company is bankers <unk> <unk>', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 11.1190
+--------------------------------
+Saving checkpoint to styleptb-aem-seed3435.pt
+Starting epoch: 4
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 2000/627, |EncParam|: 74.2225, |DecParam|: 139.8688, |ParserParam|: 57.4869, LR: 0.0005, SrcPPL: 522.1321, PPL: 7.5901, ValPPL: 11.1190, Throughput: 3.87 examples/sec
+--------------------------------------------------------------------------------
+
+Source: we 're very pleased with the new deal
+Target: we are very pleased with the deal that is new
+Source Tree: (we ('re ((((very (pleased with)) the) new) deal)))
+
+QCFG Tree: (((we are) (((very pleased) with) (the deal))) that)
+
+('we', 'we', 'N7')
+('are', 'very', 'N1')
+('very', 'we', 'N0')
+('pleased', 'we', 'N0')
+('with', 'we', 'N0')
+('the', 'we', 'N0')
+('deal', 'deal', 'N7')
+('that', 'with', 'N2')
+('is', 'with', 'N1')
+('new', 'new', 'N7')
+('we are', "we 're very pleased with the new deal", 'N6')
+('that is', 'pleased with', 'N3')
+('very pleased with the', 'very pleased with the', 'N7')
+('very pleased with the deal', 'very pleased with the new deal', 'N6')
+('very pleased with the deal that is', 'very pleased with the new deal', 'N2')
+('we are very pleased with the deal that is', "we 're very pleased with the new deal", 'N2')
+('we are very pleased with the deal that is new', "we 're very pleased with the new deal", 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 9.0009
+--------------------------------
+Saving checkpoint to styleptb-aem-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 2500/627, |EncParam|: 74.6894, |DecParam|: 139.7234, |ParserParam|: 57.9149, LR: 0.0005, SrcPPL: 696.7133, PPL: 7.4695, ValPPL: 9.0009, Throughput: 3.78 examples/sec
+--------------------------------------------------------------------------------
+
+Source: they will be the next hot magazines
+Target: they will be the next magazines that are hot
+Source Tree: (((they will) be) (the (next (hot magazines))))
+
+QCFG Tree: ((((they will) (be (the next))) (magazines that)) are)
+
+('they', 'they', 'N0')
+('will', 'they', 'N0')
+('be', 'they', 'N0')
+('the', 'the', 'N7')
+('next', 'next', 'N7')
+('magazines', 'magazines', 'N7')
+('that', 'be', 'N2')
+('are', 'be', 'N1')
+('hot', 'hot', 'N7')
+('next magazines', 'next hot magazines', 'N6')
+('that are', 'they will be', 'N3')
+('they will be', 'they will be', 'N7')
+('the next magazines', 'the next hot magazines', 'N6')
+('they will be the next magazines', 'they will be the next hot magazines', 'N6')
+('they will be the next magazines that are', 'they will be the next hot magazines', 'N2')
+('they will be the next magazines that are hot', 'they will be the next hot magazines', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 9.4832
+--------------------------------
+Starting epoch: 5
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 3000/627, |EncParam|: 75.1666, |DecParam|: 139.7385, |ParserParam|: 58.2137, LR: 0.0005, SrcPPL: 1547.3160, PPL: 6.6761, ValPPL: 9.0009, Throughput: 3.92 examples/sec
+--------------------------------------------------------------------------------
+
+Source: penalty overhaul is still likely congressional sources say
+Target: penalty overhaul is still likely say sources that are congressional
+Source Tree: (penalty (((overhaul is) still) ((likely congressional) (sources say))))
+
+QCFG Tree: (((penalty ((overhaul is) (still likely))) ((say sources) that)) are)
+
+('penalty', 'penalty', 'N7')
+('overhaul', 'penalty', 'N0')
+('is', 'penalty', 'N0')
+('still', 'penalty', 'N0')
+('likely', 'likely', 'N7')
+('say', 'say', 'N7')
+('sources', 'sources', 'N7')
+('that', 'say', 'N2')
+('are', 'likely', 'N1')
+('congressional', 'congressional', 'N7')
+('likely say', 'likely congressional sources say', 'N6')
+('sources that', 'sources say', 'N6')
+('overhaul is still', 'overhaul is still', 'N7')
+('sources that are', 'overhaul is still likely congressional sources say', 'N3')
+('overhaul is still likely say', 'overhaul is still likely congressional sources say', 'N6')
+('penalty overhaul is still likely say', 'penalty overhaul is still likely congressional sources say', 'N6')
+('penalty overhaul is still likely say sources that are', 'penalty overhaul is still likely congressional sources say', 'N2')
+('penalty overhaul is still likely say sources that are congressional', 'penalty overhaul is still likely congressional sources say', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 9.3704
+--------------------------------
+Starting epoch: 6
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 3500/627, |EncParam|: 75.8909, |DecParam|: 139.7135, |ParserParam|: 58.4829, LR: 0.0005, SrcPPL: 2725.8708, PPL: 6.4993, ValPPL: 9.0009, Throughput: 3.87 examples/sec
+--------------------------------------------------------------------------------
+
+Source: both reflect the dismissal of lower-level and shorter-tenure executives
+Target: both reflect the dismissal of executives that were of lower-level and shorter-tenure
+Source Tree: (both (reflect ((the ((dismissal ((of lower-level) and)) shorter-tenure)) executives)))
+
+QCFG Tree: (((both (reflect ((the (dismissal of)) executives))) (that were)) ((of lower-level) and))
+
+('both', 'both', 'N7')
+('reflect', 'reflect', 'N7')
+('the', 'the', 'N7')
+('dismissal', 'dismissal', 'N7')
+('of', 'of', 'N7')
+('executives', 'executives', 'N7')
+('that', 'of', 'N2')
+('were', 'of', 'N1')
+('of', 'both', 'N0')
+('lower-level', 'both', 'N0')
+('and', 'both', 'N0')
+('shorter-tenure', 'shorter-tenure', 'N7')
+('dismissal of', 'dismissal of lower-level and', 'N6')
+('that were', 'of lower-level', 'N3')
+('the dismissal of', 'the dismissal of lower-level and shorter-tenure', 'N6')
+('of lower-level and', 'of lower-level and', 'N7')
+('the dismissal of executives', 'the dismissal of lower-level and shorter-tenure executives', 'N6')
+('of lower-level and shorter-tenure', 'dismissal of lower-level and shorter-tenure', 'N5')
+('reflect the dismissal of executives', 'reflect the dismissal of lower-level and shorter-tenure executives', 'N6')
+('both reflect the dismissal of executives', 'both reflect the dismissal of lower-level and shorter-tenure executives', 'N6')
+('both reflect the dismissal of executives that were', 'both reflect the dismissal of lower-level and shorter-tenure executives', 'N2')
+('both reflect the dismissal of executives that were of lower-level and shorter-tenure', 'both reflect the dismissal of lower-level and shorter-tenure executives', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 7.9734
+--------------------------------
+Saving checkpoint to styleptb-aem-seed3435.pt
+Starting epoch: 7
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 4000/627, |EncParam|: 76.4860, |DecParam|: 139.5806, |ParserParam|: 58.8032, LR: 0.0005, SrcPPL: 2439.4732, PPL: 6.0631, ValPPL: 7.9734, Throughput: 3.88 examples/sec
+--------------------------------------------------------------------------------
+
+Source: it 's just not <unk> <unk> he says
+Target: he says it is just not <unk> <unk>
+Source Tree: (((it 's) ((just not) <unk>)) (<unk> (he says)))
+
+QCFG Tree: (((he says) ((it is) ((just not) <unk>))) <unk>)
+
+('he', 'he', 'N7')
+('says', 'says', 'N7')
+('it', 'it', 'N7')
+('is', "'s", 'N1')
+('just', 'just', 'N7')
+('not', 'not', 'N7')
+('<unk>', '<unk>', 'N3')
+('<unk>', '<unk>', 'N7')
+('he says', "it 's just not <unk> <unk> he says", 'N6')
+('it is', "it 's", 'N6')
+('just not', 'just not', 'N6')
+('just not <unk>', 'just not <unk>', 'N6')
+('it is just not <unk>', "it 's just not <unk>", 'N6')
+('he says it is just not <unk>', "it 's just not <unk> <unk> he says", 'N2')
+('he says it is just not <unk> <unk>', "it 's just not <unk> <unk> he says", 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 8.5597
+--------------------------------
+Starting epoch: 8
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 4500/627, |EncParam|: 77.0765, |DecParam|: 139.4115, |ParserParam|: 59.0734, LR: 0.0005, SrcPPL: 2081.6625, PPL: 5.5163, ValPPL: 7.9734, Throughput: 3.86 examples/sec
+--------------------------------------------------------------------------------
+
+Source: there is a reality to the excess energy he said
+Target: he said there is a reality to the energy that is excess
+Source Tree: ((((there (is a)) reality) (to ((the excess) energy))) (he said))
+
+QCFG Tree: (((he said) (((there is) (a (reality to))) (the energy))) that)
+
+('he', 'he', 'N7')
+('said', 'said', 'N7')
+('there', 'there', 'N0')
+('is', 'there', 'N0')
+('a', 'there', 'N0')
+('reality', 'there', 'N0')
+('to', 'to', 'N7')
+('the', 'the', 'N7')
+('energy', 'energy', 'N7')
+('that', 'to', 'N2')
+('is', 'the', 'N1')
+('excess', 'excess', 'N7')
+('he said', 'there is a reality to the excess energy he said', 'N6')
+('the energy', 'the excess energy', 'N6')
+('that is', 'to the excess energy', 'N3')
+('to the energy', 'to the excess energy', 'N6')
+('there is a reality', 'there is a reality', 'N7')
+('there is a reality to the energy', 'there is a reality to the excess energy', 'N6')
+('there is a reality to the energy that is', 'there is a reality to the excess energy', 'N2')
+('he said there is a reality to the energy that is', 'there is a reality to the excess energy he said', 'N2')
+('he said there is a reality to the energy that is excess', 'there is a reality to the excess energy he said', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 8.3431
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 5000/627, |EncParam|: 77.6598, |DecParam|: 139.3181, |ParserParam|: 59.3510, LR: 0.0005, SrcPPL: 2170.7278, PPL: 5.4180, ValPPL: 7.9734, Throughput: 3.79 examples/sec
+--------------------------------------------------------------------------------
+
+Source: municipals ended mixed while mortgage-backed and investment-grade corporate bonds rose
+Target: municipals ended mixed while corporate bonds rose if they were investment-grade
+Source Tree: (((((((municipals ended) (mixed while)) mortgage-backed) and) investment-grade) (corporate bonds)) rose)
+
+QCFG Tree: (((((municipals ended) (mixed while)) corporate) (bonds (rose if))) they)
+
+('municipals', 'municipals', 'N0')
+('ended', 'municipals', 'N0')
+('mixed', 'municipals', 'N0')
+('while', 'municipals', 'N0')
+('corporate', 'municipals', 'N0')
+('bonds', 'municipals', 'N0')
+('rose', 'rose', 'N7')
+('if', 'while', 'N4')
+('they', 'while', 'N4')
+('were', 'mixed', 'N6')
+('investment-grade', 'investment-grade', 'N7')
+('corporate bonds', 'corporate bonds', 'N7')
+('they were', 'mixed while', 'N2')
+('if they were', 'municipals ended mixed while mortgage-backed', 'N2')
+('municipals ended mixed while', 'municipals ended mixed while', 'N7')
+('municipals ended mixed while corporate bonds', 'municipals ended mixed while mortgage-backed and investment-grade corporate bonds', 'N6')
+('municipals ended mixed while corporate bonds rose', 'municipals ended mixed while mortgage-backed and investment-grade corporate bonds rose', 'N6')
+('municipals ended mixed while corporate bonds rose if they were', 'municipals ended mixed while mortgage-backed and investment-grade corporate bonds rose', 'N2')
+('municipals ended mixed while corporate bonds rose if they were investment-grade', 'municipals ended mixed while mortgage-backed and investment-grade corporate bonds rose', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 7.6875
+--------------------------------
+Saving checkpoint to styleptb-aem-seed3435.pt
+Starting epoch: 9
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 5500/627, |EncParam|: 78.4944, |DecParam|: 139.1642, |ParserParam|: 59.6301, LR: 0.0005, SrcPPL: 2050.7672, PPL: 5.1478, ValPPL: 7.6875, Throughput: 3.90 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> plans also include <unk> in <unk> foreign markets
+Target: <unk> plans also include <unk> in <unk> markets which are foreign
+Source Tree: (<unk> (((plans also) ((include (<unk> in)) <unk>)) (foreign markets)))
+
+QCFG Tree: (((<unk> (((plans also) (include <unk>)) in)) (<unk> markets)) which)
+
+('<unk>', '<unk>', 'N7')
+('plans', '<unk>', 'N0')
+('also', '<unk>', 'N0')
+('include', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('in', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('markets', 'markets', 'N7')
+('which', 'include', 'N2')
+('are', '<unk>', 'N1')
+('foreign', 'foreign', 'N7')
+('plans also', 'plans also', 'N7')
+('which are', 'include <unk> in <unk>', 'N3')
+('include <unk> in <unk>', 'include <unk> in <unk>', 'N7')
+('plans also include <unk> in <unk>', 'plans also include <unk> in <unk>', 'N6')
+('plans also include <unk> in <unk> markets', 'plans also include <unk> in <unk> foreign markets', 'N6')
+('<unk> plans also include <unk> in <unk> markets', '<unk> plans also include <unk> in <unk> foreign markets', 'N6')
+('<unk> plans also include <unk> in <unk> markets which are', '<unk> plans also include <unk> in <unk> foreign markets', 'N2')
+('<unk> plans also include <unk> in <unk> markets which are foreign', '<unk> plans also include <unk> in <unk> foreign markets', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 8.0945
+--------------------------------
+Starting epoch: 10
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 6000/627, |EncParam|: 79.3514, |DecParam|: 138.9676, |ParserParam|: 59.9163, LR: 0.0005, SrcPPL: 2070.4996, PPL: 4.8090, ValPPL: 7.6875, Throughput: 3.89 examples/sec
+--------------------------------------------------------------------------------
+
+Source: mr. <unk> 's resignation <unk> many industry <unk>
+Target: the amount of industry <unk> <unk> by mr. <unk> resignation were many
+Source Tree: ((mr. ((<unk> 's) resignation)) (<unk> ((many industry) <unk>)))
+
+QCFG Tree: (((((((the (amount of)) industry) <unk>) <unk>) by) ((mr. (<unk> resignation)) were)) many)
+
+('the', 'industry', 'N0')
+('amount', 'industry', 'N4')
+('of', 'industry', 'N6')
+('industry', 'industry', 'N7')
+('<unk>', '<unk>', 'N3')
+('<unk>', '<unk>', 'N3')
+('by', 'industry', 'N6')
+('mr.', 'mr.', 'N7')
+('<unk>', '<unk>', 'N3')
+('resignation', 'resignation', 'N7')
+('were', 'industry', 'N1')
+('many', 'many', 'N7')
+('amount of', 'many industry', 'N2')
+('<unk> resignation', "<unk> 's resignation", 'N6')
+('the amount of', 'many industry', 'N2')
+('mr. <unk> resignation', "mr. <unk> 's resignation <unk> many industry <unk>", 'N6')
+('the amount of industry', 'many industry', 'N6')
+('mr. <unk> resignation were', "mr. <unk> 's resignation <unk> many industry <unk>", 'N3')
+('the amount of industry <unk>', 'many industry <unk>', 'N6')
+('the amount of industry <unk> <unk>', 'many industry <unk>', 'N6')
+('the amount of industry <unk> <unk> by', 'many industry <unk>', 'N2')
+('the amount of industry <unk> <unk> by mr. <unk> resignation were', "mr. <unk> 's resignation <unk> many industry <unk>", 'N2')
+('the amount of industry <unk> <unk> by mr. <unk> resignation were many', "mr. <unk> 's resignation <unk> many industry <unk>", 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 8.0868
+--------------------------------
+Starting epoch: 11
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 6500/627, |EncParam|: 80.2015, |DecParam|: 138.7790, |ParserParam|: 60.2376, LR: 0.0005, SrcPPL: 1530.3885, PPL: 4.1418, ValPPL: 7.6875, Throughput: 3.88 examples/sec
+--------------------------------------------------------------------------------
+
+Source: broader averages also posted modest gains
+Target: averages that posted modest gains were broader
+Source Tree: (((broader averages) ((also posted) modest)) gains)
+
+QCFG Tree: ((((averages ((that posted) modest)) gains) were) broader)
+
+('averages', 'averages', 'N7')
+('that', 'also', 'N3')
+('posted', 'posted', 'N7')
+('modest', 'modest', 'N7')
+('gains', 'gains', 'N7')
+('were', 'averages', 'N1')
+('broader', 'broader', 'N7')
+('that posted', 'also posted', 'N6')
+('that posted modest', 'also posted modest', 'N6')
+('averages that posted modest', 'broader averages also posted modest', 'N6')
+('averages that posted modest gains', 'broader averages also posted modest gains', 'N6')
+('averages that posted modest gains were', 'broader averages also posted modest gains', 'N2')
+('averages that posted modest gains were broader', 'broader averages also posted modest gains', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 8.1302
+--------------------------------
+Starting epoch: 12
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 7000/627, |EncParam|: 81.0875, |DecParam|: 138.7388, |ParserParam|: 60.6658, LR: 0.0005, SrcPPL: 1663.0293, PPL: 4.2371, ValPPL: 7.6875, Throughput: 3.85 examples/sec
+--------------------------------------------------------------------------------
+
+Source: litigation <unk> is n't a <unk> of a <unk> <unk>
+Target: litigation <unk> is not a <unk> of an <unk> that is <unk>
+Source Tree: (litigation ((((<unk> (is ((n't a) <unk>))) of) (a <unk>)) <unk>))
+
+QCFG Tree: (((litigation ((((<unk> (is ((not a) <unk>))) of) an) <unk>)) (that is)) <unk>)
+
+('litigation', 'litigation', 'N7')
+('<unk>', '<unk>', 'N7')
+('is', 'is', 'N7')
+('not', "n't", 'N3')
+('a', 'a', 'N7')
+('<unk>', '<unk>', 'N7')
+('of', 'of', 'N7')
+('an', 'a', 'N3')
+('<unk>', '<unk>', 'N7')
+('that', 'a', 'N2')
+('is', 'a', 'N1')
+('<unk>', '<unk>', 'N7')
+('not a', "n't a", 'N6')
+('that is', "n't a <unk>", 'N3')
+('not a <unk>', "n't a <unk>", 'N6')
+('is not a <unk>', "is n't a <unk>", 'N6')
+('<unk> is not a <unk>', "<unk> is n't a <unk>", 'N6')
+('<unk> is not a <unk> of', "<unk> is n't a <unk> of", 'N6')
+('<unk> is not a <unk> of an', "<unk> is n't a <unk> of a <unk>", 'N6')
+('<unk> is not a <unk> of an <unk>', "<unk> is n't a <unk> of a <unk> <unk>", 'N6')
+('litigation <unk> is not a <unk> of an <unk>', "litigation <unk> is n't a <unk> of a <unk> <unk>", 'N6')
+('litigation <unk> is not a <unk> of an <unk> that is', "litigation <unk> is n't a <unk> of a <unk> <unk>", 'N2')
+('litigation <unk> is not a <unk> of an <unk> that is <unk>', "litigation <unk> is n't a <unk> of a <unk> <unk>", 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 7.4453
+--------------------------------
+Saving checkpoint to styleptb-aem-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 7500/627, |EncParam|: 81.9628, |DecParam|: 138.4836, |ParserParam|: 61.0903, LR: 0.0005, SrcPPL: 1577.1215, PPL: 4.3089, ValPPL: 7.4453, Throughput: 3.76 examples/sec
+--------------------------------------------------------------------------------
+
+Source: but one <unk> <unk> is still with us
+Target: but still with us is one <unk> that's <unk>
+Source Tree: ((but one) ((((<unk> <unk>) is) still) (with us)))
+
+QCFG Tree: ((((but (still (with us))) is) one) ((<unk> that's) <unk>))
+
+('but', 'but', 'N7')
+('still', 'still', 'N7')
+('with', 'but', 'N0')
+('us', 'but', 'N0')
+('is', 'is', 'N1')
+('one', 'one', 'N7')
+('<unk>', '<unk>', 'N5')
+("that's", '<unk>', 'N6')
+('<unk>', '<unk>', 'N7')
+('with us', 'with us', 'N7')
+("<unk> that's", '<unk> <unk>', 'N2')
+('still with us', '<unk> <unk> is still with us', 'N6')
+("<unk> that's <unk>", '<unk> <unk>', 'N0')
+('but still with us', 'but one <unk> <unk> is still with us', 'N6')
+('but still with us is', 'but one <unk> <unk> is still with us', 'N3')
+('but still with us is one', 'but one <unk> <unk> is still with us', 'N2')
+("but still with us is one <unk> that's <unk>", 'but one <unk> <unk> is still with us', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 7.9388
+--------------------------------
+Starting epoch: 13
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 8000/627, |EncParam|: 82.5533, |DecParam|: 138.3096, |ParserParam|: 61.5058, LR: 0.0005, SrcPPL: 1411.0600, PPL: 4.0209, ValPPL: 7.4453, Throughput: 3.89 examples/sec
+--------------------------------------------------------------------------------
+
+Source: but <unk> volatility was <unk> in the <unk>
+Target: but the volatility <unk> in the <unk> was <unk>
+Source Tree: ((but (<unk> (volatility was))) (((<unk> in) the) <unk>))
+
+QCFG Tree: ((((but (the volatility)) (<unk> in)) the) <unk>)
+
+('but', 'but', 'N7')
+('the', 'volatility', 'N0')
+('volatility', 'volatility', 'N7')
+('<unk>', 'but', 'N0')
+('in', 'but', 'N0')
+('the', 'but', 'N0')
+('<unk>', 'but', 'N0')
+('was', 'was', 'N1')
+('<unk>', '<unk>', 'N7')
+('the volatility', '<unk> volatility was', 'N6')
+('but the volatility', 'but <unk> volatility was', 'N6')
+('<unk> in the <unk>', '<unk> in the <unk>', 'N7')
+('but the volatility <unk> in the <unk>', 'but <unk> volatility was <unk> in the <unk>', 'N6')
+('but the volatility <unk> in the <unk> was', 'but <unk> volatility was <unk> in the <unk>', 'N2')
+('but the volatility <unk> in the <unk> was <unk>', 'but <unk> volatility was <unk> in the <unk>', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 7.4752
+--------------------------------
+Starting epoch: 14
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 8500/627, |EncParam|: 83.1093, |DecParam|: 138.0744, |ParserParam|: 62.0677, LR: 0.0005, SrcPPL: 1174.7548, PPL: 3.6315, ValPPL: 7.4453, Throughput: 3.90 examples/sec
+--------------------------------------------------------------------------------
+
+Source: both reflect the dismissal of lower-level and shorter-tenure executives
+Target: both reflect the dismissal of executives that are <unk> <unk> and lower level
+Source Tree: ((((both reflect) the) (((dismissal of) (lower-level and)) shorter-tenure)) executives)
+
+QCFG Tree: (((((both reflect) (the dismissal)) of) ((((executives that) are) <unk>) <unk>)) (and lower))
+
+('both', 'both', 'N0')
+('reflect', 'both', 'N0')
+('the', 'both', 'N0')
+('dismissal', 'both', 'N0')
+('of', 'both', 'N0')
+('executives', 'executives', 'N7')
+('that', 'of', 'N2')
+('are', 'of', 'N1')
+('<unk>', 'dismissal', 'N5')
+('<unk>', 'dismissal', 'N5')
+('and', 'and', 'N7')
+('lower', 'and', 'N5')
+('level', 'lower-level', 'N4')
+('dismissal of', 'dismissal of', 'N7')
+('that are', 'dismissal of', 'N3')
+('lower level', 'dismissal of lower-level and shorter-tenure', 'N5')
+('both reflect the', 'both reflect the', 'N7')
+('that are <unk>', 'dismissal of', 'N5')
+('that are <unk> <unk>', 'dismissal of', 'N5')
+('both reflect the dismissal of', 'both reflect the dismissal of lower-level and shorter-tenure', 'N6')
+('that are <unk> <unk> and', 'dismissal of lower-level and', 'N2')
+('both reflect the dismissal of executives', 'both reflect the dismissal of lower-level and shorter-tenure executives', 'N6')
+('both reflect the dismissal of executives that are <unk> <unk> and', 'both reflect the dismissal of lower-level and shorter-tenure executives', 'N2')
+('both reflect the dismissal of executives that are <unk> <unk> and lower level', 'both reflect the dismissal of lower-level and shorter-tenure executives', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 8.6882
+--------------------------------
+Starting epoch: 15
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 9000/627, |EncParam|: 83.9999, |DecParam|: 137.9306, |ParserParam|: 62.6852, LR: 0.0005, SrcPPL: 831.2497, PPL: 3.4943, ValPPL: 7.4453, Throughput: 3.86 examples/sec
+--------------------------------------------------------------------------------
+
+Source: my <unk> is to change human <unk> <unk> touch
+Target: my <unk> <unk> touch is to change <unk> that's human
+Source Tree: (my ((<unk> is) ((to (((change human) <unk>) <unk>)) touch)))
+
+QCFG Tree: ((((my ((<unk> <unk>) touch)) is) (to ((change <unk>) that's))) human)
+
+('my', 'my', 'N7')
+('<unk>', '<unk>', 'N3')
+('<unk>', '<unk>', 'N3')
+('touch', 'touch', 'N7')
+('is', 'is', 'N1')
+('to', 'change', 'N4')
+('change', 'change', 'N7')
+('<unk>', '<unk>', 'N3')
+("that's", '<unk>', 'N6')
+('human', 'human', 'N7')
+('<unk> <unk>', 'change human <unk> <unk>', 'N6')
+('change <unk>', 'change human <unk>', 'N6')
+('<unk> <unk> touch', 'to change human <unk> <unk> touch', 'N6')
+("change <unk> that's", 'change human <unk>', 'N2')
+('my <unk> <unk> touch', 'my <unk> is to change human <unk> <unk> touch', 'N6')
+("to change <unk> that's", 'to change human <unk> <unk>', 'N2')
+('my <unk> <unk> touch is', 'my <unk> is to change human <unk> <unk> touch', 'N3')
+("my <unk> <unk> touch is to change <unk> that's", 'my <unk> is to change human <unk> <unk> touch', 'N2')
+("my <unk> <unk> touch is to change <unk> that's human", 'my <unk> is to change human <unk> <unk> touch', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 9.1212
+--------------------------------

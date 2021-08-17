@@ -1,0 +1,1341 @@
+Num sents: 15225, Vocab Size Before prune: 13, After prune: 13
+Num sents: 15225, Vocab Size Before prune: 6, After prune: 6
+Starting epoch: 1
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 1000/15225, |EncParam|: 28.2854, |DecParam|: 99.0140, |SrcParserParam|: 51.6284, LR: 0.0005, SrcPPL: 20.1453, PPL: 2.8324, ValPPL: 100000.0000, Throughput: 4.99 examples/sec
+--------------------------------------------------------------------------------
+
+Source: jump opposite left and run opposite left
+Target: I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_RUN
+
+Source Tree: ((jump ((opposite left) ((and run) opposite))) left)
+QCFG Tree: ((I_TURN_LEFT (I_TURN_LEFT I_JUMP)) (I_TURN_LEFT (I_TURN_LEFT I_RUN)))
+
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_LEFT I_JUMP', 'jump opposite left and run opposite', 'N1')
+('I_TURN_LEFT I_RUN', 'jump opposite left and run opposite', 'N1')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP', 'jump opposite left and run opposite', 'N4')
+('I_TURN_LEFT I_TURN_LEFT I_RUN', 'jump opposite left and run opposite left', 'N4')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_RUN', 'jump opposite left and run opposite left', 'N9')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 2000/15225, |EncParam|: 29.6218, |DecParam|: 98.9536, |SrcParserParam|: 51.9878, LR: 0.0005, SrcPPL: 19.9882, PPL: 2.2885, ValPPL: 100000.0000, Throughput: 5.00 examples/sec
+--------------------------------------------------------------------------------
+
+Source: turn left and walk right
+Target: I_TURN_LEFT I_TURN_RIGHT I_WALK
+
+Source Tree: (((turn (left and)) walk) right)
+QCFG Tree: (I_TURN_LEFT (I_TURN_RIGHT I_WALK))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_RIGHT I_WALK', 'turn left and walk right', 'N1')
+('I_TURN_LEFT I_TURN_RIGHT I_WALK', 'turn left and walk right', 'N7')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 3000/15225, |EncParam|: 31.2210, |DecParam|: 98.9625, |SrcParserParam|: 52.3248, LR: 0.0005, SrcPPL: 19.9406, PPL: 2.0583, ValPPL: 100000.0000, Throughput: 5.01 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look left after turn opposite left thrice
+Target: I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_LOOK
+
+Source Tree: (((((look left) after) (turn opposite)) left) thrice)
+QCFG Tree: (((I_TURN_LEFT I_TURN_LEFT) ((I_TURN_LEFT I_TURN_LEFT) (I_TURN_LEFT I_TURN_LEFT))) (I_TURN_LEFT I_LOOK))
+
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT I_TURN_LEFT', 'turn opposite', 'N4')
+('I_TURN_LEFT I_TURN_LEFT', 'turn opposite', 'N4')
+('I_TURN_LEFT I_TURN_LEFT', 'turn opposite', 'N4')
+('I_TURN_LEFT I_LOOK', 'look left after', 'N8')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'turn opposite', 'N9')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'turn opposite', 'N9')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_LOOK', 'look left after turn opposite left thrice', 'N6')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 4000/15225, |EncParam|: 32.7264, |DecParam|: 99.0086, |SrcParserParam|: 52.5581, LR: 0.0005, SrcPPL: 19.8634, PPL: 1.9090, ValPPL: 100000.0000, Throughput: 5.01 examples/sec
+--------------------------------------------------------------------------------
+
+Source: run opposite right and look opposite right twice
+Target: I_TURN_RIGHT I_TURN_RIGHT I_RUN I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK
+
+Source Tree: (((run opposite) right) (and (((look opposite) right) twice)))
+QCFG Tree: ((I_TURN_RIGHT (I_TURN_RIGHT I_RUN)) ((I_TURN_RIGHT (I_TURN_RIGHT I_LOOK)) (I_TURN_RIGHT (I_TURN_RIGHT I_LOOK))))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT I_RUN', 'run opposite right', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT I_RUN', 'run opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'and look opposite right twice', 'N9')
+('I_TURN_RIGHT I_TURN_RIGHT I_RUN I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'run opposite right and look opposite right twice', 'N6')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 5000/15225, |EncParam|: 34.1585, |DecParam|: 99.0533, |SrcParserParam|: 52.9763, LR: 0.0005, SrcPPL: 19.7752, PPL: 1.8072, ValPPL: 100000.0000, Throughput: 5.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look opposite left and walk opposite right
+Target: I_TURN_LEFT I_TURN_LEFT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_WALK
+
+Source Tree: (((((look opposite) left) and) (walk opposite)) right)
+QCFG Tree: ((I_TURN_LEFT (I_TURN_LEFT I_LOOK)) (I_TURN_RIGHT (I_TURN_RIGHT I_WALK)))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT I_LOOK', 'look opposite', 'N1')
+('I_TURN_RIGHT I_WALK', 'look opposite left and walk opposite right', 'N1')
+('I_TURN_LEFT I_TURN_LEFT I_LOOK', 'look opposite left', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_WALK', 'look opposite left and walk opposite right', 'N4')
+('I_TURN_LEFT I_TURN_LEFT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_WALK', 'look opposite left and walk opposite right', 'N2')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 6000/15225, |EncParam|: 35.4882, |DecParam|: 99.0489, |SrcParserParam|: 53.4073, LR: 0.0005, SrcPPL: 19.6267, PPL: 1.7119, ValPPL: 100000.0000, Throughput: 5.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: walk around left twice after turn right
+Target: I_TURN_RIGHT I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK
+
+Source Tree: (((walk ((around left) (twice after))) turn) right)
+QCFG Tree: (I_TURN_RIGHT ((((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK)) ((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK))) (((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK)) ((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK)))))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT I_WALK', 'walk around left twice after', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left twice after', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left twice after', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left twice after', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left twice after', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left twice after', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left twice after', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left twice after', 'N1')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left twice after', 'N5')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left twice after', 'N5')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left twice after', 'N5')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left twice after', 'N5')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left twice after', 'N9')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left twice after', 'N9')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left twice after', 'N3')
+('I_TURN_RIGHT I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left twice after turn right', 'N2')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 7000/15225, |EncParam|: 36.7915, |DecParam|: 99.0460, |SrcParserParam|: 54.0340, LR: 0.0005, SrcPPL: 19.3945, PPL: 1.6399, ValPPL: 100000.0000, Throughput: 5.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: run opposite right thrice and turn around left twice
+Target: I_TURN_RIGHT I_TURN_RIGHT I_RUN I_TURN_RIGHT I_TURN_RIGHT I_RUN I_TURN_RIGHT I_TURN_RIGHT I_RUN I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT
+
+Source Tree: (((((run opposite) (right thrice)) and) turn) (around (left twice)))
+QCFG Tree: (((I_TURN_RIGHT (I_TURN_RIGHT I_RUN)) ((I_TURN_RIGHT (I_TURN_RIGHT I_RUN)) (I_TURN_RIGHT (I_TURN_RIGHT I_RUN)))) (((I_TURN_LEFT I_TURN_LEFT) (I_TURN_LEFT I_TURN_LEFT)) ((I_TURN_LEFT I_TURN_LEFT) (I_TURN_LEFT I_TURN_LEFT))))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_RIGHT I_RUN', 'run opposite right thrice', 'N1')
+('I_TURN_RIGHT I_RUN', 'run opposite right thrice', 'N1')
+('I_TURN_RIGHT I_RUN', 'run opposite right thrice', 'N1')
+('I_TURN_LEFT I_TURN_LEFT', 'around left twice', 'N1')
+('I_TURN_LEFT I_TURN_LEFT', 'around left twice', 'N1')
+('I_TURN_LEFT I_TURN_LEFT', 'run opposite right thrice and turn around left twice', 'N1')
+('I_TURN_LEFT I_TURN_LEFT', 'run opposite right thrice and turn around left twice', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT I_RUN', 'run opposite right thrice', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_RUN', 'run opposite right thrice', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_RUN', 'run opposite right thrice', 'N4')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'around left twice', 'N5')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'run opposite right thrice and turn around left twice', 'N5')
+('I_TURN_RIGHT I_TURN_RIGHT I_RUN I_TURN_RIGHT I_TURN_RIGHT I_RUN', 'run opposite right thrice', 'N9')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'run opposite right thrice and turn around left twice', 'N3')
+('I_TURN_RIGHT I_TURN_RIGHT I_RUN I_TURN_RIGHT I_TURN_RIGHT I_RUN I_TURN_RIGHT I_TURN_RIGHT I_RUN', 'run opposite right thrice', 'N3')
+('I_TURN_RIGHT I_TURN_RIGHT I_RUN I_TURN_RIGHT I_TURN_RIGHT I_RUN I_TURN_RIGHT I_TURN_RIGHT I_RUN I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'run opposite right thrice and turn around left twice', 'N7')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 8000/15225, |EncParam|: 38.1533, |DecParam|: 99.0293, |SrcParserParam|: 54.8424, LR: 0.0005, SrcPPL: 18.9190, PPL: 1.5798, ValPPL: 100000.0000, Throughput: 5.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look right and jump around left twice
+Target: I_TURN_RIGHT I_LOOK I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP
+
+Source Tree: (((((look right) and) jump) around) (left twice))
+QCFG Tree: ((I_TURN_RIGHT I_LOOK) ((((I_TURN_LEFT I_JUMP) (I_TURN_LEFT I_JUMP)) ((I_TURN_LEFT I_JUMP) (I_TURN_LEFT I_JUMP))) (((I_TURN_LEFT I_JUMP) (I_TURN_LEFT I_JUMP)) ((I_TURN_LEFT I_JUMP) (I_TURN_LEFT I_JUMP)))))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT I_LOOK', 'look right', 'N0')
+('I_TURN_LEFT I_JUMP', 'look right and jump around', 'N1')
+('I_TURN_LEFT I_JUMP', 'look right and jump around', 'N1')
+('I_TURN_LEFT I_JUMP', 'look right and jump around', 'N1')
+('I_TURN_LEFT I_JUMP', 'look right and jump around', 'N1')
+('I_TURN_LEFT I_JUMP', 'look right and jump around', 'N1')
+('I_TURN_LEFT I_JUMP', 'look right and jump around', 'N1')
+('I_TURN_LEFT I_JUMP', 'look right and jump around', 'N1')
+('I_TURN_LEFT I_JUMP', 'look right and jump around', 'N1')
+('I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'look right and jump around', 'N5')
+('I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'look right and jump around', 'N5')
+('I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'look right and jump around', 'N5')
+('I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'look right and jump around', 'N5')
+('I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'look right and jump around', 'N9')
+('I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'look right and jump around', 'N9')
+('I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'look right and jump around left twice', 'N3')
+('I_TURN_RIGHT I_LOOK I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'look right and jump around left twice', 'N2')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 9000/15225, |EncParam|: 39.1283, |DecParam|: 98.9646, |SrcParserParam|: 56.0024, LR: 0.0005, SrcPPL: 18.0443, PPL: 1.5302, ValPPL: 100000.0000, Throughput: 5.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: run twice after look right thrice
+Target: I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_RUN I_RUN
+
+Source Tree: ((run (twice after)) (look (right thrice)))
+QCFG Tree: (((I_TURN_RIGHT I_LOOK) ((I_TURN_RIGHT I_LOOK) (I_TURN_RIGHT I_LOOK))) (I_RUN I_RUN))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_RUN', 'run', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_RIGHT I_LOOK', 'look right thrice', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look right thrice', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look right thrice', 'N1')
+('I_RUN I_RUN', 'run twice after', 'N3')
+('I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK', 'look right thrice', 'N5')
+('I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK', 'look right thrice', 'N3')
+('I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_RUN I_RUN', 'run twice after look right thrice', 'N2')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 10000/15225, |EncParam|: 40.0347, |DecParam|: 99.0608, |SrcParserParam|: 57.1055, LR: 0.0005, SrcPPL: 16.8424, PPL: 1.4867, ValPPL: 100000.0000, Throughput: 5.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look around left thrice and look opposite left
+Target: I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_TURN_LEFT I_LOOK
+
+Source Tree: ((look ((around left) thrice)) (and (look (opposite left))))
+QCFG Tree: (((((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK)) ((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK))) ((((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK)) ((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK))) (((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK)) ((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK))))) (I_TURN_LEFT (I_TURN_LEFT I_LOOK)))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT I_LOOK', 'look around left thrice', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left thrice', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left thrice', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left thrice', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left thrice', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left thrice', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left thrice', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left thrice', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left thrice', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left thrice', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left thrice', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left thrice', 'N1')
+('I_TURN_LEFT I_LOOK', 'look opposite left', 'N1')
+('I_TURN_LEFT I_TURN_LEFT I_LOOK', 'and look opposite left', 'N4')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left thrice', 'N5')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left thrice', 'N5')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left thrice', 'N5')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left thrice', 'N5')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left thrice', 'N5')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left thrice', 'N5')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left thrice', 'N9')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left thrice', 'N9')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left thrice', 'N9')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left thrice', 'N3')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left thrice', 'N3')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_TURN_LEFT I_LOOK', 'look around left thrice and look opposite left', 'N6')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 11000/15225, |EncParam|: 40.6465, |DecParam|: 99.0262, |SrcParserParam|: 57.5890, LR: 0.0005, SrcPPL: 15.2687, PPL: 1.4422, ValPPL: 100000.0000, Throughput: 5.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: turn right twice and look opposite right twice
+Target: I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK
+
+Source Tree: ((turn (right twice)) (and ((look (opposite right)) twice)))
+QCFG Tree: ((I_TURN_RIGHT I_TURN_RIGHT) ((I_TURN_RIGHT (I_TURN_RIGHT I_LOOK)) (I_TURN_RIGHT (I_TURN_RIGHT I_LOOK))))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT I_TURN_RIGHT', 'turn right twice', 'N3')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'and look opposite right twice', 'N3')
+('I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'turn right twice and look opposite right twice', 'N6')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 12000/15225, |EncParam|: 41.0170, |DecParam|: 98.9908, |SrcParserParam|: 57.5483, LR: 0.0005, SrcPPL: 13.8265, PPL: 1.4041, ValPPL: 100000.0000, Throughput: 5.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look around left thrice and look right
+Target: I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_RIGHT I_LOOK
+
+Source Tree: (((look (around left)) thrice) (and (look right)))
+QCFG Tree: (((((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK)) ((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK))) ((((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK)) ((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK))) (((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK)) ((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK))))) (I_TURN_RIGHT I_LOOK))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT I_LOOK', 'look around left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look around left', 'N1')
+('I_TURN_RIGHT I_LOOK', 'and look right', 'N4')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left', 'N5')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left', 'N5')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left', 'N5')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left', 'N5')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left', 'N5')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left', 'N5')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left', 'N9')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left', 'N9')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left', 'N9')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left', 'N3')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look around left thrice', 'N3')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_RIGHT I_LOOK', 'look around left thrice and look right', 'N2')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 13000/15225, |EncParam|: 41.3514, |DecParam|: 98.8351, |SrcParserParam|: 57.3669, LR: 0.0005, SrcPPL: 12.7034, PPL: 1.3737, ValPPL: 100000.0000, Throughput: 5.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look left twice and jump opposite right thrice
+Target: I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP
+
+Source Tree: (((look left) twice) (and ((jump (opposite right)) thrice)))
+QCFG Tree: (((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK)) ((I_TURN_RIGHT (I_TURN_RIGHT I_JUMP)) ((I_TURN_RIGHT (I_TURN_RIGHT I_JUMP)) (I_TURN_RIGHT (I_TURN_RIGHT I_JUMP)))))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT I_LOOK', 'look left', 'N0')
+('I_TURN_LEFT I_LOOK', 'look left', 'N1')
+('I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N1')
+('I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N1')
+('I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N4')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look left twice', 'N3')
+('I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N3')
+('I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP', 'and jump opposite right thrice', 'N3')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP', 'look left twice and jump opposite right thrice', 'N6')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 14000/15225, |EncParam|: 41.5063, |DecParam|: 98.6633, |SrcParserParam|: 57.1589, LR: 0.0005, SrcPPL: 11.8123, PPL: 1.3474, ValPPL: 100000.0000, Throughput: 5.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: walk opposite left twice and turn right thrice
+Target: I_TURN_LEFT I_TURN_LEFT I_WALK I_TURN_LEFT I_TURN_LEFT I_WALK I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT
+
+Source Tree: (((walk (opposite left)) twice) (and (turn (right thrice))))
+QCFG Tree: (((I_TURN_LEFT (I_TURN_LEFT I_WALK)) (I_TURN_LEFT (I_TURN_LEFT I_WALK))) ((I_TURN_RIGHT I_TURN_RIGHT) I_TURN_RIGHT))
+
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_TURN_LEFT', 'opposite', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_LEFT I_WALK', 'walk opposite left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk opposite left', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT', 'turn right thrice', 'N1')
+('I_TURN_LEFT I_TURN_LEFT I_WALK', 'walk opposite left', 'N4')
+('I_TURN_LEFT I_TURN_LEFT I_WALK', 'walk opposite left', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT', 'and turn right thrice', 'N3')
+('I_TURN_LEFT I_TURN_LEFT I_WALK I_TURN_LEFT I_TURN_LEFT I_WALK', 'walk opposite left twice', 'N3')
+('I_TURN_LEFT I_TURN_LEFT I_WALK I_TURN_LEFT I_TURN_LEFT I_WALK I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT', 'walk opposite left twice and turn right thrice', 'N6')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 15000/15225, |EncParam|: 41.7132, |DecParam|: 98.4392, |SrcParserParam|: 56.9223, LR: 0.0005, SrcPPL: 11.0613, PPL: 1.3245, ValPPL: 100000.0000, Throughput: 5.04 examples/sec
+--------------------------------------------------------------------------------
+
+Source: jump opposite left thrice and look opposite right twice
+Target: I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK
+
+Source Tree: (((jump (opposite left)) thrice) (and ((look (opposite right)) twice)))
+QCFG Tree: (((I_TURN_LEFT (I_TURN_LEFT I_JUMP)) ((I_TURN_LEFT (I_TURN_LEFT I_JUMP)) (I_TURN_LEFT (I_TURN_LEFT I_JUMP)))) ((I_TURN_RIGHT (I_TURN_RIGHT I_LOOK)) (I_TURN_RIGHT (I_TURN_RIGHT I_LOOK))))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT I_JUMP', 'jump opposite left', 'N1')
+('I_TURN_LEFT I_JUMP', 'jump opposite left', 'N1')
+('I_TURN_LEFT I_JUMP', 'jump opposite left', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP', 'jump opposite left', 'N4')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP', 'jump opposite left', 'N4')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP', 'jump opposite left', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP', 'jump opposite left', 'N3')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'and look opposite right twice', 'N9')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP', 'jump opposite left thrice', 'N3')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'jump opposite left thrice and look opposite right twice', 'N6')
+Starting epoch: 2
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 16000/15225, |EncParam|: 41.9797, |DecParam|: 98.2886, |SrcParserParam|: 56.6670, LR: 0.0005, SrcPPL: 4.4353, PPL: 1.0396, ValPPL: 100000.0000, Throughput: 5.12 examples/sec
+--------------------------------------------------------------------------------
+
+Source: jump twice and walk right twice
+Target: I_JUMP I_JUMP I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK
+
+Source Tree: ((jump twice) (and ((walk right) twice)))
+QCFG Tree: ((I_JUMP I_JUMP) ((I_TURN_RIGHT I_WALK) (I_TURN_RIGHT I_WALK)))
+
+('I_JUMP', 'jump', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_JUMP I_JUMP', 'jump twice', 'N3')
+('I_TURN_RIGHT I_WALK', 'walk right', 'N0')
+('I_TURN_RIGHT I_WALK', 'walk right', 'N1')
+('I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK', 'and walk right twice', 'N3')
+('I_JUMP I_JUMP I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK', 'jump twice and walk right twice', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 1.0271
+--------------------------------
+Saving checkpoint to scan-aroundright-seed12.pt
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 17000/15225, |EncParam|: 42.0714, |DecParam|: 97.9354, |SrcParserParam|: 56.3615, LR: 0.0005, SrcPPL: 4.3958, PPL: 1.0283, ValPPL: 1.0271, Throughput: 2.70 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look right thrice and turn around left twice
+Target: I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT
+
+Source Tree: ((look (right thrice)) (and ((turn (around left)) twice)))
+QCFG Tree: (((I_TURN_RIGHT I_LOOK) ((I_TURN_RIGHT I_LOOK) (I_TURN_RIGHT I_LOOK))) (((I_TURN_LEFT I_TURN_LEFT) (I_TURN_LEFT I_TURN_LEFT)) ((I_TURN_LEFT I_TURN_LEFT) (I_TURN_LEFT I_TURN_LEFT))))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_TURN_RIGHT I_LOOK', 'look right thrice', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look right thrice', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look right thrice', 'N1')
+('I_TURN_LEFT I_TURN_LEFT', 'turn around left', 'N0')
+('I_TURN_LEFT I_TURN_LEFT', 'turn around left', 'N1')
+('I_TURN_LEFT I_TURN_LEFT', 'turn around left', 'N0')
+('I_TURN_LEFT I_TURN_LEFT', 'turn around left', 'N1')
+('I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK', 'look right thrice', 'N5')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'turn around left', 'N5')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'turn around left', 'N5')
+('I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK', 'look right thrice', 'N3')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'and turn around left twice', 'N3')
+('I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'look right thrice and turn around left twice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.0735
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 18000/15225, |EncParam|: 42.2887, |DecParam|: 97.6528, |SrcParserParam|: 56.0512, LR: 0.0005, SrcPPL: 4.3844, PPL: 1.0246, ValPPL: 1.0271, Throughput: 2.38 examples/sec
+--------------------------------------------------------------------------------
+
+Source: walk left twice after run thrice
+Target: I_RUN I_RUN I_RUN I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK
+
+Source Tree: ((walk (left twice)) (after (run thrice)))
+QCFG Tree: ((I_RUN (I_RUN I_RUN)) ((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK)))
+
+('I_RUN', 'run', 'N0')
+('I_RUN', 'run', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_RUN I_RUN', 'run thrice', 'N9')
+('I_TURN_LEFT I_WALK', 'walk left twice', 'N1')
+('I_TURN_LEFT I_WALK', 'walk left twice', 'N1')
+('I_RUN I_RUN I_RUN', 'after run thrice', 'N3')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk left twice', 'N3')
+('I_RUN I_RUN I_RUN I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk left twice after run thrice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.0183
+--------------------------------
+Saving checkpoint to scan-aroundright-seed12.pt
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 19000/15225, |EncParam|: 42.4137, |DecParam|: 97.3511, |SrcParserParam|: 55.7069, LR: 0.0005, SrcPPL: 4.3942, PPL: 1.0394, ValPPL: 1.0183, Throughput: 2.26 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look opposite right twice after jump opposite right thrice
+Target: I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK
+
+Source Tree: (((look (opposite right)) twice) (after ((jump (opposite right)) thrice)))
+QCFG Tree: (((I_TURN_RIGHT (I_TURN_RIGHT I_JUMP)) ((I_TURN_RIGHT (I_TURN_RIGHT I_JUMP)) (I_TURN_RIGHT (I_TURN_RIGHT I_JUMP)))) ((I_TURN_RIGHT (I_TURN_RIGHT I_LOOK)) (I_TURN_RIGHT (I_TURN_RIGHT I_LOOK))))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N1')
+('I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N1')
+('I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP', 'jump opposite right', 'N3')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right twice', 'N3')
+('I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP', 'after jump opposite right thrice', 'N3')
+('I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right twice after jump opposite right thrice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.0212
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 20000/15225, |EncParam|: 42.6322, |DecParam|: 97.2268, |SrcParserParam|: 55.3441, LR: 0.0005, SrcPPL: 4.3844, PPL: 1.0430, ValPPL: 1.0183, Throughput: 2.20 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look opposite left after look right thrice
+Target: I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_LEFT I_TURN_LEFT I_LOOK
+
+Source Tree: ((look (opposite left)) (after ((look right) thrice)))
+QCFG Tree: (((I_TURN_RIGHT I_LOOK) ((I_TURN_RIGHT I_LOOK) (I_TURN_RIGHT I_LOOK))) (I_TURN_LEFT (I_TURN_LEFT I_LOOK)))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT I_LOOK', 'look right', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look right', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look right', 'N1')
+('I_TURN_LEFT I_LOOK', 'look opposite left', 'N1')
+('I_TURN_LEFT I_TURN_LEFT I_LOOK', 'look opposite left', 'N4')
+('I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK', 'look right', 'N3')
+('I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK', 'after look right thrice', 'N3')
+('I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_LEFT I_TURN_LEFT I_LOOK', 'look opposite left after look right thrice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.0306
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 21000/15225, |EncParam|: 42.8381, |DecParam|: 96.8981, |SrcParserParam|: 54.9619, LR: 0.0005, SrcPPL: 4.3851, PPL: 1.0400, ValPPL: 1.0183, Throughput: 2.16 examples/sec
+--------------------------------------------------------------------------------
+
+Source: jump right thrice and run opposite right
+Target: I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_RUN
+
+Source Tree: ((jump (right thrice)) (and (run (opposite right))))
+QCFG Tree: (((I_TURN_RIGHT I_JUMP) ((I_TURN_RIGHT I_JUMP) (I_TURN_RIGHT I_JUMP))) (I_TURN_RIGHT (I_TURN_RIGHT I_RUN)))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_RIGHT I_JUMP', 'jump right thrice', 'N1')
+('I_TURN_RIGHT I_JUMP', 'jump right thrice', 'N1')
+('I_TURN_RIGHT I_JUMP', 'jump right thrice', 'N1')
+('I_TURN_RIGHT I_RUN', 'run opposite right', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT I_RUN', 'and run opposite right', 'N4')
+('I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP', 'jump right thrice', 'N5')
+('I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP', 'jump right thrice', 'N3')
+('I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_RUN', 'jump right thrice and run opposite right', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.0283
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 22000/15225, |EncParam|: 43.1014, |DecParam|: 96.6306, |SrcParserParam|: 54.5414, LR: 0.0005, SrcPPL: 4.3813, PPL: 1.0411, ValPPL: 1.0183, Throughput: 2.13 examples/sec
+--------------------------------------------------------------------------------
+
+Source: run opposite right after turn right twice
+Target: I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_RUN
+
+Source Tree: ((run (opposite right)) (after (turn (right twice))))
+QCFG Tree: ((I_TURN_RIGHT I_TURN_RIGHT) (I_TURN_RIGHT (I_TURN_RIGHT I_RUN)))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_RIGHT I_TURN_RIGHT', 'after turn right twice', 'N8')
+('I_TURN_RIGHT I_RUN', 'run opposite right', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT I_RUN', 'run opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_RUN', 'run opposite right after turn right twice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.0518
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 23000/15225, |EncParam|: 43.1969, |DecParam|: 96.3573, |SrcParserParam|: 54.1032, LR: 0.0005, SrcPPL: 4.3794, PPL: 1.0412, ValPPL: 1.0183, Throughput: 2.11 examples/sec
+--------------------------------------------------------------------------------
+
+Source: walk left twice after look left thrice
+Target: I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK
+
+Source Tree: ((walk (left twice)) (after ((look left) thrice)))
+QCFG Tree: (((I_TURN_LEFT I_LOOK) ((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK))) ((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK)))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT I_LOOK', 'look left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk left twice', 'N1')
+('I_TURN_LEFT I_WALK', 'walk left twice', 'N1')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look left', 'N3')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk left twice', 'N3')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'after look left thrice', 'N3')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk left twice after look left thrice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.0302
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 24000/15225, |EncParam|: 43.4583, |DecParam|: 96.0690, |SrcParserParam|: 53.6548, LR: 0.0005, SrcPPL: 4.3814, PPL: 1.0424, ValPPL: 1.0183, Throughput: 2.09 examples/sec
+--------------------------------------------------------------------------------
+
+Source: walk right thrice and jump
+Target: I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_JUMP
+
+Source Tree: (((walk right) thrice) (and jump))
+QCFG Tree: (((I_TURN_RIGHT I_WALK) ((I_TURN_RIGHT I_WALK) (I_TURN_RIGHT I_WALK))) I_JUMP)
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT I_WALK', 'walk right', 'N1')
+('I_TURN_RIGHT I_WALK', 'walk right', 'N1')
+('I_TURN_RIGHT I_WALK', 'walk right', 'N1')
+('I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK', 'walk right', 'N5')
+('I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK', 'walk right thrice', 'N3')
+('I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_TURN_RIGHT I_WALK I_JUMP', 'walk right thrice and jump', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 12.5236
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 25000/15225, |EncParam|: 43.6198, |DecParam|: 95.7103, |SrcParserParam|: 53.2094, LR: 0.0005, SrcPPL: 4.3785, PPL: 1.0396, ValPPL: 1.0183, Throughput: 2.08 examples/sec
+--------------------------------------------------------------------------------
+
+Source: walk left thrice and turn right twice
+Target: I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_RIGHT I_TURN_RIGHT
+
+Source Tree: ((walk (left thrice)) (and ((turn right) twice)))
+QCFG Tree: (((I_TURN_LEFT I_WALK) ((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK))) (I_TURN_RIGHT I_TURN_RIGHT))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_LEFT I_WALK', 'walk left thrice', 'N1')
+('I_TURN_LEFT I_WALK', 'walk left thrice', 'N1')
+('I_TURN_LEFT I_WALK', 'walk left thrice', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT', 'and turn right twice', 'N8')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk left thrice', 'N5')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk left thrice', 'N3')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_RIGHT I_TURN_RIGHT', 'walk left thrice and turn right twice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.1708
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 26000/15225, |EncParam|: 43.7654, |DecParam|: 95.3699, |SrcParserParam|: 52.7101, LR: 0.0005, SrcPPL: 4.3757, PPL: 1.0391, ValPPL: 1.0183, Throughput: 2.07 examples/sec
+--------------------------------------------------------------------------------
+
+Source: walk left thrice after jump opposite left twice
+Target: I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK
+
+Source Tree: (((walk left) thrice) (after ((jump (opposite left)) twice)))
+QCFG Tree: (((I_TURN_LEFT (I_TURN_LEFT I_JUMP)) (I_TURN_LEFT (I_TURN_LEFT I_JUMP))) ((I_TURN_LEFT I_WALK) ((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK))))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT I_JUMP', 'jump opposite left', 'N1')
+('I_TURN_LEFT I_JUMP', 'jump opposite left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk left', 'N4')
+('I_TURN_LEFT I_WALK', 'walk left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk left', 'N0')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP', 'jump opposite left', 'N4')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP', 'jump opposite left', 'N4')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk left', 'N3')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP', 'after jump opposite left twice', 'N3')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk left thrice', 'N3')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk left thrice after jump opposite left twice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 2.9509
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 27000/15225, |EncParam|: 43.8812, |DecParam|: 94.9576, |SrcParserParam|: 52.2164, LR: 0.0005, SrcPPL: 4.3736, PPL: 1.0383, ValPPL: 1.0183, Throughput: 2.06 examples/sec
+--------------------------------------------------------------------------------
+
+Source: walk opposite right after look left thrice
+Target: I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_WALK
+
+Source Tree: ((walk (opposite right)) (after ((look left) thrice)))
+QCFG Tree: (((I_TURN_LEFT I_LOOK) ((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK))) (I_TURN_RIGHT (I_TURN_RIGHT I_WALK)))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT I_LOOK', 'look left', 'N4')
+('I_TURN_LEFT I_LOOK', 'look left', 'N4')
+('I_TURN_LEFT I_LOOK', 'look left', 'N1')
+('I_TURN_RIGHT I_WALK', 'walk opposite right', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT I_WALK', 'walk opposite right', 'N4')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look left', 'N3')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'after look left thrice', 'N3')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_WALK', 'walk opposite right after look left thrice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 4.0205
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 28000/15225, |EncParam|: 44.1610, |DecParam|: 94.7468, |SrcParserParam|: 51.6591, LR: 0.0005, SrcPPL: 4.3708, PPL: 1.0396, ValPPL: 1.0183, Throughput: 2.06 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look thrice and jump opposite left twice
+Target: I_LOOK I_LOOK I_LOOK I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP
+
+Source Tree: ((look thrice) (and ((jump (opposite left)) twice)))
+QCFG Tree: ((I_LOOK (I_LOOK I_LOOK)) ((I_TURN_LEFT (I_TURN_LEFT I_JUMP)) (I_TURN_LEFT (I_TURN_LEFT I_JUMP))))
+
+('I_LOOK', 'look', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_LOOK I_LOOK', 'look thrice', 'N0')
+('I_TURN_LEFT I_JUMP', 'jump opposite left', 'N1')
+('I_TURN_LEFT I_JUMP', 'jump opposite left', 'N1')
+('I_LOOK I_LOOK I_LOOK', 'look thrice', 'N3')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP', 'jump opposite left', 'N4')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP', 'jump opposite left', 'N4')
+('I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP', 'and jump opposite left twice', 'N3')
+('I_LOOK I_LOOK I_LOOK I_TURN_LEFT I_TURN_LEFT I_JUMP I_TURN_LEFT I_TURN_LEFT I_JUMP', 'look thrice and jump opposite left twice', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 5.6436
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 29000/15225, |EncParam|: 44.1234, |DecParam|: 94.5199, |SrcParserParam|: 51.0796, LR: 0.0005, SrcPPL: 4.3726, PPL: 1.0435, ValPPL: 1.0183, Throughput: 2.05 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look opposite right after turn opposite left
+Target: I_TURN_LEFT I_TURN_LEFT I_TURN_RIGHT I_TURN_RIGHT I_LOOK
+
+Source Tree: ((look (opposite right)) (after (turn (opposite left))))
+QCFG Tree: ((I_TURN_LEFT I_TURN_LEFT) (I_TURN_RIGHT (I_TURN_RIGHT I_LOOK)))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT I_TURN_LEFT', 'after turn opposite left', 'N4')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right after turn opposite left', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.3524
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 30000/15225, |EncParam|: 44.5457, |DecParam|: 94.3851, |SrcParserParam|: 50.4993, LR: 0.0005, SrcPPL: 4.3673, PPL: 1.0443, ValPPL: 1.0183, Throughput: 2.04 examples/sec
+--------------------------------------------------------------------------------
+
+Source: jump left twice and run right
+Target: I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_RIGHT I_RUN
+
+Source Tree: (((jump left) twice) (and (run right)))
+QCFG Tree: (((I_TURN_LEFT I_JUMP) (I_TURN_LEFT I_JUMP)) (I_TURN_RIGHT I_RUN))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_LEFT I_JUMP', 'jump left', 'N4')
+('I_TURN_LEFT I_JUMP', 'jump left', 'N1')
+('I_TURN_RIGHT I_RUN', 'and run right', 'N4')
+('I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'jump left twice', 'N3')
+('I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_RIGHT I_RUN', 'jump left twice and run right', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.0526
+--------------------------------
+Starting epoch: 3
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 31000/15225, |EncParam|: 44.6816, |DecParam|: 94.0133, |SrcParserParam|: 49.8892, LR: 0.0005, SrcPPL: 4.3127, PPL: 1.0189, ValPPL: 1.0183, Throughput: 4.97 examples/sec
+--------------------------------------------------------------------------------
+
+Source: jump around left after look right thrice
+Target: I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP
+
+Source Tree: ((jump (around left)) (after ((look right) thrice)))
+QCFG Tree: (((I_TURN_RIGHT I_LOOK) ((I_TURN_RIGHT I_LOOK) (I_TURN_RIGHT I_LOOK))) (((I_TURN_LEFT I_JUMP) (I_TURN_LEFT I_JUMP)) ((I_TURN_LEFT I_JUMP) (I_TURN_LEFT I_JUMP))))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT I_LOOK', 'look right', 'N4')
+('I_TURN_RIGHT I_LOOK', 'look right', 'N4')
+('I_TURN_RIGHT I_LOOK', 'look right', 'N1')
+('I_TURN_LEFT I_JUMP', 'jump around left', 'N1')
+('I_TURN_LEFT I_JUMP', 'jump around left', 'N1')
+('I_TURN_LEFT I_JUMP', 'jump around left', 'N1')
+('I_TURN_LEFT I_JUMP', 'jump around left', 'N1')
+('I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK', 'look right', 'N3')
+('I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'jump around left', 'N5')
+('I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'jump around left', 'N5')
+('I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK', 'after look right thrice', 'N3')
+('I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'jump around left', 'N9')
+('I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_LOOK I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP I_TURN_LEFT I_JUMP', 'jump around left after look right thrice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.0863
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 32000/15225, |EncParam|: 44.7136, |DecParam|: 93.5086, |SrcParserParam|: 49.2532, LR: 0.0005, SrcPPL: 4.3146, PPL: 1.0175, ValPPL: 1.0183, Throughput: 2.52 examples/sec
+--------------------------------------------------------------------------------
+
+Source: run twice and run right thrice
+Target: I_RUN I_RUN I_TURN_RIGHT I_RUN I_TURN_RIGHT I_RUN I_TURN_RIGHT I_RUN
+
+Source Tree: ((run twice) (and ((run right) thrice)))
+QCFG Tree: ((I_RUN I_RUN) ((I_TURN_RIGHT I_RUN) ((I_TURN_RIGHT I_RUN) (I_TURN_RIGHT I_RUN))))
+
+('I_RUN', 'run', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_RUN', 'run', 'N0')
+('I_RUN I_RUN', 'run twice', 'N3')
+('I_TURN_RIGHT I_RUN', 'run right', 'N4')
+('I_TURN_RIGHT I_RUN', 'run right', 'N4')
+('I_TURN_RIGHT I_RUN', 'run right', 'N1')
+('I_TURN_RIGHT I_RUN I_TURN_RIGHT I_RUN', 'run right', 'N3')
+('I_TURN_RIGHT I_RUN I_TURN_RIGHT I_RUN I_TURN_RIGHT I_RUN', 'and run right thrice', 'N8')
+('I_RUN I_RUN I_TURN_RIGHT I_RUN I_TURN_RIGHT I_RUN I_TURN_RIGHT I_RUN', 'run twice and run right thrice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.0259
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 33000/15225, |EncParam|: 44.7266, |DecParam|: 93.1457, |SrcParserParam|: 48.6716, LR: 0.0005, SrcPPL: 4.3284, PPL: 1.0200, ValPPL: 1.0183, Throughput: 2.27 examples/sec
+--------------------------------------------------------------------------------
+
+Source: jump right thrice and run left thrice
+Target: I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN
+
+Source Tree: ((jump (right thrice)) (and (run (left thrice))))
+QCFG Tree: (((I_TURN_RIGHT I_JUMP) ((I_TURN_RIGHT I_JUMP) (I_TURN_RIGHT I_JUMP))) ((I_TURN_LEFT I_RUN) ((I_TURN_LEFT I_RUN) (I_TURN_LEFT I_RUN))))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_RIGHT I_JUMP', 'jump right thrice', 'N1')
+('I_TURN_RIGHT I_JUMP', 'jump right thrice', 'N1')
+('I_TURN_RIGHT I_JUMP', 'jump right thrice', 'N1')
+('I_TURN_LEFT I_RUN', 'run left thrice', 'N1')
+('I_TURN_LEFT I_RUN', 'run left thrice', 'N1')
+('I_TURN_LEFT I_RUN', 'run left thrice', 'N1')
+('I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP', 'jump right thrice', 'N5')
+('I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN', 'run left thrice', 'N5')
+('I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP', 'jump right thrice', 'N3')
+('I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN', 'and run left thrice', 'N8')
+('I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP I_TURN_RIGHT I_JUMP I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN', 'jump right thrice and run left thrice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.0260
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 34000/15225, |EncParam|: 45.0991, |DecParam|: 92.9260, |SrcParserParam|: 48.0352, LR: 0.0005, SrcPPL: 4.3472, PPL: 1.0468, ValPPL: 1.0183, Throughput: 2.18 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look thrice and walk around left thrice
+Target: I_LOOK I_LOOK I_LOOK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK
+
+Source Tree: ((look thrice) (and ((walk (around left)) thrice)))
+QCFG Tree: ((I_LOOK (I_LOOK I_LOOK)) ((((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK)) ((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK))) ((((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK)) ((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK))) (((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK)) ((I_TURN_LEFT I_WALK) (I_TURN_LEFT I_WALK))))))
+
+('I_LOOK', 'look', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_LOOK I_LOOK', 'look thrice', 'N0')
+('I_TURN_LEFT I_WALK', 'walk around left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left', 'N1')
+('I_TURN_LEFT I_WALK', 'walk around left', 'N1')
+('I_LOOK I_LOOK I_LOOK', 'look thrice', 'N3')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left', 'N5')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left', 'N5')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left', 'N5')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left', 'N5')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left', 'N5')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left', 'N5')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left', 'N9')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left', 'N9')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left', 'N9')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'walk around left', 'N3')
+('I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'and walk around left thrice', 'N8')
+('I_LOOK I_LOOK I_LOOK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK I_TURN_LEFT I_WALK', 'look thrice and walk around left thrice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 7.3856
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 35000/15225, |EncParam|: 45.1615, |DecParam|: 92.5891, |SrcParserParam|: 47.3528, LR: 0.0005, SrcPPL: 4.3521, PPL: 1.0409, ValPPL: 1.0183, Throughput: 2.13 examples/sec
+--------------------------------------------------------------------------------
+
+Source: turn around left after turn opposite left thrice
+Target: I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT
+
+Source Tree: ((turn (around left)) (after ((turn (opposite left)) thrice)))
+QCFG Tree: (((I_TURN_LEFT I_TURN_LEFT) ((I_TURN_LEFT I_TURN_LEFT) (I_TURN_LEFT I_TURN_LEFT))) ((I_TURN_LEFT I_TURN_LEFT) (I_TURN_LEFT I_TURN_LEFT)))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT', 'around', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_TURN_LEFT I_TURN_LEFT', 'turn opposite left', 'N4')
+('I_TURN_LEFT I_TURN_LEFT', 'turn opposite left', 'N4')
+('I_TURN_LEFT I_TURN_LEFT', 'turn opposite left', 'N4')
+('I_TURN_LEFT I_TURN_LEFT', 'turn around left', 'N1')
+('I_TURN_LEFT I_TURN_LEFT', 'turn around left', 'N1')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'turn opposite left', 'N3')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'turn around left', 'N5')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'after turn opposite left thrice', 'N3')
+('I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT I_TURN_LEFT', 'turn around left after turn opposite left thrice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 5.6719
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 36000/15225, |EncParam|: 45.4774, |DecParam|: 92.2041, |SrcParserParam|: 46.6434, LR: 0.0005, SrcPPL: 4.3514, PPL: 1.0379, ValPPL: 1.0183, Throughput: 2.11 examples/sec
+--------------------------------------------------------------------------------
+
+Source: jump thrice and look opposite right thrice
+Target: I_JUMP I_JUMP I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK
+
+Source Tree: ((jump thrice) (and ((look (opposite right)) thrice)))
+QCFG Tree: ((I_JUMP (I_JUMP I_JUMP)) ((I_TURN_RIGHT (I_TURN_RIGHT I_LOOK)) ((I_TURN_RIGHT (I_TURN_RIGHT I_LOOK)) (I_TURN_RIGHT (I_TURN_RIGHT I_LOOK)))))
+
+('I_JUMP', 'jump', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_JUMP', 'jump', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_JUMP I_JUMP', 'jump thrice', 'N0')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_JUMP I_JUMP I_JUMP', 'jump thrice', 'N3')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N3')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'and look opposite right thrice', 'N3')
+('I_JUMP I_JUMP I_JUMP I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'jump thrice and look opposite right thrice', 'N7')
+--------------------------------
+Checking validation perf...
+PPL: 1.2319
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 37000/15225, |EncParam|: 45.2784, |DecParam|: 91.6420, |SrcParserParam|: 45.9211, LR: 0.0005, SrcPPL: 4.3511, PPL: 1.0341, ValPPL: 1.0183, Throughput: 2.09 examples/sec
+--------------------------------------------------------------------------------
+
+Source: walk right after look thrice
+Target: I_LOOK I_LOOK I_LOOK I_TURN_RIGHT I_WALK
+
+Source Tree: ((walk right) (after (look thrice)))
+QCFG Tree: ((I_LOOK (I_LOOK I_LOOK)) (I_TURN_RIGHT I_WALK))
+
+('I_LOOK', 'look', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_LOOK I_LOOK', 'look thrice', 'N0')
+('I_TURN_RIGHT I_WALK', 'walk right', 'N1')
+('I_LOOK I_LOOK I_LOOK', 'after look thrice', 'N8')
+('I_LOOK I_LOOK I_LOOK I_TURN_RIGHT I_WALK', 'walk right after look thrice', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 1.0120
+--------------------------------
+Saving checkpoint to scan-aroundright-seed12.pt
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 38000/15225, |EncParam|: 45.5769, |DecParam|: 91.3159, |SrcParserParam|: 45.2445, LR: 0.0005, SrcPPL: 4.3476, PPL: 1.0349, ValPPL: 1.0120, Throughput: 2.07 examples/sec
+--------------------------------------------------------------------------------
+
+Source: turn right twice and look opposite right twice
+Target: I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK
+
+Source Tree: (((turn right) twice) (and ((look (opposite right)) twice)))
+QCFG Tree: ((I_TURN_RIGHT I_TURN_RIGHT) ((I_TURN_RIGHT (I_TURN_RIGHT I_LOOK)) (I_TURN_RIGHT (I_TURN_RIGHT I_LOOK))))
+
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT I_TURN_RIGHT', 'turn right twice', 'N6')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_RIGHT I_LOOK', 'look opposite right', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'look opposite right', 'N4')
+('I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'and look opposite right twice', 'N8')
+('I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_TURN_RIGHT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_LOOK', 'turn right twice and look opposite right twice', 'N7')
+--------------------------------
+Checking validation perf...
+PPL: 1.0148
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 39000/15225, |EncParam|: 45.7447, |DecParam|: 91.1507, |SrcParserParam|: 44.4787, LR: 0.0005, SrcPPL: 4.3518, PPL: 1.0380, ValPPL: 1.0120, Throughput: 2.06 examples/sec
+--------------------------------------------------------------------------------
+
+Source: walk opposite right after look left thrice
+Target: I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_WALK
+
+Source Tree: ((walk (opposite right)) (after ((look left) thrice)))
+QCFG Tree: (((I_TURN_LEFT I_LOOK) ((I_TURN_LEFT I_LOOK) (I_TURN_LEFT I_LOOK))) (I_TURN_RIGHT (I_TURN_RIGHT I_WALK)))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_TURN_RIGHT', 'right', 'N0')
+('I_WALK', 'walk', 'N0')
+('I_TURN_LEFT I_LOOK', 'look left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look left', 'N4')
+('I_TURN_RIGHT I_WALK', 'walk opposite right', 'N1')
+('I_TURN_RIGHT I_TURN_RIGHT I_WALK', 'walk opposite right', 'N4')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'look left', 'N3')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK', 'after look left thrice', 'N2')
+('I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_LEFT I_LOOK I_TURN_RIGHT I_TURN_RIGHT I_WALK', 'walk opposite right after look left thrice', 'N7')
+--------------------------------
+Checking validation perf...
+PPL: 1.0488
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 40000/15225, |EncParam|: 45.9717, |DecParam|: 90.9539, |SrcParserParam|: 43.7479, LR: 0.0005, SrcPPL: 4.3524, PPL: 1.0400, ValPPL: 1.0120, Throughput: 2.05 examples/sec
+--------------------------------------------------------------------------------
+
+Source: look left after run around left
+Target: I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_LOOK
+
+Source Tree: ((look left) (after (run (around left))))
+QCFG Tree: ((((I_TURN_LEFT I_RUN) (I_TURN_LEFT I_RUN)) ((I_TURN_LEFT I_RUN) (I_TURN_LEFT I_RUN))) (I_TURN_LEFT I_LOOK))
+
+('I_TURN_LEFT', 'left', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_RUN', 'run', 'N0')
+('I_TURN_LEFT', 'left', 'N0')
+('I_LOOK', 'look', 'N0')
+('I_TURN_LEFT I_RUN', 'run around left', 'N1')
+('I_TURN_LEFT I_RUN', 'run around left', 'N1')
+('I_TURN_LEFT I_RUN', 'run around left', 'N1')
+('I_TURN_LEFT I_RUN', 'run around left', 'N1')
+('I_TURN_LEFT I_LOOK', 'look left', 'N4')
+('I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN', 'run around left', 'N5')
+('I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN', 'run around left', 'N5')
+('I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN', 'after run around left', 'N9')
+('I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_RUN I_TURN_LEFT I_LOOK', 'look left after run around left', 'N7')
+--------------------------------
+Checking validation perf...
+PPL: 1.0091
+--------------------------------
+Saving checkpoint to scan-aroundright-seed12.pt

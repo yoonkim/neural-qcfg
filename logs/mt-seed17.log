@@ -1,0 +1,2276 @@
+Num sents: 6073, Vocab Size Before prune: 2479, After prune: 1275
+Num sents: 6073, Vocab Size Before prune: 3180, After prune: 1451
+Starting epoch 1
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 1000/6073, |EncParam|: 42.4467, |DecParam|: 147.4073, |SrcParserParam|: 58.0475, LR: 0.0005, SrcPPL: 533.9187, PPL: 133.0469, ValPPL: 100000.0000, Throughput: 4.01 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m <unk> .
+Target: je suis sans enthousiasme .
+
+Source Tree: ((i m) (<unk> .))
+QCFG Tree: ((je suis) ((sans enthousiasme) .))
+
+('je', 'i', 'N8')
+('suis', 'm', 'N9')
+('sans', '<unk>', 'N13')
+('enthousiasme', '<unk>', 'N9')
+('.', '.', 'N0')
+('je suis', 'i m', 'N10')
+('sans enthousiasme', '<unk>', 'N10')
+('sans enthousiasme .', '<unk> .', 'N1')
+('je suis sans enthousiasme .', 'i m <unk> .', 'N7')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 2000/6073, |EncParam|: 41.0863, |DecParam|: 146.5942, |SrcParserParam|: 57.1123, LR: 0.0005, SrcPPL: 291.9669, PPL: 65.0675, ValPPL: 100000.0000, Throughput: 4.11 examples/sec
+--------------------------------------------------------------------------------
+
+Source: you re really gorgeous .
+Target: tu es vraiment magnifique .
+
+Source Tree: ((((you re) really) gorgeous) .)
+QCFG Tree: ((((tu es) vraiment) magnifique) .)
+
+('tu', 'you', 'N13')
+('es', 're', 'N9')
+('vraiment', 'really', 'N9')
+('magnifique', 'gorgeous', 'N9')
+('.', '.', 'N9')
+('tu es', 'you re', 'N9')
+('tu es vraiment', 'you re really', 'N9')
+('tu es vraiment magnifique', 'you re really gorgeous', 'N9')
+('tu es vraiment magnifique .', 'you re really gorgeous .', 'N9')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 3000/6073, |EncParam|: 40.7343, |DecParam|: 146.2502, |SrcParserParam|: 56.5557, LR: 0.0005, SrcPPL: 237.3073, PPL: 47.7321, ValPPL: 100000.0000, Throughput: 4.12 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m <unk> .
+Target: je fais la fete .
+
+Source Tree: (((i m) <unk>) .)
+QCFG Tree: (((je fais) (la fete)) .)
+
+('je', 'i', 'N8')
+('fais', 'm', 'N9')
+('la', '<unk>', 'N13')
+('fete', '<unk>', 'N9')
+('.', '.', 'N9')
+('je fais', 'i m', 'N9')
+('la fete', '<unk>', 'N8')
+('je fais la fete', 'i m <unk>', 'N5')
+('je fais la fete .', 'i m <unk> .', 'N7')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 4000/6073, |EncParam|: 40.8151, |DecParam|: 146.0831, |SrcParserParam|: 56.2428, LR: 0.0005, SrcPPL: 213.4513, PPL: 39.2453, ValPPL: 100000.0000, Throughput: 4.10 examples/sec
+--------------------------------------------------------------------------------
+
+Source: they are all very happy .
+Target: elles sont toutes tres heureuses .
+
+Source Tree: (they ((are (all (very happy))) .))
+QCFG Tree: (elles ((sont (toutes (tres heureuses))) .))
+
+('elles', 'they', 'N8')
+('sont', 'are', 'N8')
+('toutes', 'all', 'N1')
+('tres', 'very', 'N13')
+('heureuses', 'happy', 'N9')
+('.', '.', 'N9')
+('tres heureuses', 'very happy', 'N3')
+('toutes tres heureuses', 'all very happy', 'N3')
+('sont toutes tres heureuses', 'are all very happy', 'N5')
+('sont toutes tres heureuses .', 'are all very happy .', 'N7')
+('elles sont toutes tres heureuses .', 'they are all very happy .', 'N9')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 5000/6073, |EncParam|: 41.0022, |DecParam|: 145.9905, |SrcParserParam|: 56.0456, LR: 0.0005, SrcPPL: 199.9777, PPL: 33.6343, ValPPL: 100000.0000, Throughput: 4.10 examples/sec
+--------------------------------------------------------------------------------
+
+Source: they re looking for a scapegoat .
+Target: elles cherchent un bouc emissaire .
+
+Source Tree: ((((they re) looking) for) (a (scapegoat .)))
+QCFG Tree: ((((elles cherchent) (un bouc)) emissaire) .)
+
+('elles', 'they', 'N8')
+('cherchent', 're', 'N9')
+('un', 'looking', 'N13')
+('bouc', 'looking', 'N9')
+('emissaire', 'for', 'N9')
+('.', 'a scapegoat .', 'N9')
+('elles cherchent', 'they re', 'N9')
+('un bouc', 'looking', 'N9')
+('elles cherchent un bouc', 'they re looking', 'N6')
+('elles cherchent un bouc emissaire', 'they re looking for', 'N8')
+('elles cherchent un bouc emissaire .', 'they re looking for a scapegoat .', 'N4')
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 6000/6073, |EncParam|: 41.3024, |DecParam|: 145.9435, |SrcParserParam|: 55.9314, LR: 0.0005, SrcPPL: 190.0475, PPL: 29.4054, ValPPL: 100000.0000, Throughput: 4.12 examples/sec
+--------------------------------------------------------------------------------
+
+Source: you re welcome .
+Target: avec <unk> .
+
+Source Tree: ((you (re welcome)) .)
+QCFG Tree: ((avec <unk>) .)
+
+('avec', 'you', 'N13')
+('<unk>', 're welcome', 'N11')
+('.', '.', 'N9')
+('avec <unk>', 'you re welcome', 'N1')
+('avec <unk> .', 'you re welcome .', 'N3')
+Starting epoch 2
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 7000/6073, |EncParam|: 41.4781, |DecParam|: 145.9002, |SrcParserParam|: 55.9150, LR: 0.0005, SrcPPL: 152.8333, PPL: 13.3517, ValPPL: 100000.0000, Throughput: 4.23 examples/sec
+--------------------------------------------------------------------------------
+
+Source: we re close enough .
+Target: nous sommes suffisamment proches .
+
+Source Tree: (we (re ((close enough) .)))
+QCFG Tree: (nous (sommes ((suffisamment proches) .)))
+
+('nous', 'we', 'N8')
+('sommes', 're', 'N5')
+('suffisamment', 'enough', 'N8')
+('proches', 'close', 'N9')
+('.', '.', 'N9')
+('suffisamment proches', 'close enough', 'N9')
+('suffisamment proches .', 'close enough .', 'N5')
+('sommes suffisamment proches .', 're close enough .', 'N8')
+('nous sommes suffisamment proches .', 'we re close enough .', 'N3')
+--------------------------------
+Checking validation perf...
+PPL: 15.9590
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 8000/6073, |EncParam|: 41.6077, |DecParam|: 145.9018, |SrcParserParam|: 55.9110, LR: 0.0005, SrcPPL: 152.0943, PPL: 13.2517, ValPPL: 15.9590, Throughput: 3.50 examples/sec
+--------------------------------------------------------------------------------
+
+Source: she s not <unk> her mistake .
+Target: elle n <unk> pas son erreur .
+
+Source Tree: ((((she (s not)) (<unk> her)) mistake) .)
+QCFG Tree: ((((elle ((n <unk>) pas)) son) erreur) .)
+
+('elle', 'she', 'N8')
+('n', 's', 'N13')
+('<unk>', 's', 'N11')
+('pas', 'not', 'N11')
+('son', '<unk> her', 'N1')
+('erreur', 'mistake', 'N9')
+('.', '.', 'N9')
+('n <unk>', 's', 'N0')
+('n <unk> pas', 's not', 'N7')
+('elle n <unk> pas', 'she s not', 'N10')
+('elle n <unk> pas son', 'she s not <unk> her', 'N4')
+('elle n <unk> pas son erreur', 'she s not <unk> her mistake', 'N5')
+('elle n <unk> pas son erreur .', 'she s not <unk> her mistake .', 'N3')
+--------------------------------
+Checking validation perf...
+PPL: 14.9029
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 9000/6073, |EncParam|: 41.7576, |DecParam|: 145.9119, |SrcParserParam|: 55.9376, LR: 0.0005, SrcPPL: 150.7640, PPL: 12.5392, ValPPL: 14.9029, Throughput: 3.35 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m fond of taking pictures .
+Target: j adore prendre des photos .
+
+Source Tree: ((((i m) fond) ((of taking) pictures)) .)
+QCFG Tree: (((j adore) (prendre (des photos))) .)
+
+('j', 'i m', 'N3')
+('adore', 'fond', 'N9')
+('prendre', 'of taking', 'N9')
+('des', 'pictures', 'N13')
+('photos', 'pictures', 'N9')
+('.', '.', 'N9')
+('j adore', 'i m fond', 'N1')
+('des photos', 'pictures', 'N3')
+('prendre des photos', 'of taking pictures', 'N10')
+('j adore prendre des photos', 'i m fond of taking pictures', 'N7')
+('j adore prendre des photos .', 'i m fond of taking pictures .', 'N7')
+--------------------------------
+Checking validation perf...
+PPL: 13.8074
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 10000/6073, |EncParam|: 41.9315, |DecParam|: 145.8822, |SrcParserParam|: 55.9711, LR: 0.0005, SrcPPL: 150.5076, PPL: 12.3333, ValPPL: 13.8074, Throughput: 3.27 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he is unable to do it .
+Target: il est incapable de le faire .
+
+Source Tree: ((he (((is unable) (to do)) it)) .)
+QCFG Tree: ((il (((est incapable) (de le)) faire)) .)
+
+('il', 'he', 'N8')
+('est', 'is', 'N8')
+('incapable', 'unable', 'N9')
+('de', 'to', 'N1')
+('le', 'do', 'N4')
+('faire', 'it', 'N11')
+('.', '.', 'N9')
+('est incapable', 'is unable', 'N9')
+('de le', 'to do', 'N2')
+('est incapable de le', 'is unable to do', 'N6')
+('est incapable de le faire', 'is unable to do it', 'N13')
+('il est incapable de le faire', 'he is unable to do it', 'N6')
+('il est incapable de le faire .', 'he is unable to do it .', 'N3')
+--------------------------------
+Checking validation perf...
+PPL: 12.9091
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 11000/6073, |EncParam|: 42.0968, |DecParam|: 145.9091, |SrcParserParam|: 55.9906, LR: 0.0005, SrcPPL: 150.1609, PPL: 11.8927, ValPPL: 12.9091, Throughput: 3.23 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m <unk> .
+Target: je suis <unk> .
+
+Source Tree: (i ((m <unk>) .))
+QCFG Tree: (je ((suis <unk>) .))
+
+('je', 'i', 'N8')
+('suis', 'm', 'N8')
+('<unk>', '<unk>', 'N11')
+('.', '.', 'N12')
+('suis <unk>', 'm <unk>', 'N9')
+('suis <unk> .', 'm <unk> .', 'N13')
+('je suis <unk> .', 'i m <unk> .', 'N7')
+--------------------------------
+Checking validation perf...
+PPL: 12.2219
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 12000/6073, |EncParam|: 42.3943, |DecParam|: 145.9232, |SrcParserParam|: 56.0275, LR: 0.0005, SrcPPL: 149.8574, PPL: 11.6274, ValPPL: 12.2219, Throughput: 3.20 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m an <unk> .
+Target: je suis un <unk> .
+
+Source Tree: (((i m) (an <unk>)) .)
+QCFG Tree: (((je suis) (un <unk>)) .)
+
+('je', 'i', 'N8')
+('suis', 'm', 'N8')
+('un', 'an', 'N1')
+('<unk>', '<unk>', 'N11')
+('.', '.', 'N1')
+('je suis', 'i m', 'N6')
+('un <unk>', 'an <unk>', 'N8')
+('je suis un <unk>', 'i m an <unk>', 'N5')
+('je suis un <unk> .', 'i m an <unk> .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 12.0634
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+Starting epoch 3
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 13000/6073, |EncParam|: 42.5610, |DecParam|: 145.9442, |SrcParserParam|: 56.0930, LR: 0.0005, SrcPPL: 151.2571, PPL: 8.9948, ValPPL: 12.0634, Throughput: 4.10 examples/sec
+--------------------------------------------------------------------------------
+
+Source: you are too young to travel alone .
+Target: tu es trop jeune pour voyager seul .
+
+Source Tree: (((you (are (too young))) (to (travel alone))) .)
+QCFG Tree: (((tu (es (trop jeune))) (pour (voyager seul))) .)
+
+('tu', 'you', 'N8')
+('es', 'are', 'N8')
+('trop', 'too', 'N1')
+('jeune', 'young', 'N4')
+('pour', 'to', 'N9')
+('voyager', 'travel', 'N1')
+('seul', 'alone', 'N9')
+('.', '.', 'N7')
+('trop jeune', 'too young', 'N8')
+('voyager seul', 'travel alone', 'N3')
+('es trop jeune', 'are too young', 'N13')
+('pour voyager seul', 'to travel alone', 'N10')
+('tu es trop jeune', 'you are too young', 'N6')
+('tu es trop jeune pour voyager seul', 'you are too young to travel alone', 'N8')
+('tu es trop jeune pour voyager seul .', 'you are too young to travel alone .', 'N11')
+--------------------------------
+Checking validation perf...
+PPL: 11.0378
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 14000/6073, |EncParam|: 42.8714, |DecParam|: 145.9468, |SrcParserParam|: 56.1472, LR: 0.0005, SrcPPL: 147.7165, PPL: 8.8874, ValPPL: 11.0378, Throughput: 3.49 examples/sec
+--------------------------------------------------------------------------------
+
+Source: she s wearing a nice hat .
+Target: elle porte un chouette chapeau .
+
+Source Tree: ((she (s (wearing (a nice)))) (hat .))
+QCFG Tree: ((elle (porte (un chouette))) (chapeau .))
+
+('elle', 'she', 'N8')
+('porte', 's', 'N9')
+('un', 'wearing', 'N1')
+('chouette', 'a nice', 'N4')
+('chapeau', 'hat', 'N9')
+('.', '.', 'N13')
+('un chouette', 'wearing a nice', 'N9')
+('chapeau .', 'hat .', 'N4')
+('porte un chouette', 's wearing a nice', 'N10')
+('elle porte un chouette', 'she s wearing a nice', 'N6')
+('elle porte un chouette chapeau .', 'she s wearing a nice hat .', 'N9')
+--------------------------------
+Checking validation perf...
+PPL: 10.5996
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 15000/6073, |EncParam|: 43.1560, |DecParam|: 145.9683, |SrcParserParam|: 56.2020, LR: 0.0005, SrcPPL: 149.0976, PPL: 8.5347, ValPPL: 10.5996, Throughput: 3.35 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he is looked up to as their leader .
+Target: il est considere comme leur chef .
+
+Source Tree: (((he is) (((looked up) to) as)) ((their leader) .))
+QCFG Tree: (((il est) (considere comme)) ((leur chef) .))
+
+('il', 'he', 'N8')
+('est', 'is', 'N8')
+('considere', 'looked up to', 'N9')
+('comme', 'as', 'N1')
+('leur', 'their', 'N1')
+('chef', 'leader', 'N4')
+('.', '.', 'N0')
+('il est', 'he is', 'N6')
+('considere comme', 'looked up to as', 'N10')
+('leur chef', 'their leader', 'N8')
+('leur chef .', 'their leader .', 'N0')
+('il est considere comme', 'he is looked up to as', 'N6')
+('il est considere comme leur chef .', 'he is looked up to as their leader .', 'N9')
+--------------------------------
+Checking validation perf...
+PPL: 10.7059
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 16000/6073, |EncParam|: 43.3474, |DecParam|: 145.9531, |SrcParserParam|: 56.2497, LR: 0.0005, SrcPPL: 147.7452, PPL: 8.4330, ValPPL: 10.5996, Throughput: 3.28 examples/sec
+--------------------------------------------------------------------------------
+
+Source: you re going to die .
+Target: tu vas mourir .
+
+Source Tree: (you (re (going ((to die) .))))
+QCFG Tree: (tu (vas (mourir .)))
+
+('tu', 'you', 'N8')
+('vas', 're', 'N9')
+('mourir', 'going', 'N9')
+('.', 'to die .', 'N5')
+('mourir .', 'going to die .', 'N4')
+('vas mourir .', 're going to die .', 'N11')
+('tu vas mourir .', 'you re going to die .', 'N7')
+--------------------------------
+Checking validation perf...
+PPL: 10.5553
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 17000/6073, |EncParam|: 43.7293, |DecParam|: 145.9791, |SrcParserParam|: 56.3291, LR: 0.0005, SrcPPL: 148.7061, PPL: 8.3285, ValPPL: 10.5553, Throughput: 3.22 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am taking a holiday at the beach .
+Target: je prends des vacances a la plage .
+
+Source Tree: (((((i ((am taking) a)) (holiday at)) the) beach) .)
+QCFG Tree: (((((je (prends des)) (vacances a)) la) plage) .)
+
+('je', 'i', 'N8')
+('prends', 'am taking', 'N8')
+('des', 'a', 'N13')
+('vacances', 'holiday', 'N9')
+('a', 'at', 'N13')
+('la', 'the', 'N1')
+('plage', 'beach', 'N9')
+('.', '.', 'N9')
+('prends des', 'am taking a', 'N6')
+('vacances a', 'holiday at', 'N10')
+('je prends des', 'i am taking a', 'N6')
+('je prends des vacances a', 'i am taking a holiday at', 'N3')
+('je prends des vacances a la', 'i am taking a holiday at the', 'N6')
+('je prends des vacances a la plage', 'i am taking a holiday at the beach', 'N3')
+('je prends des vacances a la plage .', 'i am taking a holiday at the beach .', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 9.7905
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 18000/6073, |EncParam|: 43.9814, |DecParam|: 146.0052, |SrcParserParam|: 56.4188, LR: 0.0005, SrcPPL: 148.1482, PPL: 8.2644, ValPPL: 9.7905, Throughput: 3.20 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m not giving up .
+Target: je n abandonne pas .
+
+Source Tree: ((i m) (not (giving (up .))))
+QCFG Tree: ((je (n abandonne)) (pas .))
+
+('je', 'i', 'N3')
+('n', 'm', 'N13')
+('abandonne', 'm', 'N9')
+('pas', 'not', 'N1')
+('.', 'giving up .', 'N4')
+('n abandonne', 'm', 'N3')
+('pas .', 'not giving up .', 'N3')
+('je n abandonne', 'i m', 'N10')
+('je n abandonne pas .', 'i m not giving up .', 'N10')
+--------------------------------
+Checking validation perf...
+PPL: 9.6461
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+Starting epoch 4
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 19000/6073, |EncParam|: 44.3334, |DecParam|: 146.0410, |SrcParserParam|: 56.4441, LR: 0.0005, SrcPPL: 146.3204, PPL: 6.3890, ValPPL: 9.6461, Throughput: 4.27 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he s nervous and easily frightened .
+Target: il est nerveux et facilement effraye .
+
+Source Tree: (((he s) (nervous (and (easily frightened)))) .)
+QCFG Tree: (((il est) (nerveux (et (facilement effraye)))) .)
+
+('il', 'he', 'N8')
+('est', 's', 'N8')
+('nerveux', 'nervous', 'N9')
+('et', 'and', 'N1')
+('facilement', 'easily', 'N9')
+('effraye', 'frightened', 'N9')
+('.', '.', 'N9')
+('il est', 'he s', 'N6')
+('facilement effraye', 'easily frightened', 'N10')
+('et facilement effraye', 'and easily frightened', 'N3')
+('nerveux et facilement effraye', 'nervous and easily frightened', 'N10')
+('il est nerveux et facilement effraye', 'he s nervous and easily frightened', 'N3')
+('il est nerveux et facilement effraye .', 'he s nervous and easily frightened .', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 9.0324
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 20000/6073, |EncParam|: 44.6775, |DecParam|: 146.0668, |SrcParserParam|: 56.5117, LR: 0.0005, SrcPPL: 142.8052, PPL: 6.4820, ValPPL: 9.0324, Throughput: 3.53 examples/sec
+--------------------------------------------------------------------------------
+
+Source: we re in luck .
+Target: nous sommes <unk> .
+
+Source Tree: (((we re) (in luck)) .)
+QCFG Tree: (((nous sommes) <unk>) .)
+
+('nous', 'we', 'N8')
+('sommes', 're', 'N0')
+('<unk>', 'in luck', 'N0')
+('.', '.', 'N9')
+('nous sommes', 'we re', 'N6')
+('nous sommes <unk>', 'we re in luck', 'N13')
+('nous sommes <unk> .', 'we re in luck .', 'N9')
+--------------------------------
+Checking validation perf...
+PPL: 8.8584
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 21000/6073, |EncParam|: 44.8793, |DecParam|: 146.0750, |SrcParserParam|: 56.5862, LR: 0.0005, SrcPPL: 144.1467, PPL: 6.4875, ValPPL: 8.8584, Throughput: 3.37 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am <unk> the flowers .
+Target: je suis en train d <unk> les fleurs .
+
+Source Tree: ((i (am (<unk> the))) (flowers .))
+QCFG Tree: ((je (suis ((en (train (d <unk>))) les))) (fleurs .))
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('en', '<unk>', 'N13')
+('train', '<unk>', 'N13')
+('d', '<unk>', 'N13')
+('<unk>', '<unk>', 'N11')
+('les', 'the', 'N1')
+('fleurs', 'flowers', 'N5')
+('.', '.', 'N1')
+('d <unk>', '<unk>', 'N9')
+('fleurs .', 'flowers .', 'N12')
+('train d <unk>', '<unk>', 'N10')
+('en train d <unk>', '<unk>', 'N1')
+('en train d <unk> les', '<unk> the', 'N11')
+('suis en train d <unk> les', 'am <unk> the', 'N13')
+('je suis en train d <unk> les', 'i am <unk> the', 'N6')
+('je suis en train d <unk> les fleurs .', 'i am <unk> the flowers .', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 8.8530
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 22000/6073, |EncParam|: 45.0377, |DecParam|: 146.0940, |SrcParserParam|: 56.6661, LR: 0.0005, SrcPPL: 145.2234, PPL: 6.6030, ValPPL: 8.8530, Throughput: 3.28 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he is very brave .
+Target: il est fort courageux .
+
+Source Tree: ((he is) (very (brave .)))
+QCFG Tree: ((il est) (fort (courageux .)))
+
+('il', 'he', 'N8')
+('est', 'is', 'N8')
+('fort', 'very', 'N8')
+('courageux', 'brave', 'N5')
+('.', '.', 'N13')
+('il est', 'he is', 'N6')
+('courageux .', 'brave .', 'N6')
+('fort courageux .', 'very brave .', 'N6')
+('il est fort courageux .', 'he is very brave .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 9.1397
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 23000/6073, |EncParam|: 45.3059, |DecParam|: 146.1116, |SrcParserParam|: 56.7514, LR: 0.0005, SrcPPL: 144.8221, PPL: 6.6686, ValPPL: 8.8530, Throughput: 3.23 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: (((i am) daxy) .)
+QCFG Tree: (((je suis) daxiste) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N4')
+('.', '.', 'N4')
+('je suis', 'i am', 'N6')
+('je suis daxiste', 'i am daxy', 'N13')
+('je suis daxiste .', 'i am daxy .', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 8.8366
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 24000/6073, |EncParam|: 45.6437, |DecParam|: 146.1282, |SrcParserParam|: 56.8311, LR: 0.0005, SrcPPL: 144.4780, PPL: 6.6707, ValPPL: 8.8366, Throughput: 3.00 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: (i (am (daxy .)))
+QCFG Tree: (je (suis (daxiste .)))
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N5')
+('.', '.', 'N0')
+('daxiste .', 'daxy .', 'N7')
+('suis daxiste .', 'am daxy .', 'N7')
+('je suis daxiste .', 'i am daxy .', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 8.0469
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+Starting epoch 5
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 25000/6073, |EncParam|: 45.8900, |DecParam|: 146.1621, |SrcParserParam|: 56.9758, LR: 0.0005, SrcPPL: 134.4153, PPL: 5.3184, ValPPL: 8.0469, Throughput: 4.13 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m going to <unk> to her .
+Target: je vais la demander en <unk> .
+
+Source Tree: (((((i (m going)) to) (<unk> to)) her) .)
+QCFG Tree: ((((je vais) ((la demander) en)) <unk>) .)
+
+('je', 'i m going', 'N8')
+('vais', 'to', 'N9')
+('la', '<unk>', 'N13')
+('demander', '<unk>', 'N9')
+('en', 'to', 'N9')
+('<unk>', 'her', 'N11')
+('.', '.', 'N9')
+('je vais', 'i m going to', 'N9')
+('la demander', '<unk>', 'N3')
+('la demander en', '<unk> to', 'N1')
+('je vais la demander en', 'i m going to <unk> to', 'N6')
+('je vais la demander en <unk>', 'i m going to <unk> to her', 'N8')
+('je vais la demander en <unk> .', 'i m going to <unk> to her .', 'N9')
+--------------------------------
+Checking validation perf...
+PPL: 8.0369
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 26000/6073, |EncParam|: 46.2253, |DecParam|: 146.1685, |SrcParserParam|: 57.0444, LR: 0.0005, SrcPPL: 136.8751, PPL: 5.6125, ValPPL: 8.0369, Throughput: 3.45 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m not really that thirsty .
+Target: je n ai pas si soif que ca .
+
+Source Tree: (i ((m (not really)) (that (thirsty .))))
+QCFG Tree: (je (((n ai) pas) (si ((soif (que ca)) .))))
+
+('je', 'i', 'N8')
+('n', 'm', 'N13')
+('ai', 'm', 'N9')
+('pas', 'not really', 'N12')
+('si', 'that', 'N8')
+('soif', 'thirsty', 'N1')
+('que', 'thirsty', 'N13')
+('ca', 'thirsty', 'N9')
+('.', '.', 'N11')
+('n ai', 'm', 'N3')
+('que ca', 'thirsty', 'N9')
+('n ai pas', 'm not really', 'N4')
+('soif que ca', 'thirsty', 'N10')
+('soif que ca .', 'thirsty .', 'N1')
+('si soif que ca .', 'that thirsty .', 'N10')
+('n ai pas si soif que ca .', 'm not really that thirsty .', 'N8')
+('je n ai pas si soif que ca .', 'i m not really that thirsty .', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 8.2857
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 27000/6073, |EncParam|: 46.5460, |DecParam|: 146.2281, |SrcParserParam|: 57.2319, LR: 0.0005, SrcPPL: 134.8046, PPL: 5.4992, ValPPL: 8.0369, Throughput: 3.30 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m married .
+Target: je suis mariee .
+
+Source Tree: ((i (m married)) .)
+QCFG Tree: ((je (suis mariee)) .)
+
+('je', 'i', 'N8')
+('suis', 'm', 'N8')
+('mariee', 'married', 'N4')
+('.', '.', 'N13')
+('suis mariee', 'm married', 'N12')
+('je suis mariee', 'i m married', 'N5')
+('je suis mariee .', 'i m married .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 7.8476
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 28000/6073, |EncParam|: 46.8755, |DecParam|: 146.2511, |SrcParserParam|: 57.3496, LR: 0.0005, SrcPPL: 131.3507, PPL: 5.6306, ValPPL: 7.8476, Throughput: 3.23 examples/sec
+--------------------------------------------------------------------------------
+
+Source: you re very <unk> .
+Target: vous etes tres <unk> .
+
+Source Tree: (((you (re very)) <unk>) .)
+QCFG Tree: (((vous (etes tres)) <unk>) .)
+
+('vous', 'you', 'N8')
+('etes', 're', 'N8')
+('tres', 'very', 'N12')
+('<unk>', '<unk>', 'N11')
+('.', '.', 'N13')
+('etes tres', 're very', 'N13')
+('vous etes tres', 'you re very', 'N6')
+('vous etes tres <unk>', 'you re very <unk>', 'N5')
+('vous etes tres <unk> .', 'you re very <unk> .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 7.7878
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 29000/6073, |EncParam|: 47.0472, |DecParam|: 146.2868, |SrcParserParam|: 57.4840, LR: 0.0005, SrcPPL: 127.3754, PPL: 5.6573, ValPPL: 7.7878, Throughput: 3.19 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he is an actor .
+Target: c est un acteur .
+
+Source Tree: ((he (is (an actor))) .)
+QCFG Tree: ((c (est (un acteur))) .)
+
+('c', 'he', 'N8')
+('est', 'is', 'N8')
+('un', 'an', 'N1')
+('acteur', 'actor', 'N4')
+('.', '.', 'N13')
+('un acteur', 'an actor', 'N12')
+('est un acteur', 'is an actor', 'N12')
+('c est un acteur', 'he is an actor', 'N5')
+('c est un acteur .', 'he is an actor .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 8.1428
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 30000/6073, |EncParam|: 47.2948, |DecParam|: 146.3169, |SrcParserParam|: 57.6389, LR: 0.0005, SrcPPL: 123.2126, PPL: 5.7146, ValPPL: 7.7878, Throughput: 3.18 examples/sec
+--------------------------------------------------------------------------------
+
+Source: we re <unk> .
+Target: nous sommes <unk> .
+
+Source Tree: ((we (re <unk>)) .)
+QCFG Tree: ((nous (sommes <unk>)) .)
+
+('nous', 'we', 'N8')
+('sommes', 're', 'N0')
+('<unk>', '<unk>', 'N11')
+('.', '.', 'N11')
+('sommes <unk>', 're <unk>', 'N7')
+('nous sommes <unk>', 'we re <unk>', 'N0')
+('nous sommes <unk> .', 'we re <unk> .', 'N7')
+--------------------------------
+Checking validation perf...
+PPL: 7.9354
+--------------------------------
+Starting epoch 6
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 31000/6073, |EncParam|: 47.5994, |DecParam|: 146.3526, |SrcParserParam|: 57.7838, LR: 0.0005, SrcPPL: 86.6385, PPL: 4.9575, ValPPL: 7.7878, Throughput: 4.25 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: (((i am) daxy) .)
+QCFG Tree: (((je suis) daxiste) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N4')
+('.', '.', 'N4')
+('je suis', 'i am', 'N6')
+('je suis daxiste', 'i am daxy', 'N2')
+('je suis daxiste .', 'i am daxy .', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 8.0331
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 32000/6073, |EncParam|: 47.9424, |DecParam|: 146.3563, |SrcParserParam|: 57.9261, LR: 0.0005, SrcPPL: 87.9965, PPL: 5.0858, ValPPL: 7.7878, Throughput: 3.45 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: ((i (am daxy)) .)
+QCFG Tree: ((je (suis daxiste)) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N4')
+('.', '.', 'N4')
+('suis daxiste', 'am daxy', 'N2')
+('je suis daxiste', 'i am daxy', 'N0')
+('je suis daxiste .', 'i am daxy .', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 8.0845
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 33000/6073, |EncParam|: 48.1345, |DecParam|: 146.3695, |SrcParserParam|: 57.9794, LR: 0.0005, SrcPPL: 90.8499, PPL: 5.2479, ValPPL: 7.7878, Throughput: 3.27 examples/sec
+--------------------------------------------------------------------------------
+
+Source: we re powerful .
+Target: nous sommes <unk> .
+
+Source Tree: (((we re) powerful) .)
+QCFG Tree: (((nous sommes) <unk>) .)
+
+('nous', 'we', 'N8')
+('sommes', 're', 'N0')
+('<unk>', 'powerful', 'N11')
+('.', '.', 'N1')
+('nous sommes', 'we re', 'N6')
+('nous sommes <unk>', 'we re powerful', 'N5')
+('nous sommes <unk> .', 'we re powerful .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 7.7021
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 34000/6073, |EncParam|: 48.4093, |DecParam|: 146.3961, |SrcParserParam|: 58.1150, LR: 0.0005, SrcPPL: 90.1663, PPL: 5.2697, ValPPL: 7.7021, Throughput: 3.21 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he s really into soccer .
+Target: il est vraiment fondu de foot .
+
+Source Tree: (((he ((s really) into)) soccer) .)
+QCFG Tree: (((il ((est vraiment) (fondu de))) foot) .)
+
+('il', 'he', 'N8')
+('est', 's', 'N8')
+('vraiment', 'really', 'N8')
+('fondu', 'into', 'N9')
+('de', 'into', 'N12')
+('foot', 'soccer', 'N4')
+('.', '.', 'N1')
+('est vraiment', 's really', 'N13')
+('fondu de', 'into', 'N12')
+('est vraiment fondu de', 's really into', 'N2')
+('il est vraiment fondu de', 'he s really into', 'N13')
+('il est vraiment fondu de foot', 'he s really into soccer', 'N5')
+('il est vraiment fondu de foot .', 'he s really into soccer .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 7.5333
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 35000/6073, |EncParam|: 48.6702, |DecParam|: 146.4474, |SrcParserParam|: 58.2602, LR: 0.0005, SrcPPL: 89.5599, PPL: 5.1737, ValPPL: 7.5333, Throughput: 3.18 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m <unk> .
+Target: je fais la fete .
+
+Source Tree: ((i (m <unk>)) .)
+QCFG Tree: ((je (fais (la fete))) .)
+
+('je', 'i', 'N8')
+('fais', 'm', 'N8')
+('la', '<unk>', 'N13')
+('fete', '<unk>', 'N9')
+('.', '.', 'N12')
+('la fete', '<unk>', 'N3')
+('fais la fete', 'm <unk>', 'N12')
+('je fais la fete', 'i m <unk>', 'N2')
+('je fais la fete .', 'i m <unk> .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 7.4073
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 36000/6073, |EncParam|: 48.8316, |DecParam|: 146.4781, |SrcParserParam|: 58.3948, LR: 0.0005, SrcPPL: 89.0439, PPL: 5.1247, ValPPL: 7.4073, Throughput: 3.16 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: ((i (am daxy)) .)
+QCFG Tree: ((je (suis daxiste)) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N4')
+('.', '.', 'N4')
+('suis daxiste', 'am daxy', 'N12')
+('je suis daxiste', 'i am daxy', 'N2')
+('je suis daxiste .', 'i am daxy .', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 7.6672
+--------------------------------
+Starting epoch 7
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 37000/6073, |EncParam|: 49.1723, |DecParam|: 146.4947, |SrcParserParam|: 58.5211, LR: 0.0005, SrcPPL: 81.6986, PPL: 4.4866, ValPPL: 7.4073, Throughput: 4.19 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he s short and fat .
+Target: il est petit et gros .
+
+Source Tree: ((((he (s short)) and) fat) .)
+QCFG Tree: ((((il (est petit)) et) gros) .)
+
+('il', 'he', 'N8')
+('est', 's', 'N8')
+('petit', 'short', 'N5')
+('et', 'and', 'N12')
+('gros', 'fat', 'N4')
+('.', '.', 'N12')
+('est petit', 's short', 'N12')
+('il est petit', 'he s short', 'N2')
+('il est petit et', 'he s short and', 'N13')
+('il est petit et gros', 'he s short and fat', 'N2')
+('il est petit et gros .', 'he s short and fat .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 7.4541
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 38000/6073, |EncParam|: 49.4755, |DecParam|: 146.5145, |SrcParserParam|: 58.6546, LR: 0.0005, SrcPPL: 75.8428, PPL: 4.5755, ValPPL: 7.4073, Throughput: 3.44 examples/sec
+--------------------------------------------------------------------------------
+
+Source: she s a <unk> of some <unk> .
+Target: c est une <unk> d une certaine renommee .
+
+Source Tree: (((she (((s a) <unk>) of)) (some <unk>)) .)
+QCFG Tree: (((c (((est une) <unk>) d)) (une (certaine renommee))) .)
+
+('c', 'she', 'N8')
+('est', 's', 'N8')
+('une', 'a', 'N8')
+('<unk>', '<unk>', 'N11')
+('d', 'of', 'N1')
+('une', 'some', 'N9')
+('certaine', '<unk>', 'N13')
+('renommee', '<unk>', 'N9')
+('.', '.', 'N13')
+('est une', 's a', 'N13')
+('certaine renommee', '<unk>', 'N3')
+('est une <unk>', 's a <unk>', 'N12')
+('une certaine renommee', 'some <unk>', 'N10')
+('est une <unk> d', 's a <unk> of', 'N6')
+('c est une <unk> d', 'she s a <unk> of', 'N6')
+('c est une <unk> d une certaine renommee', 'she s a <unk> of some <unk>', 'N8')
+('c est une <unk> d une certaine renommee .', 'she s a <unk> of some <unk> .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 7.3433
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 39000/6073, |EncParam|: 49.8099, |DecParam|: 146.5412, |SrcParserParam|: 58.7943, LR: 0.0005, SrcPPL: 70.7782, PPL: 4.5881, ValPPL: 7.3433, Throughput: 3.27 examples/sec
+--------------------------------------------------------------------------------
+
+Source: she s fashionable .
+Target: elle est a la mode .
+
+Source Tree: ((she (s fashionable)) .)
+QCFG Tree: ((elle (est (a (la mode)))) .)
+
+('elle', 'she', 'N8')
+('est', 's', 'N8')
+('a', 'fashionable', 'N13')
+('la', 'fashionable', 'N13')
+('mode', 'fashionable', 'N9')
+('.', '.', 'N12')
+('la mode', 'fashionable', 'N3')
+('a la mode', 'fashionable', 'N0')
+('est a la mode', 's fashionable', 'N12')
+('elle est a la mode', 'she s fashionable', 'N2')
+('elle est a la mode .', 'she s fashionable .', 'N12')
+--------------------------------
+Checking validation perf...
+PPL: 7.3803
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 40000/6073, |EncParam|: 50.0299, |DecParam|: 146.5657, |SrcParserParam|: 58.9095, LR: 0.0005, SrcPPL: 67.3273, PPL: 4.6334, ValPPL: 7.3433, Throughput: 3.22 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he is suffering from a serious illness .
+Target: il souffre d une maladie grave .
+
+Source Tree: ((he ((((is suffering) from) (a serious)) illness)) .)
+QCFG Tree: ((il (((souffre d) (une maladie)) grave)) .)
+
+('il', 'he', 'N2')
+('souffre', 'is suffering', 'N4')
+('d', 'from', 'N12')
+('une', 'a', 'N8')
+('maladie', 'serious', 'N5')
+('grave', 'illness', 'N4')
+('.', '.', 'N1')
+('souffre d', 'is suffering from', 'N11')
+('une maladie', 'a serious', 'N0')
+('souffre d une maladie', 'is suffering from a serious', 'N7')
+('souffre d une maladie grave', 'is suffering from a serious illness', 'N7')
+('il souffre d une maladie grave', 'he is suffering from a serious illness', 'N7')
+('il souffre d une maladie grave .', 'he is suffering from a serious illness .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 7.2986
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 41000/6073, |EncParam|: 50.2953, |DecParam|: 146.5813, |SrcParserParam|: 58.9992, LR: 0.0005, SrcPPL: 65.2889, PPL: 4.5874, ValPPL: 7.2986, Throughput: 3.18 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m on a diet .
+Target: je suis au regime .
+
+Source Tree: ((i (m ((on a) diet))) .)
+QCFG Tree: ((je (suis (au regime))) .)
+
+('je', 'i', 'N8')
+('suis', 'm', 'N8')
+('au', 'on a', 'N1')
+('regime', 'diet', 'N5')
+('.', '.', 'N1')
+('au regime', 'on a diet', 'N12')
+('suis au regime', 'm on a diet', 'N2')
+('je suis au regime', 'i m on a diet', 'N5')
+('je suis au regime .', 'i m on a diet .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 7.0656
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 42000/6073, |EncParam|: 50.5627, |DecParam|: 146.5977, |SrcParserParam|: 59.0805, LR: 0.0005, SrcPPL: 63.7587, PPL: 4.6389, ValPPL: 7.0656, Throughput: 3.15 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he is ashamed to ask questions .
+Target: il a honte de <unk> des questions .
+
+Source Tree: ((he (((is ashamed) to) (ask questions))) .)
+QCFG Tree: ((il (((a honte) de) (<unk> (des questions)))) .)
+
+('il', 'he', 'N2')
+('a', 'is', 'N4')
+('honte', 'ashamed', 'N12')
+('de', 'to', 'N12')
+('<unk>', 'ask', 'N0')
+('des', 'questions', 'N13')
+('questions', 'questions', 'N4')
+('.', '.', 'N2')
+('a honte', 'is ashamed', 'N7')
+('des questions', 'questions', 'N7')
+('a honte de', 'is ashamed to', 'N7')
+('<unk> des questions', 'ask questions', 'N7')
+('a honte de <unk> des questions', 'is ashamed to ask questions', 'N7')
+('il a honte de <unk> des questions', 'he is ashamed to ask questions', 'N7')
+('il a honte de <unk> des questions .', 'he is ashamed to ask questions .', 'N7')
+--------------------------------
+Checking validation perf...
+PPL: 7.0572
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+Starting epoch 8
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 43000/6073, |EncParam|: 50.8637, |DecParam|: 146.6696, |SrcParserParam|: 59.1601, LR: 0.0005, SrcPPL: 55.8055, PPL: 4.1976, ValPPL: 7.0572, Throughput: 4.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: we re all very good <unk> .
+Target: nous sommes tous de tres bons <unk> .
+
+Source Tree: ((we (((re all) (very good)) <unk>)) .)
+QCFG Tree: ((nous (((sommes tous) ((de tres) bons)) <unk>)) .)
+
+('nous', 'we', 'N8')
+('sommes', 're', 'N2')
+('tous', 'all', 'N5')
+('de', 'very', 'N13')
+('tres', 'very', 'N12')
+('bons', 'good', 'N5')
+('<unk>', '<unk>', 'N11')
+('.', '.', 'N12')
+('sommes tous', 're all', 'N7')
+('de tres', 'very', 'N4')
+('de tres bons', 'very good', 'N4')
+('sommes tous de tres bons', 're all very good', 'N7')
+('sommes tous de tres bons <unk>', 're all very good <unk>', 'N7')
+('nous sommes tous de tres bons <unk>', 'we re all very good <unk>', 'N2')
+('nous sommes tous de tres bons <unk> .', 'we re all very good <unk> .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 7.2757
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 44000/6073, |EncParam|: 51.1519, |DecParam|: 146.6957, |SrcParserParam|: 59.2804, LR: 0.0005, SrcPPL: 55.0741, PPL: 4.3396, ValPPL: 7.0572, Throughput: 3.34 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he is a student at <unk> .
+Target: il est etudiant a <unk> .
+
+Source Tree: ((he ((is ((a student) at)) <unk>)) .)
+QCFG Tree: ((il ((est (etudiant a)) <unk>)) .)
+
+('il', 'he', 'N8')
+('est', 'is', 'N8')
+('etudiant', 'a student', 'N8')
+('a', 'at', 'N12')
+('<unk>', '<unk>', 'N11')
+('.', '.', 'N12')
+('etudiant a', 'a student at', 'N13')
+('est etudiant a', 'is a student at', 'N13')
+('est etudiant a <unk>', 'is a student at <unk>', 'N12')
+('il est etudiant a <unk>', 'he is a student at <unk>', 'N2')
+('il est etudiant a <unk> .', 'he is a student at <unk> .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.8176
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 45000/6073, |EncParam|: 51.4390, |DecParam|: 146.7430, |SrcParserParam|: 59.4282, LR: 0.0005, SrcPPL: 52.6315, PPL: 4.2176, ValPPL: 6.8176, Throughput: 3.28 examples/sec
+--------------------------------------------------------------------------------
+
+Source: you are entirely correct .
+Target: vous avez entierement raison .
+
+Source Tree: ((you (are (entirely correct))) .)
+QCFG Tree: ((vous (avez (entierement raison))) .)
+
+('vous', 'you', 'N8')
+('avez', 'are', 'N8')
+('entierement', 'entirely', 'N5')
+('raison', 'correct', 'N12')
+('.', '.', 'N1')
+('entierement raison', 'entirely correct', 'N13')
+('avez entierement raison', 'are entirely correct', 'N2')
+('vous avez entierement raison', 'you are entirely correct', 'N5')
+('vous avez entierement raison .', 'you are entirely correct .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 6.8591
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 46000/6073, |EncParam|: 51.7065, |DecParam|: 146.7592, |SrcParserParam|: 59.5053, LR: 0.0005, SrcPPL: 52.8807, PPL: 4.2613, ValPPL: 6.8176, Throughput: 3.19 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m sorry i m so stupid .
+Target: desole d etre si stupide .
+
+Source Tree: ((i (m ((((sorry i) m) so) stupid))) .)
+QCFG Tree: ((desole (d ((etre si) stupide))) .)
+
+('desole', 'i', 'N1')
+('d', 'm', 'N1')
+('etre', 'sorry i m', 'N1')
+('si', 'so', 'N9')
+('stupide', 'stupid', 'N9')
+('.', '.', 'N9')
+('etre si', 'sorry i m so', 'N1')
+('etre si stupide', 'sorry i m so stupid', 'N4')
+('d etre si stupide', 'm sorry i m so stupid', 'N1')
+('desole d etre si stupide', 'i m sorry i m so stupid', 'N11')
+('desole d etre si stupide .', 'i m sorry i m so stupid .', 'N7')
+--------------------------------
+Checking validation perf...
+PPL: 7.1059
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 47000/6073, |EncParam|: 52.0463, |DecParam|: 146.8000, |SrcParserParam|: 59.5704, LR: 0.0005, SrcPPL: 52.0286, PPL: 4.2498, ValPPL: 6.8176, Throughput: 3.17 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he s self employed .
+Target: il est independant .
+
+Source Tree: ((he (s (self employed))) .)
+QCFG Tree: ((il (est independant)) .)
+
+('il', 'he', 'N3')
+('est', 's', 'N8')
+('independant', 'self employed', 'N4')
+('.', '.', 'N1')
+('est independant', 's self employed', 'N2')
+('il est independant', 'he s self employed', 'N5')
+('il est independant .', 'he s self employed .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 6.7703
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 48000/6073, |EncParam|: 52.3462, |DecParam|: 146.8461, |SrcParserParam|: 59.6785, LR: 0.0005, SrcPPL: 51.3888, PPL: 4.2601, ValPPL: 6.7703, Throughput: 3.15 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m going to go to my room .
+Target: je vais aller dans ma chambre .
+
+Source Tree: ((i (((m (going to)) ((go to) my)) room)) .)
+QCFG Tree: ((je ((vais ((aller dans) ma)) chambre)) .)
+
+('je', 'i', 'N8')
+('vais', 'm going to', 'N9')
+('aller', 'go', 'N3')
+('dans', 'to', 'N12')
+('ma', 'my', 'N12')
+('chambre', 'room', 'N4')
+('.', '.', 'N12')
+('aller dans', 'go to', 'N2')
+('aller dans ma', 'go to my', 'N13')
+('vais aller dans ma', 'm going to go to my', 'N13')
+('vais aller dans ma chambre', 'm going to go to my room', 'N12')
+('je vais aller dans ma chambre', 'i m going to go to my room', 'N2')
+('je vais aller dans ma chambre .', 'i m going to go to my room .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.7793
+--------------------------------
+Starting epoch 9
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 49000/6073, |EncParam|: 52.6116, |DecParam|: 146.9199, |SrcParserParam|: 59.7909, LR: 0.0005, SrcPPL: 43.7485, PPL: 3.5971, ValPPL: 6.7703, Throughput: 4.02 examples/sec
+--------------------------------------------------------------------------------
+
+Source: she is related to him .
+Target: elle lui est apparentee .
+
+Source Tree: ((she (((is related) to) him)) .)
+QCFG Tree: ((elle (lui (est apparentee))) .)
+
+('elle', 'she', 'N3')
+('lui', 'him', 'N8')
+('est', 'is related', 'N8')
+('apparentee', 'to', 'N9')
+('.', '.', 'N12')
+('est apparentee', 'is related to', 'N9')
+('lui est apparentee', 'is related to him', 'N9')
+('elle lui est apparentee', 'she is related to him', 'N12')
+('elle lui est apparentee .', 'she is related to him .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 7.0251
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 50000/6073, |EncParam|: 52.8816, |DecParam|: 146.9831, |SrcParserParam|: 59.8877, LR: 0.0005, SrcPPL: 46.4084, PPL: 3.8946, ValPPL: 6.7703, Throughput: 3.35 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: ((i (am daxy)) .)
+QCFG Tree: ((je (suis daxiste)) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N2')
+('.', '.', 'N8')
+('suis daxiste', 'am daxy', 'N12')
+('je suis daxiste', 'i am daxy', 'N2')
+('je suis daxiste .', 'i am daxy .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.8579
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 51000/6073, |EncParam|: 53.2252, |DecParam|: 147.0070, |SrcParserParam|: 59.9822, LR: 0.0005, SrcPPL: 47.4639, PPL: 3.9313, ValPPL: 6.7703, Throughput: 3.21 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he is a novelist and poet .
+Target: il est ecrivain et poete .
+
+Source Tree: ((he ((is (a novelist)) (and poet))) .)
+QCFG Tree: ((il ((est ecrivain) (et poete))) .)
+
+('il', 'he', 'N3')
+('est', 'is', 'N8')
+('ecrivain', 'a novelist', 'N8')
+('et', 'and', 'N12')
+('poete', 'poet', 'N5')
+('.', '.', 'N2')
+('est ecrivain', 'is a novelist', 'N13')
+('et poete', 'and poet', 'N12')
+('est ecrivain et poete', 'is a novelist and poet', 'N2')
+('il est ecrivain et poete', 'he is a novelist and poet', 'N5')
+('il est ecrivain et poete .', 'he is a novelist and poet .', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 6.9176
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 52000/6073, |EncParam|: 53.4847, |DecParam|: 147.0593, |SrcParserParam|: 60.1430, LR: 0.0005, SrcPPL: 47.2555, PPL: 4.0368, ValPPL: 6.7703, Throughput: 3.15 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m at work now .
+Target: je suis actuellement au travail .
+
+Source Tree: ((i (((m at) work) now)) .)
+QCFG Tree: ((je ((suis actuellement) (au travail))) .)
+
+('je', 'i', 'N8')
+('suis', 'now', 'N13')
+('actuellement', 'now', 'N9')
+('au', 'm at', 'N1')
+('travail', 'work', 'N9')
+('.', '.', 'N1')
+('suis actuellement', 'now', 'N1')
+('au travail', 'm at work', 'N3')
+('suis actuellement au travail', 'm at work now', 'N10')
+('je suis actuellement au travail', 'i m at work now', 'N8')
+('je suis actuellement au travail .', 'i m at work now .', 'N6')
+--------------------------------
+Checking validation perf...
+PPL: 6.8504
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 53000/6073, |EncParam|: 53.7979, |DecParam|: 147.0916, |SrcParserParam|: 60.3158, LR: 0.0005, SrcPPL: 45.6366, PPL: 4.0294, ValPPL: 6.7703, Throughput: 3.15 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: ((i (am daxy)) .)
+QCFG Tree: ((je (suis daxiste)) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N2')
+('.', '.', 'N2')
+('suis daxiste', 'am daxy', 'N12')
+('je suis daxiste', 'i am daxy', 'N2')
+('je suis daxiste .', 'i am daxy .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.7997
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 54000/6073, |EncParam|: 54.0991, |DecParam|: 147.1164, |SrcParserParam|: 60.3994, LR: 0.0005, SrcPPL: 45.9362, PPL: 4.0585, ValPPL: 6.7703, Throughput: 3.13 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he is ashamed to ask questions .
+Target: il a honte de <unk> des questions .
+
+Source Tree: ((he ((is (ashamed (to ask))) questions)) .)
+QCFG Tree: ((il ((a (honte (de <unk>))) (des questions))) .)
+
+('il', 'he', 'N2')
+('a', 'is', 'N4')
+('honte', 'ashamed', 'N3')
+('de', 'to', 'N12')
+('<unk>', 'ask', 'N11')
+('des', 'questions', 'N13')
+('questions', 'questions', 'N4')
+('.', '.', 'N2')
+('de <unk>', 'to ask', 'N0')
+('des questions', 'questions', 'N5')
+('honte de <unk>', 'ashamed to ask', 'N0')
+('a honte de <unk>', 'is ashamed to ask', 'N7')
+('a honte de <unk> des questions', 'is ashamed to ask questions', 'N0')
+('il a honte de <unk> des questions', 'he is ashamed to ask questions', 'N7')
+('il a honte de <unk> des questions .', 'he is ashamed to ask questions .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.6750
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+Starting epoch 10
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 55000/6073, |EncParam|: 54.3585, |DecParam|: 147.1493, |SrcParserParam|: 60.5558, LR: 0.0005, SrcPPL: 36.7944, PPL: 3.4089, ValPPL: 6.6750, Throughput: 4.48 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m pleased to meet you .
+Target: enchante de faire votre connaissance .
+
+Source Tree: ((i (m ((pleased to) (meet you)))) .)
+QCFG Tree: ((enchante ((de faire) (votre connaissance))) .)
+
+('enchante', 'm pleased to meet you', 'N1')
+('de', 'i', 'N13')
+('faire', 'i', 'N9')
+('votre', 'i', 'N13')
+('connaissance', 'i', 'N9')
+('.', '.', 'N9')
+('de faire', 'i', 'N3')
+('votre connaissance', 'i', 'N3')
+('de faire votre connaissance', 'i', 'N10')
+('enchante de faire votre connaissance', 'i m pleased to meet you', 'N1')
+('enchante de faire votre connaissance .', 'i m pleased to meet you .', 'N3')
+--------------------------------
+Checking validation perf...
+PPL: 6.7693
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 56000/6073, |EncParam|: 54.6738, |DecParam|: 147.2182, |SrcParserParam|: 60.6950, LR: 0.0005, SrcPPL: 40.4323, PPL: 3.6644, ValPPL: 6.6750, Throughput: 3.36 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he s rich .
+Target: il est riche .
+
+Source Tree: ((he (s rich)) .)
+QCFG Tree: ((il (est riche)) .)
+
+('il', 'he', 'N2')
+('est', 's', 'N8')
+('riche', 'rich', 'N5')
+('.', '.', 'N2')
+('est riche', 's rich', 'N12')
+('il est riche', 'he s rich', 'N2')
+('il est riche .', 'he s rich .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.7863
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 57000/6073, |EncParam|: 54.9725, |DecParam|: 147.2846, |SrcParserParam|: 60.8134, LR: 0.0005, SrcPPL: 41.2425, PPL: 3.7726, ValPPL: 6.6750, Throughput: 3.19 examples/sec
+--------------------------------------------------------------------------------
+
+Source: she s an only child .
+Target: elle est fille unique .
+
+Source Tree: ((she (s ((an only) child))) .)
+QCFG Tree: ((elle (est (fille unique))) .)
+
+('elle', 'she', 'N8')
+('est', 's', 'N8')
+('fille', 'child', 'N1')
+('unique', 'an only', 'N4')
+('.', '.', 'N2')
+('fille unique', 'an only child', 'N12')
+('est fille unique', 's an only child', 'N2')
+('elle est fille unique', 'she s an only child', 'N13')
+('elle est fille unique .', 'she s an only child .', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 7.0715
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 58000/6073, |EncParam|: 55.2316, |DecParam|: 147.3074, |SrcParserParam|: 60.9718, LR: 0.0005, SrcPPL: 40.7037, PPL: 3.7387, ValPPL: 6.6750, Throughput: 3.17 examples/sec
+--------------------------------------------------------------------------------
+
+Source: you re right of course .
+Target: tu as raison bien sur .
+
+Source Tree: ((you ((re (right of)) course)) .)
+QCFG Tree: ((tu ((as (raison bien)) sur)) .)
+
+('tu', 'you', 'N8')
+('as', 're', 'N8')
+('raison', 'right', 'N2')
+('bien', 'of', 'N2')
+('sur', 'course', 'N2')
+('.', '.', 'N2')
+('raison bien', 'right of', 'N13')
+('as raison bien', 're right of', 'N13')
+('as raison bien sur', 're right of course', 'N2')
+('tu as raison bien sur', 'you re right of course', 'N5')
+('tu as raison bien sur .', 'you re right of course .', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 7.0060
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 59000/6073, |EncParam|: 55.5499, |DecParam|: 147.3263, |SrcParserParam|: 61.0353, LR: 0.0005, SrcPPL: 39.8198, PPL: 3.7716, ValPPL: 6.6750, Throughput: 3.15 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: ((i (am daxy)) .)
+QCFG Tree: ((je (suis daxiste)) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N2')
+('.', '.', 'N2')
+('suis daxiste', 'am daxy', 'N12')
+('je suis daxiste', 'i am daxy', 'N2')
+('je suis daxiste .', 'i am daxy .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.8500
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 60000/6073, |EncParam|: 55.8619, |DecParam|: 147.3655, |SrcParserParam|: 61.1502, LR: 0.0005, SrcPPL: 39.6540, PPL: 3.8060, ValPPL: 6.6750, Throughput: 3.14 examples/sec
+--------------------------------------------------------------------------------
+
+Source: we re almost out of sugar .
+Target: nous sommes presque a court de sucre .
+
+Source Tree: ((we (re ((almost out) (of sugar)))) .)
+QCFG Tree: ((nous (sommes ((presque (a court)) (de sucre)))) .)
+
+('nous', 'we', 'N8')
+('sommes', 're', 'N2')
+('presque', 'almost', 'N2')
+('a', 'out', 'N13')
+('court', 'out', 'N4')
+('de', 'of', 'N2')
+('sucre', 'sugar', 'N4')
+('.', '.', 'N2')
+('a court', 'out', 'N7')
+('de sucre', 'of sugar', 'N7')
+('presque a court', 'almost out', 'N7')
+('presque a court de sucre', 'almost out of sugar', 'N7')
+('sommes presque a court de sucre', 're almost out of sugar', 'N7')
+('nous sommes presque a court de sucre', 'we re almost out of sugar', 'N13')
+('nous sommes presque a court de sucre .', 'we re almost out of sugar .', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 6.5729
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+Starting epoch 11
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 61000/6073, |EncParam|: 56.0963, |DecParam|: 147.3928, |SrcParserParam|: 61.2627, LR: 0.0005, SrcPPL: 34.9921, PPL: 3.4910, ValPPL: 6.5729, Throughput: 4.12 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he is leaving <unk> tomorrow .
+Target: il va quitter <unk> demain .
+
+Source Tree: ((he (is ((leaving <unk>) tomorrow))) .)
+QCFG Tree: ((il (va ((quitter <unk>) demain))) .)
+
+('il', 'he', 'N2')
+('va', 'is', 'N9')
+('quitter', 'leaving', 'N1')
+('<unk>', '<unk>', 'N11')
+('demain', 'tomorrow', 'N0')
+('.', '.', 'N2')
+('quitter <unk>', 'leaving <unk>', 'N5')
+('quitter <unk> demain', 'leaving <unk> tomorrow', 'N0')
+('va quitter <unk> demain', 'is leaving <unk> tomorrow', 'N12')
+('il va quitter <unk> demain', 'he is leaving <unk> tomorrow', 'N2')
+('il va quitter <unk> demain .', 'he is leaving <unk> tomorrow .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.4821
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 62000/6073, |EncParam|: 56.4438, |DecParam|: 147.4668, |SrcParserParam|: 61.3587, LR: 0.0005, SrcPPL: 34.9524, PPL: 3.2600, ValPPL: 6.4821, Throughput: 3.32 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m not too worried about tom .
+Target: je ne m inquiete pas trop pour tom .
+
+Source Tree: ((i (m (not (((too worried) about) tom)))) .)
+QCFG Tree: ((je ((ne m) (inquiete (((pas trop) pour) tom)))) .)
+
+('je', 'i', 'N8')
+('ne', 'm', 'N13')
+('m', 'm', 'N9')
+('inquiete', 'not', 'N1')
+('pas', 'worried', 'N1')
+('trop', 'too', 'N5')
+('pour', 'about', 'N12')
+('tom', 'tom', 'N5')
+('.', '.', 'N2')
+('ne m', 'm', 'N3')
+('pas trop', 'too worried', 'N4')
+('pas trop pour', 'too worried about', 'N11')
+('pas trop pour tom', 'too worried about tom', 'N11')
+('inquiete pas trop pour tom', 'not too worried about tom', 'N1')
+('ne m inquiete pas trop pour tom', 'm not too worried about tom', 'N10')
+('je ne m inquiete pas trop pour tom', 'i m not too worried about tom', 'N2')
+('je ne m inquiete pas trop pour tom .', 'i m not too worried about tom .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.9016
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 63000/6073, |EncParam|: 56.7208, |DecParam|: 147.5273, |SrcParserParam|: 61.4567, LR: 0.0005, SrcPPL: 35.6892, PPL: 3.3503, ValPPL: 6.4821, Throughput: 3.20 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: ((i (am daxy)) .)
+QCFG Tree: ((je (suis daxiste)) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N2')
+('.', '.', 'N2')
+('suis daxiste', 'am daxy', 'N12')
+('je suis daxiste', 'i am daxy', 'N2')
+('je suis daxiste .', 'i am daxy .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.9694
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 64000/6073, |EncParam|: 56.9735, |DecParam|: 147.5346, |SrcParserParam|: 61.6102, LR: 0.0005, SrcPPL: 35.2463, PPL: 3.4932, ValPPL: 6.4821, Throughput: 3.16 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he s a young <unk> teenager .
+Target: c est un jeune adolescent <unk> .
+
+Source Tree: ((he (s (((a young) <unk>) teenager))) .)
+QCFG Tree: ((c (est ((un jeune) (adolescent <unk>)))) .)
+
+('c', 'he', 'N8')
+('est', 's', 'N8')
+('un', '<unk>', 'N1')
+('jeune', 'a young', 'N1')
+('adolescent', 'teenager', 'N8')
+('<unk>', 'teenager', 'N11')
+('.', '.', 'N2')
+('un jeune', 'a young <unk>', 'N6')
+('adolescent <unk>', 'teenager', 'N2')
+('un jeune adolescent <unk>', 'a young <unk> teenager', 'N5')
+('est un jeune adolescent <unk>', 's a young <unk> teenager', 'N12')
+('c est un jeune adolescent <unk>', 'he s a young <unk> teenager', 'N2')
+('c est un jeune adolescent <unk> .', 'he s a young <unk> teenager .', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 6.6702
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 65000/6073, |EncParam|: 57.2626, |DecParam|: 147.5824, |SrcParserParam|: 61.6839, LR: 0.0005, SrcPPL: 35.2567, PPL: 3.5517, ValPPL: 6.4821, Throughput: 3.15 examples/sec
+--------------------------------------------------------------------------------
+
+Source: they re out of their <unk> .
+Target: ils ont perdu l esprit .
+
+Source Tree: ((they (re (out ((of their) <unk>)))) .)
+QCFG Tree: ((ils (ont (perdu (l esprit)))) .)
+
+('ils', 'they', 'N8')
+('ont', 're', 'N4')
+('perdu', 'out', 'N10')
+('l', 'of their', 'N1')
+('esprit', '<unk>', 'N9')
+('.', '.', 'N2')
+('l esprit', 'of their <unk>', 'N3')
+('perdu l esprit', 'out of their <unk>', 'N11')
+('ont perdu l esprit', 're out of their <unk>', 'N7')
+('ils ont perdu l esprit', 'they re out of their <unk>', 'N2')
+('ils ont perdu l esprit .', 'they re out of their <unk> .', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 6.6489
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 66000/6073, |EncParam|: 57.5602, |DecParam|: 147.6502, |SrcParserParam|: 61.7821, LR: 0.0005, SrcPPL: 35.2678, PPL: 3.6060, ValPPL: 6.4821, Throughput: 3.12 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he is <unk> <unk> .
+Target: il est <unk> <unk> .
+
+Source Tree: ((he (is (<unk> <unk>))) .)
+QCFG Tree: ((il (est (<unk> <unk>))) .)
+
+('il', 'he', 'N2')
+('est', 'is', 'N2')
+('<unk>', '<unk>', 'N0')
+('<unk>', '<unk>', 'N11')
+('.', '.', 'N2')
+('<unk> <unk>', '<unk> <unk>', 'N7')
+('est <unk> <unk>', 'is <unk> <unk>', 'N7')
+('il est <unk> <unk>', 'he is <unk> <unk>', 'N7')
+('il est <unk> <unk> .', 'he is <unk> <unk> .', 'N7')
+--------------------------------
+Checking validation perf...
+PPL: 6.5385
+--------------------------------
+Starting epoch 12
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 67000/6073, |EncParam|: 57.8459, |DecParam|: 147.6775, |SrcParserParam|: 61.8489, LR: 0.0005, SrcPPL: 35.4727, PPL: 3.1386, ValPPL: 6.4821, Throughput: 4.04 examples/sec
+--------------------------------------------------------------------------------
+
+Source: you re not the only one .
+Target: tu n es pas le seul .
+
+Source Tree: ((you (re (not ((the only) one)))) .)
+QCFG Tree: ((tu ((n es) (pas (le seul)))) .)
+
+('tu', 'you', 'N8')
+('n', 're', 'N13')
+('es', 're', 'N8')
+('pas', 'not', 'N8')
+('le', 'the only', 'N1')
+('seul', 'one', 'N9')
+('.', '.', 'N2')
+('n es', 're', 'N6')
+('le seul', 'the only one', 'N8')
+('pas le seul', 'not the only one', 'N12')
+('n es pas le seul', 're not the only one', 'N2')
+('tu n es pas le seul', 'you re not the only one', 'N5')
+('tu n es pas le seul .', 'you re not the only one .', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 6.6157
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 68000/6073, |EncParam|: 58.2148, |DecParam|: 147.7785, |SrcParserParam|: 61.9710, LR: 0.0005, SrcPPL: 33.0663, PPL: 3.2431, ValPPL: 6.4821, Throughput: 3.21 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m ready for a break .
+Target: je suis pret pour une pause .
+
+Source Tree: ((i (m ((ready for) (a break)))) .)
+QCFG Tree: ((je (suis ((pret pour) (une pause)))) .)
+
+('je', 'i', 'N8')
+('suis', 'm', 'N8')
+('pret', 'ready', 'N10')
+('pour', 'for', 'N8')
+('une', 'a', 'N8')
+('pause', 'break', 'N5')
+('.', '.', 'N2')
+('pret pour', 'ready for', 'N13')
+('une pause', 'a break', 'N12')
+('pret pour une pause', 'ready for a break', 'N12')
+('suis pret pour une pause', 'm ready for a break', 'N12')
+('je suis pret pour une pause', 'i m ready for a break', 'N2')
+('je suis pret pour une pause .', 'i m ready for a break .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.7577
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 69000/6073, |EncParam|: 58.5595, |DecParam|: 147.8313, |SrcParserParam|: 62.0807, LR: 0.0005, SrcPPL: 32.4482, PPL: 3.2543, ValPPL: 6.4821, Throughput: 3.19 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: ((i (am daxy)) .)
+QCFG Tree: ((je (suis daxiste)) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N9')
+('.', '.', 'N2')
+('suis daxiste', 'am daxy', 'N12')
+('je suis daxiste', 'i am daxy', 'N2')
+('je suis daxiste .', 'i am daxy .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.6346
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 70000/6073, |EncParam|: 58.8227, |DecParam|: 147.8894, |SrcParserParam|: 62.1451, LR: 0.0005, SrcPPL: 32.3551, PPL: 3.3406, ValPPL: 6.4821, Throughput: 3.15 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am counting on your help .
+Target: je compte sur ton aide .
+
+Source Tree: ((i (am (counting (on (your help))))) .)
+QCFG Tree: ((je (compte (sur (ton aide)))) .)
+
+('je', 'i', 'N8')
+('compte', 'am', 'N9')
+('sur', 'counting', 'N1')
+('ton', 'on', 'N9')
+('aide', 'your help', 'N5')
+('.', '.', 'N2')
+('ton aide', 'on your help', 'N4')
+('sur ton aide', 'counting on your help', 'N8')
+('compte sur ton aide', 'am counting on your help', 'N12')
+('je compte sur ton aide', 'i am counting on your help', 'N2')
+('je compte sur ton aide .', 'i am counting on your help .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.5207
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 71000/6073, |EncParam|: 59.0738, |DecParam|: 147.9473, |SrcParserParam|: 62.2104, LR: 0.0005, SrcPPL: 32.2387, PPL: 3.3222, ValPPL: 6.4821, Throughput: 3.14 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: ((i (am daxy)) .)
+QCFG Tree: ((je (suis daxiste)) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N2')
+('.', '.', 'N2')
+('suis daxiste', 'am daxy', 'N12')
+('je suis daxiste', 'i am daxy', 'N2')
+('je suis daxiste .', 'i am daxy .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.3661
+--------------------------------
+Saving checkpoint to mt-seed17.pt
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 72000/6073, |EncParam|: 59.3052, |DecParam|: 147.9921, |SrcParserParam|: 62.2612, LR: 0.0005, SrcPPL: 32.1137, PPL: 3.3680, ValPPL: 6.3661, Throughput: 3.12 examples/sec
+--------------------------------------------------------------------------------
+
+Source: she is no beauty .
+Target: ce n est pas une beaute .
+
+Source Tree: ((she (is (no beauty))) .)
+QCFG Tree: ((ce ((n est) (pas (une beaute)))) .)
+
+('ce', 'she', 'N3')
+('n', 'is', 'N13')
+('est', 'is', 'N8')
+('pas', 'no', 'N8')
+('une', 'beauty', 'N13')
+('beaute', 'beauty', 'N4')
+('.', '.', 'N2')
+('n est', 'is', 'N6')
+('une beaute', 'beauty', 'N2')
+('pas une beaute', 'no beauty', 'N5')
+('n est pas une beaute', 'is no beauty', 'N12')
+('ce n est pas une beaute', 'she is no beauty', 'N2')
+('ce n est pas une beaute .', 'she is no beauty .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.4294
+--------------------------------
+Starting epoch 13
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 73000/6073, |EncParam|: 59.5789, |DecParam|: 148.0553, |SrcParserParam|: 62.3091, LR: 0.0005, SrcPPL: 33.6355, PPL: 3.3626, ValPPL: 6.3661, Throughput: 3.98 examples/sec
+--------------------------------------------------------------------------------
+
+Source: we re in the same boat .
+Target: nous sommes dans le meme bateau .
+
+Source Tree: ((we (re (in ((the same) boat)))) .)
+QCFG Tree: ((nous (sommes (dans ((le meme) bateau)))) .)
+
+('nous', 'we', 'N8')
+('sommes', 're', 'N2')
+('dans', 'in', 'N10')
+('le', 'the', 'N12')
+('meme', 'same', 'N5')
+('bateau', 'boat', 'N4')
+('.', '.', 'N2')
+('le meme', 'the same', 'N13')
+('le meme bateau', 'the same boat', 'N2')
+('dans le meme bateau', 'in the same boat', 'N0')
+('sommes dans le meme bateau', 're in the same boat', 'N7')
+('nous sommes dans le meme bateau', 'we re in the same boat', 'N13')
+('nous sommes dans le meme bateau .', 'we re in the same boat .', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 6.3912
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 74000/6073, |EncParam|: 59.9321, |DecParam|: 148.1634, |SrcParserParam|: 62.3546, LR: 0.0005, SrcPPL: 32.0326, PPL: 3.0147, ValPPL: 6.3661, Throughput: 3.10 examples/sec
+--------------------------------------------------------------------------------
+
+Source: she is a charming woman .
+Target: c est une femme <unk> .
+
+Source Tree: ((she (is ((a charming) woman))) .)
+QCFG Tree: ((c (est (une (femme <unk>)))) .)
+
+('c', 'she', 'N8')
+('est', 'is', 'N8')
+('une', 'a charming', 'N1')
+('femme', 'woman', 'N1')
+('<unk>', 'woman', 'N11')
+('.', '.', 'N0')
+('femme <unk>', 'woman', 'N10')
+('une femme <unk>', 'a charming woman', 'N1')
+('est une femme <unk>', 'is a charming woman', 'N12')
+('c est une femme <unk>', 'she is a charming woman', 'N2')
+('c est une femme <unk> .', 'she is a charming woman .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.7333
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 75000/6073, |EncParam|: 60.2173, |DecParam|: 148.2402, |SrcParserParam|: 62.4234, LR: 0.0005, SrcPPL: 31.2653, PPL: 3.0935, ValPPL: 6.3661, Throughput: 3.09 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m not sleeping well .
+Target: je ne dors pas bien .
+
+Source Tree: ((i (m ((not sleeping) well))) .)
+QCFG Tree: ((je ((ne dors) (pas bien))) .)
+
+('je', 'i', 'N8')
+('ne', 'm', 'N13')
+('dors', 'm', 'N9')
+('pas', 'not sleeping', 'N10')
+('bien', 'well', 'N5')
+('.', '.', 'N0')
+('ne dors', 'm', 'N3')
+('pas bien', 'not sleeping well', 'N12')
+('ne dors pas bien', 'm not sleeping well', 'N12')
+('je ne dors pas bien', 'i m not sleeping well', 'N2')
+('je ne dors pas bien .', 'i m not sleeping well .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.5473
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 76000/6073, |EncParam|: 60.5091, |DecParam|: 148.2940, |SrcParserParam|: 62.4707, LR: 0.0005, SrcPPL: 31.2610, PPL: 3.1334, ValPPL: 6.3661, Throughput: 3.10 examples/sec
+--------------------------------------------------------------------------------
+
+Source: they re not my friends .
+Target: ce ne sont pas mes amis .
+
+Source Tree: ((they (re (not (my friends)))) .)
+QCFG Tree: ((ce ((ne sont) (pas (mes amis)))) .)
+
+('ce', 'they', 'N8')
+('ne', 're', 'N13')
+('sont', 're', 'N5')
+('pas', 'not', 'N2')
+('mes', 'my', 'N2')
+('amis', 'friends', 'N2')
+('.', '.', 'N2')
+('ne sont', 're', 'N11')
+('mes amis', 'my friends', 'N7')
+('pas mes amis', 'not my friends', 'N7')
+('ne sont pas mes amis', 're not my friends', 'N7')
+('ce ne sont pas mes amis', 'they re not my friends', 'N2')
+('ce ne sont pas mes amis .', 'they re not my friends .', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 6.6415
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 77000/6073, |EncParam|: 60.7834, |DecParam|: 148.3767, |SrcParserParam|: 62.5786, LR: 0.0005, SrcPPL: 31.0100, PPL: 3.1609, ValPPL: 6.3661, Throughput: 3.11 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: ((i (am daxy)) .)
+QCFG Tree: ((je (suis daxiste)) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N4')
+('.', '.', 'N2')
+('suis daxiste', 'am daxy', 'N12')
+('je suis daxiste', 'i am daxy', 'N12')
+('je suis daxiste .', 'i am daxy .', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 6.5041
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 78000/6073, |EncParam|: 60.9871, |DecParam|: 148.4284, |SrcParserParam|: 62.6196, LR: 0.0005, SrcPPL: 30.8347, PPL: 3.1755, ValPPL: 6.3661, Throughput: 3.10 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am <unk> fish .
+Target: je suis en train de <unk> du poisson .
+
+Source Tree: ((i (am (<unk> fish))) .)
+QCFG Tree: ((je (suis ((en (train (de <unk>))) (du poisson)))) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('en', '<unk>', 'N13')
+('train', '<unk>', 'N13')
+('de', '<unk>', 'N13')
+('<unk>', '<unk>', 'N11')
+('du', 'fish', 'N13')
+('poisson', 'fish', 'N9')
+('.', '.', 'N2')
+('de <unk>', '<unk>', 'N9')
+('du poisson', 'fish', 'N3')
+('train de <unk>', '<unk>', 'N13')
+('en train de <unk>', '<unk>', 'N13')
+('en train de <unk> du poisson', '<unk> fish', 'N12')
+('suis en train de <unk> du poisson', 'am <unk> fish', 'N2')
+('je suis en train de <unk> du poisson', 'i am <unk> fish', 'N5')
+('je suis en train de <unk> du poisson .', 'i am <unk> fish .', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 6.4945
+--------------------------------
+Starting epoch 14
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 79000/6073, |EncParam|: 61.2339, |DecParam|: 148.4827, |SrcParserParam|: 62.6949, LR: 0.0005, SrcPPL: 32.8111, PPL: 3.0811, ValPPL: 6.3661, Throughput: 3.80 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m going to go take a <unk> .
+Target: je vais aller faire une <unk> .
+
+Source Tree: ((i (m (((going (to go)) take) (a <unk>)))) .)
+QCFG Tree: ((je (vais ((aller faire) (une <unk>)))) .)
+
+('je', 'i', 'N8')
+('vais', 'm', 'N9')
+('aller', 'going to go', 'N7')
+('faire', 'take', 'N12')
+('une', 'a', 'N13')
+('<unk>', '<unk>', 'N11')
+('.', '.', 'N2')
+('aller faire', 'going to go take', 'N11')
+('une <unk>', 'a <unk>', 'N9')
+('aller faire une <unk>', 'going to go take a <unk>', 'N11')
+('vais aller faire une <unk>', 'm going to go take a <unk>', 'N0')
+('je vais aller faire une <unk>', 'i m going to go take a <unk>', 'N2')
+('je vais aller faire une <unk> .', 'i m going to go take a <unk> .', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 6.4698
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 80000/6073, |EncParam|: 61.5128, |DecParam|: 148.5923, |SrcParserParam|: 62.7728, LR: 0.0005, SrcPPL: 30.5829, PPL: 2.9462, ValPPL: 6.3661, Throughput: 3.09 examples/sec
+--------------------------------------------------------------------------------
+
+Source: they are talking in the kitchen .
+Target: elles parlent dans la cuisine .
+
+Source Tree: ((they (are ((talking in) (the kitchen)))) .)
+QCFG Tree: ((elles (parlent (dans (la cuisine)))) .)
+
+('elles', 'they', 'N2')
+('parlent', 'are', 'N7')
+('dans', 'talking in', 'N10')
+('la', 'the', 'N2')
+('cuisine', 'kitchen', 'N4')
+('.', '.', 'N2')
+('la cuisine', 'the kitchen', 'N7')
+('dans la cuisine', 'talking in the kitchen', 'N7')
+('parlent dans la cuisine', 'are talking in the kitchen', 'N7')
+('elles parlent dans la cuisine', 'they are talking in the kitchen', 'N2')
+('elles parlent dans la cuisine .', 'they are talking in the kitchen .', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 6.8953
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 81000/6073, |EncParam|: 61.7758, |DecParam|: 148.6809, |SrcParserParam|: 62.8294, LR: 0.0005, SrcPPL: 30.0390, PPL: 2.9195, ValPPL: 6.3661, Throughput: 3.06 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: ((i (am daxy)) .)
+QCFG Tree: ((je (suis daxiste)) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N8')
+('.', '.', 'N2')
+('suis daxiste', 'am daxy', 'N12')
+('je suis daxiste', 'i am daxy', 'N2')
+('je suis daxiste .', 'i am daxy .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.7493
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 82000/6073, |EncParam|: 62.0438, |DecParam|: 148.7486, |SrcParserParam|: 62.9085, LR: 0.0005, SrcPPL: 29.4523, PPL: 2.9620, ValPPL: 6.3661, Throughput: 3.07 examples/sec
+--------------------------------------------------------------------------------
+
+Source: she is kind .
+Target: elle est gentille .
+
+Source Tree: ((she (is kind)) .)
+QCFG Tree: ((elle (est gentille)) .)
+
+('elle', 'she', 'N2')
+('est', 'is', 'N8')
+('gentille', 'kind', 'N5')
+('.', '.', 'N2')
+('est gentille', 'is kind', 'N5')
+('elle est gentille', 'she is kind', 'N12')
+('elle est gentille .', 'she is kind .', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 6.7779
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 83000/6073, |EncParam|: 62.2787, |DecParam|: 148.8117, |SrcParserParam|: 62.9672, LR: 0.0005, SrcPPL: 29.1818, PPL: 2.9700, ValPPL: 6.3661, Throughput: 3.08 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am thinking of resigning at once .
+Target: je songe a demissionner <unk> .
+
+Source Tree: ((i (am (((thinking of) resigning) (at once)))) .)
+QCFG Tree: ((je (songe ((a demissionner) <unk>))) .)
+
+('je', 'i', 'N8')
+('songe', 'am', 'N9')
+('a', 'thinking of', 'N1')
+('demissionner', 'resigning', 'N4')
+('<unk>', 'at once', 'N11')
+('.', '.', 'N2')
+('a demissionner', 'thinking of resigning', 'N6')
+('a demissionner <unk>', 'thinking of resigning at once', 'N8')
+('songe a demissionner <unk>', 'am thinking of resigning at once', 'N0')
+('je songe a demissionner <unk>', 'i am thinking of resigning at once', 'N2')
+('je songe a demissionner <unk> .', 'i am thinking of resigning at once .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.7054
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 84000/6073, |EncParam|: 62.4895, |DecParam|: 148.8960, |SrcParserParam|: 63.0328, LR: 0.0005, SrcPPL: 29.1922, PPL: 3.0180, ValPPL: 6.3661, Throughput: 3.09 examples/sec
+--------------------------------------------------------------------------------
+
+Source: you re the only one i think about .
+Target: je ne pense qu a toi .
+
+Source Tree: ((you (re (((the only) ((one i) think)) about))) .)
+QCFG Tree: (((je (((ne pense) qu) a)) toi) .)
+
+('je', 're', 'N1')
+('ne', 'one i', 'N13')
+('pense', 'think', 'N9')
+('qu', 'the only', 'N12')
+('a', 'about', 'N0')
+('toi', 'you', 'N7')
+('.', '.', 'N2')
+('ne pense', 'one i think', 'N3')
+('ne pense qu', 'the only one i think', 'N4')
+('ne pense qu a', 'the only one i think about', 'N10')
+('je ne pense qu a', 're the only one i think about', 'N1')
+('je ne pense qu a toi', 'you re the only one i think about', 'N11')
+('je ne pense qu a toi .', 'you re the only one i think about .', 'N7')
+--------------------------------
+Checking validation perf...
+PPL: 6.4754
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 85000/6073, |EncParam|: 62.6869, |DecParam|: 148.9884, |SrcParserParam|: 63.1031, LR: 0.0005, SrcPPL: 29.3572, PPL: 3.0339, ValPPL: 6.3661, Throughput: 3.09 examples/sec
+--------------------------------------------------------------------------------
+
+Source: she s in the garden <unk> <unk> .
+Target: elle plante des <unk> dans le jardin .
+
+Source Tree: ((she (s ((in the) ((garden <unk>) <unk>)))) .)
+QCFG Tree: ((elle (plante ((des <unk>) (dans (le jardin))))) .)
+
+('elle', 'she', 'N2')
+('plante', 's', 'N10')
+('des', 'in', 'N1')
+('<unk>', 'the', 'N11')
+('dans', '<unk>', 'N12')
+('le', '<unk>', 'N1')
+('jardin', 'garden', 'N9')
+('.', '.', 'N2')
+('des <unk>', 'in the', 'N8')
+('le jardin', 'garden <unk>', 'N3')
+('dans le jardin', 'garden <unk> <unk>', 'N11')
+('des <unk> dans le jardin', 'in the garden <unk> <unk>', 'N0')
+('plante des <unk> dans le jardin', 's in the garden <unk> <unk>', 'N12')
+('elle plante des <unk> dans le jardin', 'she s in the garden <unk> <unk>', 'N2')
+('elle plante des <unk> dans le jardin .', 'she s in the garden <unk> <unk> .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.6345
+--------------------------------
+Starting epoch 15
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 86000/6073, |EncParam|: 62.9705, |DecParam|: 149.1304, |SrcParserParam|: 63.1977, LR: 0.0005, SrcPPL: 28.7138, PPL: 2.6016, ValPPL: 6.3661, Throughput: 4.22 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i am daxy .
+Target: je suis daxiste .
+
+Source Tree: ((i (am daxy)) .)
+QCFG Tree: ((je (suis daxiste)) .)
+
+('je', 'i', 'N8')
+('suis', 'am', 'N8')
+('daxiste', 'daxy', 'N2')
+('.', '.', 'N2')
+('suis daxiste', 'am daxy', 'N12')
+('je suis daxiste', 'i am daxy', 'N2')
+('je suis daxiste .', 'i am daxy .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.8160
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 87000/6073, |EncParam|: 63.2900, |DecParam|: 149.2479, |SrcParserParam|: 63.2785, LR: 0.0005, SrcPPL: 28.1303, PPL: 2.6863, ValPPL: 6.3661, Throughput: 3.56 examples/sec
+--------------------------------------------------------------------------------
+
+Source: she is aware of my secret plan .
+Target: elle est au <unk> de mon projet secret .
+
+Source Tree: ((she (is (((aware of) (my secret)) plan))) .)
+QCFG Tree: ((elle (est ((((au <unk>) de) (mon projet)) secret))) .)
+
+('elle', 'she', 'N5')
+('est', 'is', 'N8')
+('au', 'aware', 'N13')
+('<unk>', 'aware', 'N11')
+('de', 'of', 'N12')
+('mon', 'my', 'N8')
+('projet', 'secret', 'N1')
+('secret', 'plan', 'N4')
+('.', '.', 'N2')
+('au <unk>', 'aware', 'N7')
+('mon projet', 'my secret', 'N6')
+('au <unk> de', 'aware of', 'N7')
+('au <unk> de mon projet', 'aware of my secret', 'N6')
+('au <unk> de mon projet secret', 'aware of my secret plan', 'N5')
+('est au <unk> de mon projet secret', 'is aware of my secret plan', 'N12')
+('elle est au <unk> de mon projet secret', 'she is aware of my secret plan', 'N2')
+('elle est au <unk> de mon projet secret .', 'she is aware of my secret plan .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.8203
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 88000/6073, |EncParam|: 63.4753, |DecParam|: 149.3457, |SrcParserParam|: 63.3328, LR: 0.0005, SrcPPL: 28.1323, PPL: 2.7646, ValPPL: 6.3661, Throughput: 3.38 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i m worried about the future .
+Target: je m inquiete pour l avenir .
+
+Source Tree: ((i (m (worried (about (the future))))) .)
+QCFG Tree: ((je (m (inquiete (pour (l avenir))))) .)
+
+('je', 'i', 'N8')
+('m', 'm', 'N1')
+('inquiete', 'worried', 'N1')
+('pour', 'about', 'N10')
+('l', 'the', 'N13')
+('avenir', 'future', 'N4')
+('.', '.', 'N2')
+('l avenir', 'the future', 'N12')
+('pour l avenir', 'about the future', 'N2')
+('inquiete pour l avenir', 'worried about the future', 'N5')
+('m inquiete pour l avenir', 'm worried about the future', 'N12')
+('je m inquiete pour l avenir', 'i m worried about the future', 'N2')
+('je m inquiete pour l avenir .', 'i m worried about the future .', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 6.8308
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 89000/6073, |EncParam|: 63.7065, |DecParam|: 149.4235, |SrcParserParam|: 63.3976, LR: 0.0005, SrcPPL: 28.2914, PPL: 2.8175, ValPPL: 6.3661, Throughput: 3.29 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he s curious about everything .
+Target: il est curieux de tout .
+
+Source Tree: ((he (s (curious (about everything)))) .)
+QCFG Tree: ((il (est (curieux (de tout)))) .)
+
+('il', 'he', 'N2')
+('est', 's', 'N8')
+('curieux', 'curious', 'N10')
+('de', 'about', 'N8')
+('tout', 'everything', 'N4')
+('.', '.', 'N2')
+('de tout', 'about everything', 'N12')
+('curieux de tout', 'curious about everything', 'N12')
+('est curieux de tout', 's curious about everything', 'N2')
+('il est curieux de tout', 'he s curious about everything', 'N5')
+('il est curieux de tout .', 'he s curious about everything .', 'N0')
+--------------------------------
+Checking validation perf...
+PPL: 6.6475
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 90000/6073, |EncParam|: 63.9274, |DecParam|: 149.4790, |SrcParserParam|: 63.4664, LR: 0.0005, SrcPPL: 28.1550, PPL: 2.8429, ValPPL: 6.3661, Throughput: 3.25 examples/sec
+--------------------------------------------------------------------------------
+
+Source: you re in grave danger .
+Target: tu es en grand danger .
+
+Source Tree: ((you (re ((in grave) danger))) .)
+QCFG Tree: ((tu (es ((en grand) danger))) .)
+
+('tu', 'you', 'N8')
+('es', 're', 'N8')
+('en', 'in', 'N13')
+('grand', 'grave', 'N1')
+('danger', 'danger', 'N4')
+('.', '.', 'N2')
+('en grand', 'in grave', 'N6')
+('en grand danger', 'in grave danger', 'N0')
+('es en grand danger', 're in grave danger', 'N12')
+('tu es en grand danger', 'you re in grave danger', 'N2')
+('tu es en grand danger .', 'you re in grave danger .', 'N13')
+--------------------------------
+Checking validation perf...
+PPL: 6.4772
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 91000/6073, |EncParam|: 64.2096, |DecParam|: 149.5526, |SrcParserParam|: 63.5584, LR: 0.0005, SrcPPL: 28.3762, PPL: 2.8649, ValPPL: 6.3661, Throughput: 3.21 examples/sec
+--------------------------------------------------------------------------------
+
+Source: she is older and wiser now .
+Target: elle est plus agee et plus sage maintenant .
+
+Source Tree: ((she (is ((older (and wiser)) now))) .)
+QCFG Tree: ((elle (est (((plus agee) (et (plus sage))) maintenant))) .)
+
+('elle', 'she', 'N5')
+('est', 'is', 'N8')
+('plus', 'older', 'N13')
+('agee', 'older', 'N4')
+('et', 'and', 'N10')
+('plus', 'wiser', 'N13')
+('sage', 'wiser', 'N4')
+('maintenant', 'now', 'N2')
+('.', '.', 'N2')
+('plus agee', 'older', 'N2')
+('plus sage', 'wiser', 'N13')
+('et plus sage', 'and wiser', 'N13')
+('plus agee et plus sage', 'older and wiser', 'N13')
+('plus agee et plus sage maintenant', 'older and wiser now', 'N12')
+('est plus agee et plus sage maintenant', 'is older and wiser now', 'N5')
+('elle est plus agee et plus sage maintenant', 'she is older and wiser now', 'N12')
+('elle est plus agee et plus sage maintenant .', 'she is older and wiser now .', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 6.6553
+--------------------------------

@@ -1,0 +1,2574 @@
+Num sents: 4924, Vocab Size Before prune: 6137, After prune: 2259
+Starting epoch: 1
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 500/2462, |EncParam|: 69.4431, |DecParam|: 139.8147, |ParserParam|: 58.5434, LR: 0.0005, SrcPPL: 969.0164, PPL: 18.3587, ValPPL: 100000.0000, Throughput: 3.77 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the deal would require approval by a majority of jaguar shareholders
+Target: approval by a majority of jaguar shareholders would be required by the deal
+Source Tree: (the ((((((deal (would require)) approval) (by a)) majority) (of jaguar)) shareholders))
+
+QCFG Tree: ((((approval (by a)) majority) (((of jaguar) shareholders) would)) (((be (required by)) the) deal))
+
+('approval', 'approval', 'N7')
+('by', 'the', 'N0')
+('a', 'the', 'N0')
+('majority', 'majority', 'N7')
+('of', 'the', 'N0')
+('jaguar', 'the', 'N0')
+('shareholders', 'shareholders', 'N7')
+('would', 'would', 'N7')
+('be', 'jaguar', 'N2')
+('required', 'jaguar', 'N5')
+('by', 'jaguar', 'N1')
+('the', 'the', 'N7')
+('deal', 'deal', 'N7')
+('by a', 'by a', 'N7')
+('of jaguar', 'of jaguar', 'N7')
+('required by', 'of jaguar', 'N0')
+('approval by a', 'deal would require approval by a', 'N0')
+('of jaguar shareholders', 'deal would require approval by a majority of jaguar shareholders', 'N0')
+('be required by', 'of jaguar', 'N1')
+('approval by a majority', 'deal would require approval by a majority', 'N0')
+('of jaguar shareholders would', 'the deal would require approval by a majority of jaguar shareholders', 'N0')
+('be required by the', 'the deal would require approval by a majority of jaguar shareholders', 'N0')
+('be required by the deal', 'the deal would require approval by a majority of jaguar shareholders', 'N0')
+('approval by a majority of jaguar shareholders would', 'the deal would require approval by a majority of jaguar shareholders', 'N6')
+('approval by a majority of jaguar shareholders would be required by the deal', 'the deal would require approval by a majority of jaguar shareholders', 'N3')
+--------------------------------
+Checking validation perf...
+PPL: 11.1192
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 1000/2462, |EncParam|: 66.9771, |DecParam|: 141.6132, |ParserParam|: 59.4603, LR: 0.0005, SrcPPL: 762.6102, PPL: 13.9393, ValPPL: 11.1192, Throughput: 3.32 examples/sec
+--------------------------------------------------------------------------------
+
+Source: bsn currently has 4.6 million common shares outstanding
+Target: 4.6 million common shares outstanding currently are had by bsn
+Source Tree: ((((bsn currently) (has 4.6)) (million common)) (shares outstanding))
+
+QCFG Tree: ((4.6 (((million common) (shares outstanding)) currently)) ((are (had by)) bsn))
+
+('4.6', '4.6', 'N7')
+('million', 'bsn', 'N0')
+('common', 'bsn', 'N0')
+('shares', 'bsn', 'N0')
+('outstanding', 'bsn', 'N0')
+('currently', 'currently', 'N7')
+('are', 'common', 'N2')
+('had', 'million', 'N5')
+('by', 'common', 'N1')
+('bsn', 'bsn', 'N7')
+('million common', 'million common', 'N7')
+('shares outstanding', 'shares outstanding', 'N7')
+('had by', 'million common', 'N0')
+('are had by', 'million common', 'N1')
+('million common shares outstanding', 'bsn currently has 4.6 million common shares outstanding', 'N0')
+('are had by bsn', 'bsn currently has 4.6 million common shares outstanding', 'N0')
+('million common shares outstanding currently', 'bsn currently has 4.6 million common shares outstanding', 'N0')
+('4.6 million common shares outstanding currently', 'bsn currently has 4.6 million common shares outstanding', 'N6')
+('4.6 million common shares outstanding currently are had by bsn', 'bsn currently has 4.6 million common shares outstanding', 'N3')
+--------------------------------
+Checking validation perf...
+PPL: 9.8781
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 1500/2462, |EncParam|: 66.3660, |DecParam|: 143.7385, |ParserParam|: 60.5313, LR: 0.0005, SrcPPL: 689.1247, PPL: 12.1640, ValPPL: 9.8781, Throughput: 3.21 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> totaled <unk> million or <unk> % in the year-ago third quarter
+Target: <unk> million or <unk> % was totaled by <unk> in the year-ago third quarter
+Source Tree: ((((<unk> totaled) (<unk> ((million (or <unk>)) (% (in the))))) year-ago) (third quarter))
+
+QCFG Tree: ((<unk> ((((million or) <unk>) (% (was totaled))) by)) (((<unk> in) the) (year-ago third)))
+
+('<unk>', '<unk>', 'N7')
+('million', '<unk>', 'N0')
+('or', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('%', '%', 'N7')
+('was', 'totaled', 'N2')
+('totaled', 'totaled', 'N7')
+('by', 'totaled', 'N1')
+('<unk>', '<unk>', 'N7')
+('in', '<unk>', 'N0')
+('the', '<unk>', 'N0')
+('year-ago', 'year-ago', 'N7')
+('third', '<unk>', 'N0')
+('quarter', '<unk>', 'N0')
+('totaled by', '<unk> totaled', 'N0')
+('in the', 'in the', 'N7')
+('third quarter', 'third quarter', 'N7')
+('million or <unk>', 'million or <unk>', 'N7')
+('was totaled by', '<unk> totaled', 'N1')
+('in the year-ago', '<unk> totaled <unk> million or <unk> % in the year-ago', 'N0')
+('million or <unk> %', '<unk> totaled <unk> million or <unk> % in the year-ago', 'N0')
+('in the year-ago third quarter', '<unk> totaled <unk> million or <unk> % in the year-ago third quarter', 'N0')
+('million or <unk> % was totaled by', '<unk> totaled <unk> million or <unk> % in the year-ago', 'N0')
+('million or <unk> % was totaled by <unk>', '<unk> totaled <unk> million or <unk> % in the year-ago third quarter', 'N0')
+('<unk> million or <unk> % was totaled by <unk>', '<unk> totaled <unk> million or <unk> % in the year-ago third quarter', 'N6')
+('<unk> million or <unk> % was totaled by <unk> in the year-ago third quarter', '<unk> totaled <unk> million or <unk> % in the year-ago third quarter', 'N3')
+--------------------------------
+Checking validation perf...
+PPL: 8.6135
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 2000/2462, |EncParam|: 66.8226, |DecParam|: 145.2793, |ParserParam|: 61.0701, LR: 0.0005, SrcPPL: 654.8623, PPL: 11.0056, ValPPL: 8.6135, Throughput: 3.15 examples/sec
+--------------------------------------------------------------------------------
+
+Source: and <unk> boasts <unk> besides diamonds
+Target: and <unk> besides diamonds are <unk> by <unk>
+Source Tree: (((and <unk>) boasts) ((<unk> besides) diamonds))
+
+QCFG Tree: ((and (<unk> besides)) ((diamonds (are <unk>)) by))
+
+('and', 'and', 'N7')
+('<unk>', 'and', 'N0')
+('besides', 'and', 'N0')
+('diamonds', 'and', 'N0')
+('are', 'and', 'N2')
+('<unk>', '<unk>', 'N5')
+('by', 'and', 'N1')
+('<unk>', '<unk>', 'N6')
+('<unk> by', 'and <unk>', 'N0')
+('<unk> besides diamonds', '<unk> besides diamonds', 'N7')
+('are <unk> by', 'and <unk>', 'N1')
+('and <unk> besides diamonds', 'and <unk> boasts <unk> besides diamonds', 'N6')
+('are <unk> by <unk>', 'and <unk>', 'N3')
+('and <unk> besides diamonds are <unk> by <unk>', 'and <unk> boasts <unk> besides diamonds', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 6.8658
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+Starting epoch: 2
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 2500/2462, |EncParam|: 68.1553, |DecParam|: 145.4139, |ParserParam|: 61.6138, LR: 0.0005, SrcPPL: 484.5421, PPL: 5.6047, ValPPL: 6.8658, Throughput: 3.43 examples/sec
+--------------------------------------------------------------------------------
+
+Source: mr. <unk> had been the de facto head of mgm\/ua for months
+Target: the de facto head of mgm\/ua had been the de facto head of mgm\/ua for months
+Source Tree: ((mr. <unk>) ((had ((been ((the de) facto)) (head (of (mgm\/ua for))))) months))
+
+QCFG Tree: (((the de) (facto (head of))) (mgm\/ua had))
+
+('the', 'mr.', 'N0')
+('de', 'mr.', 'N0')
+('facto', 'mr.', 'N0')
+('head', 'head', 'N7')
+('of', 'of', 'N7')
+('mgm\\/ua', 'mgm\\/ua', 'N7')
+('had', 'mr.', 'N0')
+('been', 'mr.', 'N0')
+('the', 'mr.', 'N0')
+('de', 'mr.', 'N0')
+('facto', 'mr.', 'N0')
+('head', 'mr.', 'N0')
+('of', 'mr.', 'N0')
+('mgm\\/ua', 'mr.', 'N0')
+('for', 'mr.', 'N0')
+('months', 'mr.', 'N0')
+('of mgm\\/ua', 'of mgm\\/ua for', 'N3')
+('the de facto', 'the de facto', 'N7')
+('head of mgm\\/ua', 'head of mgm\\/ua for', 'N3')
+('the de facto head of mgm\\/ua', 'mr. <unk> had been the de facto head of mgm\\/ua for months', 'N6')
+('had been the de facto head of mgm\\/ua for months', 'had been the de facto head of mgm\\/ua for months', 'N7')
+('the de facto head of mgm\\/ua had been the de facto head of mgm\\/ua for months', 'mr. <unk> had been the de facto head of mgm\\/ua for months', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 5.3365
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 3000/2462, |EncParam|: 69.6152, |DecParam|: 144.2288, |ParserParam|: 61.9741, LR: 0.0005, SrcPPL: 510.3333, PPL: 4.9148, ValPPL: 5.3365, Throughput: 3.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: also the company posted improved third-quarter earnings
+Target: also improved third-quarter earnings was posted by the company
+Source Tree: ((also the) ((company (posted improved)) (third-quarter earnings)))
+
+QCFG Tree: ((also (improved (third-quarter earnings))) (((was (posted by)) the) company))
+
+('also', 'also', 'N7')
+('improved', 'improved', 'N7')
+('third-quarter', 'also', 'N0')
+('earnings', 'also', 'N0')
+('was', 'company', 'N2')
+('posted', 'posted', 'N7')
+('by', 'posted', 'N1')
+('the', 'the', 'N7')
+('company', 'company', 'N7')
+('third-quarter earnings', 'third-quarter earnings', 'N7')
+('posted by', 'company posted improved', 'N0')
+('improved third-quarter earnings', 'also the company posted improved third-quarter earnings', 'N6')
+('was posted by', 'company posted improved', 'N1')
+('also improved third-quarter earnings', 'also the company posted improved third-quarter earnings', 'N6')
+('was posted by the', 'also the company posted improved third-quarter earnings', 'N0')
+('was posted by the company', 'also the company posted improved third-quarter earnings', 'N3')
+('also improved third-quarter earnings was posted by the company', 'also the company posted improved third-quarter earnings', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 4.2545
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 3500/2462, |EncParam|: 71.6429, |DecParam|: 143.5805, |ParserParam|: 62.5157, LR: 0.0005, SrcPPL: 537.7463, PPL: 4.5895, ValPPL: 4.2545, Throughput: 3.00 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the report follows <unk> declines in full monthly figures
+Target: <unk> declines in full monthly figures are followed by the report
+Source Tree: ((the ((report follows) (<unk> declines))) ((in full) (monthly figures)))
+
+QCFG Tree: (((<unk> declines) (in full)) (((monthly (figures are)) followed) by))
+
+('<unk>', '<unk>', 'N7')
+('declines', 'declines', 'N7')
+('in', 'the', 'N0')
+('full', 'the', 'N0')
+('monthly', 'the', 'N0')
+('figures', 'the', 'N0')
+('are', 'follows', 'N2')
+('followed', 'follows', 'N5')
+('by', '<unk>', 'N1')
+('the', 'the', 'N7')
+('report', 'report', 'N7')
+('<unk> declines', '<unk> declines', 'N6')
+('followed by', 'report follows <unk> declines', 'N0')
+('are followed by', 'report follows <unk> declines', 'N1')
+('in full monthly figures', 'in full monthly figures', 'N7')
+('are followed by the', 'the report follows <unk> declines', 'N0')
+('are followed by the report', 'the report follows <unk> declines', 'N3')
+('<unk> declines in full monthly figures', 'the report follows <unk> declines in full monthly figures', 'N6')
+('<unk> declines in full monthly figures are followed by the report', 'the report follows <unk> declines in full monthly figures', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 3.9297
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 4000/2462, |EncParam|: 73.2875, |DecParam|: 142.8476, |ParserParam|: 62.9310, LR: 0.0005, SrcPPL: 545.7927, PPL: 4.3368, ValPPL: 3.9297, Throughput: 2.99 examples/sec
+--------------------------------------------------------------------------------
+
+Source: traders shouted as their screens posted an <unk> loss on wall street
+Target: traders shouted as an <unk> loss on wall street was posted by their screens
+Source Tree: (((traders shouted) (as ((their ((screens posted) an)) <unk>))) ((loss on) (wall street)))
+
+QCFG Tree: ((((traders shouted) (as (an <unk>))) (loss on)) ((wall (street was)) (posted by)))
+
+('traders', 'traders', 'N0')
+('shouted', 'traders', 'N0')
+('as', 'as', 'N7')
+('an', 'an', 'N7')
+('<unk>', '<unk>', 'N7')
+('loss', 'traders', 'N0')
+('on', 'traders', 'N0')
+('wall', 'traders', 'N0')
+('street', 'traders', 'N0')
+('was', 'posted', 'N2')
+('posted', 'posted', 'N7')
+('by', 'posted', 'N1')
+('their', 'their', 'N7')
+('screens', 'screens', 'N7')
+('traders shouted', 'traders shouted', 'N7')
+('an <unk>', 'their screens posted an <unk>', 'N6')
+('posted by', 'screens posted', 'N0')
+('their screens', 'their screens posted an', 'N6')
+('as an <unk>', 'as their screens posted an <unk>', 'N6')
+('was posted by', 'screens posted', 'N1')
+('loss on wall street', 'loss on wall street', 'N7')
+('traders shouted as an <unk>', 'traders shouted as their screens posted an <unk>', 'N6')
+('was posted by their screens', 'traders shouted as their screens posted an <unk> loss on wall street', 'N0')
+('traders shouted as an <unk> loss on wall street', 'traders shouted as their screens posted an <unk> loss on wall street', 'N6')
+('traders shouted as an <unk> loss on wall street was posted by their screens', 'traders shouted as their screens posted an <unk> loss on wall street', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 3.5805
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 4500/2462, |EncParam|: 74.9501, |DecParam|: 141.7657, |ParserParam|: 63.2516, LR: 0.0005, SrcPPL: 541.9551, PPL: 4.1343, ValPPL: 3.5805, Throughput: 2.99 examples/sec
+--------------------------------------------------------------------------------
+
+Source: we got some exposure and pretty much good will
+Target: some exposure and pretty much good will was got by us
+Source Tree: (((we got) ((some (exposure and)) ((pretty much) good))) will)
+
+QCFG Tree: ((((some (exposure and)) (pretty much)) good) ((will (was got)) by))
+
+('some', 'some', 'N7')
+('exposure', 'we', 'N0')
+('and', 'we', 'N0')
+('pretty', 'we', 'N0')
+('much', 'we', 'N0')
+('good', 'we', 'N0')
+('will', 'will', 'N7')
+('was', 'got', 'N2')
+('got', 'got', 'N7')
+('by', 'got', 'N1')
+('us', 'we', 'N6')
+('exposure and', 'exposure and', 'N7')
+('got by', 'we got', 'N0')
+('some exposure and', 'some exposure and', 'N6')
+('pretty much good', 'pretty much good', 'N7')
+('was got by', 'we got', 'N1')
+('was got by us', 'we got some exposure and pretty much good', 'N0')
+('some exposure and pretty much good', 'some exposure and pretty much good', 'N6')
+('some exposure and pretty much good will', 'we got some exposure and pretty much good will', 'N6')
+('some exposure and pretty much good will was got by us', 'we got some exposure and pretty much good will', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 3.0576
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+Starting epoch: 3
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 5000/2462, |EncParam|: 77.0258, |DecParam|: 141.7084, |ParserParam|: 63.6095, LR: 0.0005, SrcPPL: 446.6079, PPL: 2.5111, ValPPL: 3.0576, Throughput: 3.50 examples/sec
+--------------------------------------------------------------------------------
+
+Source: sales rose 7 % to 3.8 billion
+Target: 7 % was risen by sales to 3.8 billion
+Source Tree: (sales ((rose 7) (% ((to 3.8) billion))))
+
+QCFG Tree: (((7 %) ((was (risen by)) sales)) (to 3.8))
+
+('7', '7', 'N7')
+('%', '%', 'N7')
+('was', '%', 'N2')
+('risen', '%', 'N5')
+('by', '%', 'N1')
+('sales', 'sales', 'N7')
+('to', 'sales', 'N0')
+('3.8', 'sales', 'N0')
+('billion', 'sales', 'N0')
+('7 %', 'rose 7 % to 3.8 billion', 'N6')
+('risen by', '% to 3.8 billion', 'N0')
+('was risen by', '% to 3.8 billion', 'N1')
+('to 3.8 billion', 'to 3.8 billion', 'N7')
+('was risen by sales', 'sales rose 7 % to 3.8 billion', 'N0')
+('7 % was risen by sales', 'sales rose 7 % to 3.8 billion', 'N2')
+('7 % was risen by sales to 3.8 billion', 'sales rose 7 % to 3.8 billion', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 3.0314
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 5500/2462, |EncParam|: 78.7519, |DecParam|: 140.5817, |ParserParam|: 64.0234, LR: 0.0005, SrcPPL: 519.0739, PPL: 2.7382, ValPPL: 3.0314, Throughput: 3.05 examples/sec
+--------------------------------------------------------------------------------
+
+Source: until now most japanese charges have been responses to suits against them
+Target: until now responses to suits against them have been responses to suits against them
+Source Tree: (until (now (((most (japanese (charges have))) (been responses)) (to (suits (against them))))))
+
+QCFG Tree: ((until (now (responses (to suits)))) ((against (them have)) (been responses)))
+
+('until', 'until', 'N7')
+('now', 'now', 'N7')
+('responses', 'responses', 'N7')
+('to', 'until', 'N0')
+('suits', 'until', 'N0')
+('against', 'until', 'N0')
+('them', 'until', 'N0')
+('have', 'have', 'N7')
+('been', 'until', 'N0')
+('responses', 'until', 'N0')
+('to', 'until', 'N0')
+('suits', 'until', 'N0')
+('against', 'until', 'N0')
+('them', 'until', 'N0')
+('been responses', 'been responses', 'N7')
+('have been responses', 'most japanese charges have been responses', 'N6')
+('to suits against them', 'to suits against them', 'N7')
+('to suits against them', 'to suits against them', 'N7')
+('responses to suits against them', 'most japanese charges have been responses to suits against them', 'N6')
+('now responses to suits against them', 'now most japanese charges have been responses to suits against them', 'N6')
+('until now responses to suits against them', 'until now most japanese charges have been responses to suits against them', 'N6')
+('have been responses to suits against them', 'most japanese charges have been responses to suits against them', 'N6')
+('until now responses to suits against them have been responses to suits against them', 'until now most japanese charges have been responses to suits against them', 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 2.9091
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 6000/2462, |EncParam|: 79.9703, |DecParam|: 140.1928, |ParserParam|: 64.2965, LR: 0.0005, SrcPPL: 526.4047, PPL: 2.6945, ValPPL: 2.9091, Throughput: 3.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: it 's a sound phenomenon
+Target: a sound phenomenon is had by it
+Source Tree: (((it ('s a)) sound) phenomenon)
+
+QCFG Tree: (((a sound) phenomenon) ((is (had by)) it))
+
+('a', 'a', 'N7')
+('sound', 'sound', 'N7')
+('phenomenon', 'phenomenon', 'N7')
+('is', "'s", 'N2')
+('had', "'s", 'N5')
+('by', 'a', 'N1')
+('it', 'it', 'N7')
+('a sound', "it 's a sound", 'N6')
+('had by', "'s a", 'N0')
+('a sound phenomenon', "it 's a sound phenomenon", 'N6')
+('is had by', "'s a", 'N1')
+('is had by it', "it 's a", 'N0')
+('a sound phenomenon is had by it', "it 's a sound phenomenon", 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.8728
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 6500/2462, |EncParam|: 81.3809, |DecParam|: 139.4527, |ParserParam|: 64.6853, LR: 0.0005, SrcPPL: 529.4653, PPL: 2.6213, ValPPL: 2.8728, Throughput: 3.01 examples/sec
+--------------------------------------------------------------------------------
+
+Source: every major maker offers computers with <unk> displays
+Target: computers with <unk> displays are offered by every major maker
+Source Tree: (((every major) ((maker offers) computers)) ((with <unk>) displays))
+
+QCFG Tree: ((computers (with <unk>)) ((displays (are offered)) ((by every) major)))
+
+('computers', 'computers', 'N7')
+('with', 'every', 'N0')
+('<unk>', 'every', 'N0')
+('displays', 'every', 'N0')
+('are', 'offers', 'N2')
+('offered', 'offers', 'N5')
+('by', 'offers', 'N1')
+('every', 'every', 'N0')
+('major', 'every', 'N0')
+('maker', 'maker', 'N7')
+('offered by', 'maker offers', 'N0')
+('every major', 'every major', 'N7')
+('with <unk> displays', 'with <unk> displays', 'N7')
+('are offered by', 'maker offers', 'N1')
+('every major maker', 'every major maker offers computers', 'N3')
+('computers with <unk> displays', 'every major maker offers computers with <unk> displays', 'N6')
+('are offered by every major maker', 'every major maker offers computers with <unk> displays', 'N0')
+('computers with <unk> displays are offered by every major maker', 'every major maker offers computers with <unk> displays', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.6320
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 7000/2462, |EncParam|: 82.9197, |DecParam|: 138.9979, |ParserParam|: 64.9231, LR: 0.0005, SrcPPL: 527.8097, PPL: 2.5805, ValPPL: 2.6320, Throughput: 3.01 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the executives did n't disclose the size of the expected gain
+Target: the size of the expected gain was n't disclosed by the executives
+Source Tree: ((the executives) ((did ((n't disclose) (((the size) of) the))) (expected gain)))
+
+QCFG Tree: (((the size) (of the)) ((expected (gain (was n't))) (disclosed by)))
+
+('the', 'the', 'N0')
+('size', 'the', 'N0')
+('of', 'the', 'N0')
+('the', 'the', 'N0')
+('expected', 'the', 'N0')
+('gain', 'the', 'N0')
+('was', "n't", 'N2')
+("n't", "n't", 'N7')
+('disclosed', "n't", 'N5')
+('by', 'disclose', 'N1')
+('the', 'the', 'N0')
+('executives', 'the', 'N0')
+('expected gain', 'expected gain', 'N7')
+('disclosed by', "n't disclose", 'N0')
+('the executives', 'the executives', 'N7')
+("n't disclosed by", "n't disclose the size of the", 'N0')
+('the size of the', 'the size of the', 'N7')
+("was n't disclosed by", "n't disclose the size of the", 'N1')
+('the size of the expected gain', "did n't disclose the size of the expected gain", 'N6')
+("was n't disclosed by the executives", "the executives did n't disclose the size of the expected gain", 'N0')
+("the size of the expected gain was n't disclosed by the executives", "the executives did n't disclose the size of the expected gain", 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.7419
+--------------------------------
+Starting epoch: 4
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 7500/2462, |EncParam|: 84.4457, |DecParam|: 138.8793, |ParserParam|: 65.2274, LR: 0.0005, SrcPPL: 518.8709, PPL: 2.2952, ValPPL: 2.6320, Throughput: 3.45 examples/sec
+--------------------------------------------------------------------------------
+
+Source: revenue dropped 5.4 % to <unk> billion from <unk> billion
+Target: 5.4 % was dropped by revenue to <unk> billion from <unk> billion
+Source Tree: (revenue (((dropped 5.4) (% (to <unk>))) ((billion (from <unk>)) billion)))
+
+QCFG Tree: (((5.4 %) ((was (dropped by)) revenue)) ((to <unk>) (billion from)))
+
+('5.4', '5.4', 'N7')
+('%', '%', 'N7')
+('was', 'dropped', 'N2')
+('dropped', 'dropped', 'N7')
+('by', '5.4', 'N1')
+('revenue', 'revenue', 'N7')
+('to', 'revenue', 'N0')
+('<unk>', 'revenue', 'N0')
+('billion', 'revenue', 'N0')
+('from', 'revenue', 'N0')
+('<unk>', 'revenue', 'N0')
+('billion', 'revenue', 'N0')
+('5.4 %', 'dropped 5.4 % to <unk>', 'N6')
+('dropped by', 'dropped 5.4', 'N0')
+('to <unk>', 'to <unk>', 'N7')
+('was dropped by', 'dropped 5.4', 'N1')
+('was dropped by revenue', 'revenue dropped 5.4 % to <unk> billion from <unk> billion', 'N0')
+('billion from <unk> billion', 'billion from <unk> billion', 'N7')
+('5.4 % was dropped by revenue', 'revenue dropped 5.4 % to <unk> billion from <unk> billion', 'N2')
+('to <unk> billion from <unk> billion', 'dropped 5.4 % to <unk> billion from <unk> billion', 'N3')
+('5.4 % was dropped by revenue to <unk> billion from <unk> billion', 'revenue dropped 5.4 % to <unk> billion from <unk> billion', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.4813
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 8000/2462, |EncParam|: 85.6825, |DecParam|: 138.4708, |ParserParam|: 65.5724, LR: 0.0005, SrcPPL: 512.5546, PPL: 2.2121, ValPPL: 2.4813, Throughput: 3.09 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> fell 0.3 % in august
+Target: 0.3 % was felled by <unk> in august
+Source Tree: ((((<unk> (fell 0.3)) %) in) august)
+
+QCFG Tree: (((0.3 %) ((was (felled by)) <unk>)) (in august))
+
+('0.3', '0.3', 'N7')
+('%', '%', 'N7')
+('was', 'fell', 'N2')
+('felled', 'fell', 'N5')
+('by', 'fell', 'N1')
+('<unk>', '<unk>', 'N7')
+('in', 'in', 'N7')
+('august', 'august', 'N7')
+('0.3 %', '<unk> fell 0.3 %', 'N6')
+('felled by', 'fell 0.3', 'N0')
+('in august', '<unk> fell 0.3 % in august', 'N3')
+('was felled by', 'fell 0.3', 'N1')
+('was felled by <unk>', '<unk> fell 0.3 %', 'N0')
+('0.3 % was felled by <unk>', '<unk> fell 0.3 %', 'N2')
+('0.3 % was felled by <unk> in august', '<unk> fell 0.3 % in august', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.5088
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 8500/2462, |EncParam|: 87.2402, |DecParam|: 138.0174, |ParserParam|: 65.8430, LR: 0.0005, SrcPPL: 513.6071, PPL: 2.1717, ValPPL: 2.4813, Throughput: 3.06 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i do n't like the sound of that
+Target: the sound of that is n't liked by me
+Source Tree: (((((i do) (n't (like the))) sound) of) that)
+
+QCFG Tree: ((((the sound) of) that) ((is (n't (liked by))) me))
+
+('the', 'the', 'N7')
+('sound', 'sound', 'N7')
+('of', 'of', 'N7')
+('that', 'that', 'N7')
+('is', "n't", 'N2')
+("n't", "n't", 'N7')
+('liked', 'like', 'N5')
+('by', 'the', 'N1')
+('me', 'i', 'N6')
+('the sound', "i do n't like the sound", 'N6')
+('liked by', 'like the', 'N0')
+('the sound of', "i do n't like the sound of", 'N6')
+("n't liked by", "n't like the", 'N0')
+('the sound of that', "i do n't like the sound of that", 'N6')
+("is n't liked by", "n't like the", 'N1')
+("is n't liked by me", "i do n't like the", 'N0')
+("the sound of that is n't liked by me", "i do n't like the sound of that", 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.4662
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 9000/2462, |EncParam|: 88.6727, |DecParam|: 137.8816, |ParserParam|: 66.1908, LR: 0.0005, SrcPPL: 505.6760, PPL: 2.1693, ValPPL: 2.4662, Throughput: 3.04 examples/sec
+--------------------------------------------------------------------------------
+
+Source: advancing otc stocks outpaced decliners by <unk> to <unk>
+Target: decliners was outpaced by advancing otc stocks by <unk> to <unk>
+Source Tree: ((advancing otc) (stocks ((((outpaced decliners) (by <unk>)) to) <unk>)))
+
+QCFG Tree: ((decliners ((was (outpaced by)) ((advancing otc) stocks))) (((by <unk>) to) <unk>))
+
+('decliners', 'decliners', 'N7')
+('was', 'outpaced', 'N2')
+('outpaced', 'outpaced', 'N7')
+('by', 'outpaced', 'N1')
+('advancing', 'advancing', 'N0')
+('otc', 'advancing', 'N0')
+('stocks', 'stocks', 'N7')
+('by', 'advancing', 'N0')
+('<unk>', 'advancing', 'N0')
+('to', 'to', 'N7')
+('<unk>', '<unk>', 'N7')
+('outpaced by', 'outpaced decliners', 'N0')
+('advancing otc', 'advancing otc', 'N7')
+('by <unk>', 'by <unk>', 'N7')
+('was outpaced by', 'outpaced decliners', 'N1')
+('advancing otc stocks', 'advancing otc stocks outpaced decliners by <unk> to <unk>', 'N3')
+('by <unk> to', 'outpaced decliners by <unk> to', 'N3')
+('by <unk> to <unk>', 'outpaced decliners by <unk> to <unk>', 'N3')
+('was outpaced by advancing otc stocks', 'advancing otc stocks outpaced decliners by <unk> to <unk>', 'N0')
+('decliners was outpaced by advancing otc stocks', 'advancing otc stocks outpaced decliners by <unk> to <unk>', 'N2')
+('decliners was outpaced by advancing otc stocks by <unk> to <unk>', 'advancing otc stocks outpaced decliners by <unk> to <unk>', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.5001
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 9500/2462, |EncParam|: 89.7728, |DecParam|: 137.4598, |ParserParam|: 66.4545, LR: 0.0005, SrcPPL: 509.4488, PPL: 2.1544, ValPPL: 2.4662, Throughput: 3.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: so it 's a very mixed <unk>
+Target: so a very mixed <unk> is had by it
+Source Tree: (so ((it (('s a) very)) (mixed <unk>)))
+
+QCFG Tree: ((so ((a very) (mixed <unk>))) ((is (had by)) it))
+
+('so', 'so', 'N7')
+('a', 'a', 'N7')
+('very', 'very', 'N7')
+('mixed', 'so', 'N0')
+('<unk>', 'so', 'N0')
+('is', "'s", 'N2')
+('had', "'s", 'N5')
+('by', 'a', 'N1')
+('it', 'it', 'N7')
+('a very', "'s a very", 'N6')
+('mixed <unk>', 'mixed <unk>', 'N7')
+('had by', "'s a", 'N0')
+('is had by', "'s a", 'N1')
+('a very mixed <unk>', "it 's a very mixed <unk>", 'N6')
+('is had by it', "so it 's a very mixed <unk>", 'N0')
+('so a very mixed <unk>', "so it 's a very mixed <unk>", 'N6')
+('so a very mixed <unk> is had by it', "so it 's a very mixed <unk>", 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.4123
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+Starting epoch: 5
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 10000/2462, |EncParam|: 90.9150, |DecParam|: 137.2750, |ParserParam|: 66.7295, LR: 0.0005, SrcPPL: 471.0323, PPL: 1.9241, ValPPL: 2.4123, Throughput: 3.52 examples/sec
+--------------------------------------------------------------------------------
+
+Source: we must find any way to get business
+Target: any way to get business must be found by us
+Source Tree: ((we (((must (find (any way))) to) get)) business)
+
+QCFG Tree: (((((any way) to) get) business) ((must (be (found by))) us))
+
+('any', 'we', 'N0')
+('way', 'we', 'N0')
+('to', 'to', 'N7')
+('get', 'get', 'N7')
+('business', 'business', 'N7')
+('must', 'must', 'N7')
+('be', 'must', 'N2')
+('found', 'find', 'N5')
+('by', 'must', 'N1')
+('us', 'we', 'N6')
+('any way', 'any way', 'N7')
+('found by', 'must find any way', 'N0')
+('any way to', 'must find any way to', 'N6')
+('be found by', 'must find any way', 'N1')
+('any way to get', 'must find any way to get', 'N6')
+('must be found by', 'must find any way', 'N2')
+('any way to get business', 'we must find any way to get business', 'N6')
+('must be found by us', 'we must find any way to get', 'N0')
+('any way to get business must be found by us', 'we must find any way to get business', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.3578
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 10500/2462, |EncParam|: 91.9422, |DecParam|: 136.8276, |ParserParam|: 66.9520, LR: 0.0005, SrcPPL: 505.8730, PPL: 1.8861, ValPPL: 2.3578, Throughput: 3.12 examples/sec
+--------------------------------------------------------------------------------
+
+Source: it 's <unk> to be later but i just moved it
+Target: it 's <unk> to be later but it just was moved by me
+Source Tree: ((it 's) (((<unk> (to (be later))) (but i)) ((just moved) it)))
+
+QCFG Tree: (((it 's) (<unk> (to (be later)))) ((but it) ((just (was (moved by))) me)))
+
+('it', 'it', 'N0')
+("'s", 'it', 'N0')
+('<unk>', '<unk>', 'N7')
+('to', 'to', 'N7')
+('be', 'it', 'N0')
+('later', 'it', 'N0')
+('but', 'but', 'N7')
+('it', 'it', 'N7')
+('just', 'just', 'N7')
+('was', 'moved', 'N2')
+('moved', 'moved', 'N7')
+('by', 'moved', 'N1')
+('me', 'i', 'N6')
+("it 's", "it 's", 'N7')
+('be later', 'be later', 'N7')
+('but it', '<unk> to be later but i just moved it', 'N6')
+('moved by', 'just moved', 'N0')
+('to be later', 'to be later', 'N6')
+('was moved by', 'just moved', 'N1')
+('<unk> to be later', '<unk> to be later', 'N6')
+('just was moved by', 'just moved', 'N2')
+('just was moved by me', '<unk> to be later but i just moved it', 'N0')
+("it 's <unk> to be later", "it 's <unk> to be later but i just moved it", 'N6')
+('but it just was moved by me', '<unk> to be later but i just moved it', 'N2')
+("it 's <unk> to be later but it just was moved by me", "it 's <unk> to be later but i just moved it", 'N2')
+--------------------------------
+Checking validation perf...
+PPL: 2.4617
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 11000/2462, |EncParam|: 93.0638, |DecParam|: 136.4760, |ParserParam|: 67.2404, LR: 0.0005, SrcPPL: 497.5262, PPL: 1.8848, ValPPL: 2.3578, Throughput: 3.06 examples/sec
+--------------------------------------------------------------------------------
+
+Source: this case <unk> that concern
+Target: that concern is <unk> by this case
+Source Tree: ((((this case) <unk>) that) concern)
+
+QCFG Tree: ((that concern) ((is (<unk> by)) (this case)))
+
+('that', 'that', 'N7')
+('concern', 'concern', 'N7')
+('is', '<unk>', 'N2')
+('<unk>', '<unk>', 'N5')
+('by', '<unk>', 'N1')
+('this', 'this', 'N0')
+('case', 'this', 'N0')
+('that concern', 'this case <unk> that concern', 'N6')
+('<unk> by', 'this case <unk>', 'N0')
+('this case', 'this case', 'N7')
+('is <unk> by', 'this case <unk>', 'N1')
+('is <unk> by this case', 'this case <unk> that concern', 'N0')
+('that concern is <unk> by this case', 'this case <unk> that concern', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.4512
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 11500/2462, |EncParam|: 94.2834, |DecParam|: 136.7203, |ParserParam|: 67.5966, LR: 0.0005, SrcPPL: 498.6443, PPL: 1.9076, ValPPL: 2.3578, Throughput: 3.04 examples/sec
+--------------------------------------------------------------------------------
+
+Source: it scared brokers but most survived
+Target: brokers were scared by it but most survived
+Source Tree: (((((it scared) brokers) but) most) survived)
+
+QCFG Tree: ((brokers ((were (scared by)) it)) ((but most) survived))
+
+('brokers', 'brokers', 'N7')
+('were', 'scared', 'N2')
+('scared', 'scared', 'N7')
+('by', 'scared', 'N1')
+('it', 'it', 'N7')
+('but', 'but', 'N7')
+('most', 'most', 'N7')
+('survived', 'survived', 'N7')
+('scared by', 'it scared', 'N0')
+('but most', 'it scared brokers but most', 'N3')
+('were scared by', 'it scared', 'N1')
+('but most survived', 'it scared brokers but most survived', 'N3')
+('were scared by it', 'it scared brokers', 'N0')
+('brokers were scared by it', 'it scared brokers', 'N2')
+('brokers were scared by it but most survived', 'it scared brokers but most survived', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.4443
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 12000/2462, |EncParam|: 95.2445, |DecParam|: 136.5257, |ParserParam|: 67.9233, LR: 0.0005, SrcPPL: 502.0118, PPL: 1.9022, ValPPL: 2.3578, Throughput: 3.04 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> dropped 2 5\/8 to 15 5\/8 on <unk> shares
+Target: 2 5\/8 were dropped by <unk> to 15 5\/8 on <unk> shares
+Source Tree: ((<unk> ((((dropped 2) 5\/8) to) 15)) ((5\/8 (on <unk>)) shares))
+
+QCFG Tree: (((2 5\/8) ((were (dropped by)) <unk>)) ((to 15) (5\/8 on)))
+
+('2', '2', 'N7')
+('5\\/8', '5\\/8', 'N7')
+('were', 'dropped', 'N2')
+('dropped', 'dropped', 'N7')
+('by', 'dropped', 'N1')
+('<unk>', '<unk>', 'N7')
+('to', 'to', 'N7')
+('15', '15', 'N7')
+('5\\/8', '<unk>', 'N0')
+('on', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('shares', '<unk>', 'N0')
+('2 5\\/8', 'dropped 2 5\\/8', 'N6')
+('dropped by', 'dropped 2', 'N0')
+('to 15', 'dropped 2 5\\/8 to 15', 'N3')
+('were dropped by', 'dropped 2', 'N1')
+('were dropped by <unk>', '<unk> dropped 2 5\\/8 to 15', 'N0')
+('5\\/8 on <unk> shares', '5\\/8 on <unk> shares', 'N7')
+('2 5\\/8 were dropped by <unk>', '<unk> dropped 2 5\\/8 to 15', 'N2')
+('to 15 5\\/8 on <unk> shares', '<unk> dropped 2 5\\/8 to 15 5\\/8 on <unk> shares', 'N3')
+('2 5\\/8 were dropped by <unk> to 15 5\\/8 on <unk> shares', '<unk> dropped 2 5\\/8 to 15 5\\/8 on <unk> shares', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.3060
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+Starting epoch: 6
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 12500/2462, |EncParam|: 96.0219, |DecParam|: 136.2926, |ParserParam|: 68.2303, LR: 0.0005, SrcPPL: 398.5382, PPL: 1.7753, ValPPL: 2.3060, Throughput: 3.46 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the team then proposed <unk> in their work process to management
+Target: <unk> in their work process then were proposed by the team to management
+Source Tree: (the ((((((team then) (proposed ((<unk> in) their))) work) process) to) management))
+
+QCFG Tree: ((((((<unk> in) their) work) process) ((then (were (proposed by))) (the team))) (to management))
+
+('<unk>', 'the', 'N0')
+('in', 'the', 'N0')
+('their', 'their', 'N7')
+('work', 'work', 'N7')
+('process', 'process', 'N7')
+('then', 'then', 'N7')
+('were', 'proposed', 'N2')
+('proposed', 'proposed', 'N7')
+('by', 'proposed', 'N1')
+('the', 'the', 'N7')
+('team', 'team', 'N7')
+('to', 'to', 'N7')
+('management', 'management', 'N7')
+('<unk> in', '<unk> in', 'N7')
+('proposed by', 'proposed <unk> in their', 'N0')
+('the team', 'the team then proposed <unk> in their work process to management', 'N3')
+('to management', 'team then proposed <unk> in their work process to management', 'N3')
+('<unk> in their', '<unk> in their', 'N6')
+('were proposed by', 'team then proposed <unk> in their', 'N1')
+('<unk> in their work', 'team then proposed <unk> in their work', 'N6')
+('then were proposed by', 'team then proposed <unk> in their', 'N2')
+('<unk> in their work process', 'team then proposed <unk> in their work process', 'N6')
+('then were proposed by the team', 'the team then proposed <unk> in their work process to management', 'N0')
+('<unk> in their work process then were proposed by the team', 'the team then proposed <unk> in their work process to management', 'N2')
+('<unk> in their work process then were proposed by the team to management', 'the team then proposed <unk> in their work process to management', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.2802
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 13000/2462, |EncParam|: 96.8761, |DecParam|: 135.9355, |ParserParam|: 68.4871, LR: 0.0005, SrcPPL: 474.5085, PPL: 1.7374, ValPPL: 2.2802, Throughput: 3.15 examples/sec
+--------------------------------------------------------------------------------
+
+Source: since that <unk> ruling 37 states have <unk> the death penalty
+Target: since that <unk> ruling the death penalty has been <unk> by 37 states
+Source Tree: ((((since ((that <unk>) (ruling 37))) (states (have <unk>))) the) (death penalty))
+
+QCFG Tree: ((((since ((that <unk>) ruling)) the) (death penalty)) ((has (been (<unk> by))) (37 states)))
+
+('since', 'since', 'N7')
+('that', 'since', 'N0')
+('<unk>', 'since', 'N0')
+('ruling', 'ruling', 'N7')
+('the', 'the', 'N7')
+('death', 'since', 'N0')
+('penalty', 'since', 'N0')
+('has', 'have', 'N6')
+('been', '<unk>', 'N2')
+('<unk>', '<unk>', 'N5')
+('by', '<unk>', 'N1')
+('37', '37', 'N7')
+('states', 'states', 'N7')
+('that <unk>', 'that <unk>', 'N7')
+('death penalty', 'death penalty', 'N7')
+('<unk> by', 'have <unk>', 'N0')
+('37 states', 'since that <unk> ruling 37 states have <unk>', 'N3')
+('that <unk> ruling', 'that <unk> ruling 37', 'N6')
+('been <unk> by', 'have <unk>', 'N1')
+('since that <unk> ruling', 'since that <unk> ruling 37', 'N6')
+('has been <unk> by', 'have <unk>', 'N2')
+('since that <unk> ruling the', 'since that <unk> ruling 37 states have <unk> the', 'N6')
+('has been <unk> by 37 states', 'since that <unk> ruling 37 states have <unk> the death penalty', 'N0')
+('since that <unk> ruling the death penalty', 'since that <unk> ruling 37 states have <unk> the death penalty', 'N6')
+('since that <unk> ruling the death penalty has been <unk> by 37 states', 'since that <unk> ruling 37 states have <unk> the death penalty', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.2524
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 13500/2462, |EncParam|: 97.7831, |DecParam|: 135.7469, |ParserParam|: 68.7308, LR: 0.0005, SrcPPL: 474.7992, PPL: 1.7453, ValPPL: 2.2524, Throughput: 3.08 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> republican william <unk> said the plan might <unk> the <unk> <unk>
+Target: <unk> republican william <unk> said the <unk> <unk> might be violated by the plan
+Source Tree: (((<unk> republican) william) ((<unk> (((said the) plan) (might ((<unk> the) <unk>)))) <unk>))
+
+QCFG Tree: (((<unk> republican) (william <unk>)) (((said the) <unk>) ((<unk> (might (be violated))) (by the))))
+
+('<unk>', '<unk>', 'N0')
+('republican', '<unk>', 'N0')
+('william', '<unk>', 'N0')
+('<unk>', '<unk>', 'N7')
+('said', 'said', 'N7')
+('the', 'the', 'N7')
+('<unk>', '<unk>', 'N7')
+('<unk>', '<unk>', 'N7')
+('might', 'might', 'N7')
+('be', 'might', 'N2')
+('violated', '<unk>', 'N5')
+('by', '<unk>', 'N1')
+('the', 'the', 'N7')
+('plan', 'plan', 'N7')
+('<unk> said', '<unk> said the plan might <unk> the <unk>', 'N6')
+('the <unk>', '<unk> the <unk>', 'N6')
+('violated by', '<unk> the', 'N0')
+('the plan', 'said the plan', 'N3')
+('<unk> republican william', '<unk> republican william', 'N7')
+('the <unk> <unk>', '<unk> said the plan might <unk> the <unk> <unk>', 'N6')
+('be violated by', 'might <unk> the <unk>', 'N1')
+('might be violated by', 'might <unk> the <unk>', 'N2')
+('<unk> republican william <unk> said', '<unk> republican william <unk> said the plan might <unk> the <unk> <unk>', 'N6')
+('might be violated by the plan', '<unk> said the plan might <unk> the <unk> <unk>', 'N0')
+('the <unk> <unk> might be violated by the plan', '<unk> said the plan might <unk> the <unk> <unk>', 'N5')
+('<unk> republican william <unk> said the <unk> <unk> might be violated by the plan', '<unk> republican william <unk> said the plan might <unk> the <unk> <unk>', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.3426
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 14000/2462, |EncParam|: 98.6729, |DecParam|: 135.3681, |ParserParam|: 68.9963, LR: 0.0005, SrcPPL: 485.2096, PPL: 1.7512, ValPPL: 2.2524, Throughput: 3.05 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> <unk> our advertising dollars said mr. <unk>
+Target: our advertising dollars are <unk> by <unk> said mr. <unk>
+Source Tree: (((<unk> <unk>) (((our advertising) dollars) said)) (mr. <unk>))
+
+QCFG Tree: (((our advertising) ((dollars (are <unk>)) by)) (<unk> (said mr.)))
+
+('our', '<unk>', 'N0')
+('advertising', '<unk>', 'N0')
+('dollars', '<unk>', 'N0')
+('are', '<unk>', 'N2')
+('<unk>', '<unk>', 'N5')
+('by', '<unk>', 'N1')
+('<unk>', '<unk>', 'N7')
+('said', 'said', 'N7')
+('mr.', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('<unk> by', '<unk> <unk>', 'N0')
+('mr. <unk>', 'mr. <unk>', 'N7')
+('our advertising dollars', 'our advertising dollars', 'N7')
+('are <unk> by', '<unk> <unk>', 'N1')
+('said mr. <unk>', '<unk> <unk> our advertising dollars said mr. <unk>', 'N3')
+('are <unk> by <unk>', '<unk> <unk> our advertising dollars said', 'N0')
+('our advertising dollars are <unk> by <unk>', '<unk> <unk> our advertising dollars said', 'N2')
+('our advertising dollars are <unk> by <unk> said mr. <unk>', '<unk> <unk> our advertising dollars said mr. <unk>', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.3137
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 14500/2462, |EncParam|: 99.4765, |DecParam|: 135.3163, |ParserParam|: 69.1885, LR: 0.0005, SrcPPL: 481.4126, PPL: 1.7463, ValPPL: 2.2524, Throughput: 3.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he added we have no <unk> of selling either business
+Target: he added no <unk> of selling either business is had by us
+Source Tree: ((he ((((added (we have)) no) <unk>) of)) ((selling either) business))
+
+QCFG Tree: (((he (((added no) <unk>) of)) (selling either)) ((business (is had)) by))
+
+('he', 'he', 'N7')
+('added', 'added', 'N7')
+('no', 'no', 'N7')
+('<unk>', '<unk>', 'N7')
+('of', 'of', 'N7')
+('selling', 'he', 'N0')
+('either', 'he', 'N0')
+('business', 'he', 'N0')
+('is', 'have', 'N2')
+('had', 'have', 'N5')
+('by', 'have', 'N1')
+('us', 'we', 'N6')
+('added no', 'added we have no', 'N6')
+('had by', 'we have', 'N0')
+('added no <unk>', 'added we have no <unk>', 'N6')
+('selling either business', 'selling either business', 'N7')
+('is had by', 'we have', 'N1')
+('added no <unk> of', 'added we have no <unk> of', 'N6')
+('is had by us', 'he added we have no <unk> of selling either business', 'N0')
+('he added no <unk> of', 'he added we have no <unk> of', 'N6')
+('he added no <unk> of selling either business', 'he added we have no <unk> of selling either business', 'N6')
+('he added no <unk> of selling either business is had by us', 'he added we have no <unk> of selling either business', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.2416
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+Starting epoch: 7
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 15000/2462, |EncParam|: 100.4380, |DecParam|: 135.1776, |ParserParam|: 69.3753, LR: 0.0005, SrcPPL: 484.2114, PPL: 1.6230, ValPPL: 2.2416, Throughput: 3.55 examples/sec
+--------------------------------------------------------------------------------
+
+Source: yet the state alone sells seeds and machines
+Target: yet seeds and machines are sold by the state alone
+Source Tree: ((((yet (the (state alone))) (sells seeds)) and) machines)
+
+QCFG Tree: ((((yet seeds) and) machines) ((are (sold by)) (the (state alone))))
+
+('yet', 'yet', 'N7')
+('seeds', 'seeds', 'N7')
+('and', 'and', 'N7')
+('machines', 'machines', 'N7')
+('are', 'sells', 'N2')
+('sold', 'sells', 'N5')
+('by', 'sells', 'N1')
+('the', 'the', 'N7')
+('state', 'yet', 'N0')
+('alone', 'yet', 'N0')
+('yet seeds', 'yet the state alone sells seeds', 'N6')
+('sold by', 'sells seeds', 'N0')
+('state alone', 'state alone', 'N7')
+('yet seeds and', 'yet the state alone sells seeds and', 'N6')
+('are sold by', 'sells seeds', 'N1')
+('the state alone', 'the state alone', 'N3')
+('yet seeds and machines', 'yet the state alone sells seeds and machines', 'N6')
+('are sold by the state alone', 'yet the state alone sells seeds and machines', 'N0')
+('yet seeds and machines are sold by the state alone', 'yet the state alone sells seeds and machines', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.4500
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 15500/2462, |EncParam|: 101.4239, |DecParam|: 134.8130, |ParserParam|: 69.6400, LR: 0.0005, SrcPPL: 464.8607, PPL: 1.6665, ValPPL: 2.2416, Throughput: 3.14 examples/sec
+--------------------------------------------------------------------------------
+
+Source: most investment-grade bonds fell 3\/8 to 1\/2 point
+Target: 3\/8 to 1\/2 point was felled by most investment-grade bonds
+Source Tree: ((most (investment-grade bonds)) ((fell ((3\/8 to) 1\/2)) point))
+
+QCFG Tree: ((((3\/8 to) 1\/2) point) ((was (felled by)) (most (investment-grade bonds))))
+
+('3\\/8', 'most', 'N0')
+('to', 'most', 'N0')
+('1\\/2', '1\\/2', 'N7')
+('point', 'point', 'N7')
+('was', 'fell', 'N2')
+('felled', 'fell', 'N5')
+('by', 'fell', 'N1')
+('most', 'most', 'N7')
+('investment-grade', 'investment-grade', 'N7')
+('bonds', 'bonds', 'N7')
+('3\\/8 to', '3\\/8 to', 'N7')
+('felled by', 'fell 3\\/8 to 1\\/2', 'N0')
+('investment-grade bonds', 'investment-grade bonds', 'N6')
+('3\\/8 to 1\\/2', '3\\/8 to 1\\/2', 'N6')
+('was felled by', 'fell 3\\/8 to 1\\/2', 'N1')
+('most investment-grade bonds', 'most investment-grade bonds', 'N3')
+('3\\/8 to 1\\/2 point', 'fell 3\\/8 to 1\\/2 point', 'N6')
+('was felled by most investment-grade bonds', 'most investment-grade bonds fell 3\\/8 to 1\\/2 point', 'N0')
+('3\\/8 to 1\\/2 point was felled by most investment-grade bonds', 'most investment-grade bonds fell 3\\/8 to 1\\/2 point', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.0864
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 16000/2462, |EncParam|: 102.1247, |DecParam|: 134.8022, |ParserParam|: 69.9079, LR: 0.0005, SrcPPL: 460.0926, PPL: 1.6853, ValPPL: 2.0864, Throughput: 3.10 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the company has about 8.8 million shares outstanding
+Target: about 8.8 million shares outstanding are had by the company
+Source Tree: (the (((company has) about) ((8.8 (million shares)) outstanding)))
+
+QCFG Tree: ((about (8.8 million)) ((shares (outstanding are)) (had by)))
+
+('about', 'about', 'N7')
+('8.8', 'the', 'N0')
+('million', 'the', 'N0')
+('shares', 'the', 'N0')
+('outstanding', 'the', 'N0')
+('are', 'has', 'N2')
+('had', 'has', 'N5')
+('by', 'has', 'N1')
+('the', 'the', 'N7')
+('company', 'company', 'N7')
+('had by', 'company has', 'N0')
+('the company', 'the company has about 8.8 million shares outstanding', 'N3')
+('are had by', 'company has', 'N1')
+('8.8 million shares outstanding', '8.8 million shares outstanding', 'N7')
+('about 8.8 million shares outstanding', 'company has about 8.8 million shares outstanding', 'N6')
+('are had by the company', 'the company has about 8.8 million shares outstanding', 'N0')
+('about 8.8 million shares outstanding are had by the company', 'the company has about 8.8 million shares outstanding', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.2367
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 16500/2462, |EncParam|: 102.7586, |DecParam|: 134.6682, |ParserParam|: 70.1489, LR: 0.0005, SrcPPL: 467.1907, PPL: 1.6552, ValPPL: 2.0864, Throughput: 3.06 examples/sec
+--------------------------------------------------------------------------------
+
+Source: talk show <unk> quickly change the <unk>
+Target: the <unk> is quickly changed by talk show <unk>
+Source Tree: ((talk (show <unk>)) ((quickly (change the)) <unk>))
+
+QCFG Tree: ((the <unk>) ((is (quickly (changed by))) (talk (show <unk>))))
+
+('the', 'the', 'N7')
+('<unk>', '<unk>', 'N7')
+('is', 'quickly', 'N2')
+('quickly', 'quickly', 'N7')
+('changed', 'change', 'N5')
+('by', 'the', 'N1')
+('talk', 'talk', 'N7')
+('show', 'talk', 'N0')
+('<unk>', 'talk', 'N0')
+('the <unk>', 'quickly change the <unk>', 'N6')
+('changed by', 'change the', 'N0')
+('show <unk>', 'show <unk>', 'N7')
+('quickly changed by', 'quickly change the', 'N0')
+('talk show <unk>', 'talk show <unk>', 'N3')
+('is quickly changed by', 'quickly change the', 'N1')
+('is quickly changed by talk show <unk>', 'talk show <unk> quickly change the <unk>', 'N0')
+('the <unk> is quickly changed by talk show <unk>', 'talk show <unk> quickly change the <unk>', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.1523
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 17000/2462, |EncParam|: 103.7296, |DecParam|: 134.4722, |ParserParam|: 70.4223, LR: 0.0005, SrcPPL: 469.5606, PPL: 1.6522, ValPPL: 2.0864, Throughput: 3.04 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the suit sets the firms ' liability at more than <unk> million
+Target: the firms ' liability are set by the suit at more than <unk> million
+Source Tree: (((the suit) (sets the)) (firms ((((' (liability (at more))) than) <unk>) million)))
+
+QCFG Tree: (((the (firms (' liability))) ((are (set by)) (the suit))) ((((at more) than) <unk>) million))
+
+('the', 'the', 'N7')
+('firms', 'firms', 'N7')
+("'", "'", 'N7')
+('liability', 'liability', 'N7')
+('are', 'sets', 'N2')
+('set', 'sets', 'N5')
+('by', 'the', 'N1')
+('the', 'the', 'N0')
+('suit', 'the', 'N0')
+('at', 'the', 'N0')
+('more', 'the', 'N0')
+('than', 'than', 'N7')
+('<unk>', '<unk>', 'N7')
+('million', 'million', 'N7')
+("' liability", "' liability at more", 'N6')
+('set by', 'sets the', 'N0')
+('the suit', 'the suit', 'N7')
+('at more', 'at more', 'N7')
+("firms ' liability", "firms ' liability at more than <unk> million", 'N6')
+('are set by', 'sets the', 'N1')
+('at more than', "' liability at more than", 'N3')
+("the firms ' liability", "the suit sets the firms ' liability at more than <unk> million", 'N6')
+('at more than <unk>', "' liability at more than <unk>", 'N3')
+('are set by the suit', "the suit sets the firms ' liability at more than <unk> million", 'N0')
+('at more than <unk> million', "' liability at more than <unk> million", 'N3')
+("the firms ' liability are set by the suit", "the suit sets the firms ' liability at more than <unk> million", 'N2')
+("the firms ' liability are set by the suit at more than <unk> million", "the suit sets the firms ' liability at more than <unk> million", 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.2469
+--------------------------------
+Starting epoch: 8
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 17500/2462, |EncParam|: 104.3355, |DecParam|: 134.1464, |ParserParam|: 70.7664, LR: 0.0005, SrcPPL: 446.8923, PPL: 1.5386, ValPPL: 2.0864, Throughput: 3.47 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the account currently has <unk> million
+Target: <unk> million currently are had by the account
+Source Tree: (((the account) currently) ((has <unk>) million))
+
+QCFG Tree: ((<unk> million) ((currently (are (had by))) (the account)))
+
+('<unk>', '<unk>', 'N7')
+('million', 'million', 'N7')
+('currently', 'currently', 'N7')
+('are', 'has', 'N2')
+('had', 'has', 'N5')
+('by', '<unk>', 'N1')
+('the', 'the', 'N7')
+('account', 'account', 'N7')
+('<unk> million', 'has <unk> million', 'N6')
+('had by', 'has <unk>', 'N0')
+('the account', 'the account', 'N3')
+('are had by', 'has <unk>', 'N1')
+('currently are had by', 'the account currently has <unk> million', 'N1')
+('currently are had by the account', 'the account currently has <unk> million', 'N0')
+('<unk> million currently are had by the account', 'the account currently has <unk> million', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.2124
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 18000/2462, |EncParam|: 105.0850, |DecParam|: 133.9875, |ParserParam|: 70.9352, LR: 0.0005, SrcPPL: 469.2750, PPL: 1.5534, ValPPL: 2.0864, Throughput: 3.17 examples/sec
+--------------------------------------------------------------------------------
+
+Source: net fell 1 % to <unk> billion yen from <unk> billion yen
+Target: 1 % was felled by net to <unk> billion yen from <unk> billion yen
+Source Tree: ((net ((fell 1) ((((% to) (<unk> billion)) yen) from))) ((<unk> billion) yen))
+
+QCFG Tree: (((1 %) ((was (felled by)) net)) ((((to (<unk> billion)) yen) from) (<unk> billion)))
+
+('1', '1', 'N7')
+('%', '%', 'N7')
+('was', 'fell', 'N2')
+('felled', 'fell', 'N5')
+('by', 'fell', 'N1')
+('net', 'net', 'N7')
+('to', 'to', 'N7')
+('<unk>', 'net', 'N0')
+('billion', 'net', 'N0')
+('yen', 'yen', 'N7')
+('from', 'from', 'N7')
+('<unk>', 'net', 'N0')
+('billion', 'net', 'N0')
+('yen', 'net', 'N0')
+('1 %', 'fell 1 % to <unk> billion yen from', 'N6')
+('felled by', 'fell 1', 'N0')
+('<unk> billion', '<unk> billion', 'N7')
+('was felled by', 'fell 1', 'N1')
+('to <unk> billion', '% to <unk> billion', 'N3')
+('<unk> billion yen', '<unk> billion yen', 'N7')
+('was felled by net', 'net fell 1 % to <unk> billion yen from', 'N0')
+('to <unk> billion yen', '% to <unk> billion yen', 'N3')
+('to <unk> billion yen from', '% to <unk> billion yen from', 'N3')
+('1 % was felled by net', 'net fell 1 % to <unk> billion yen from', 'N2')
+('to <unk> billion yen from <unk> billion yen', 'net fell 1 % to <unk> billion yen from <unk> billion yen', 'N3')
+('1 % was felled by net to <unk> billion yen from <unk> billion yen', 'net fell 1 % to <unk> billion yen from <unk> billion yen', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.2102
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 18500/2462, |EncParam|: 105.7703, |DecParam|: 133.7756, |ParserParam|: 71.2135, LR: 0.0005, SrcPPL: 463.8756, PPL: 1.5501, ValPPL: 2.0864, Throughput: 3.08 examples/sec
+--------------------------------------------------------------------------------
+
+Source: bolar pharmaceutical co. posted the largest volume increase <unk> shares to <unk>
+Target: the largest volume increase <unk> shares to <unk> were posted by bolar pharmaceutical co.
+Source Tree: (((bolar (pharmaceutical co.)) (posted (((the largest) (volume increase)) <unk>))) ((shares to) <unk>))
+
+QCFG Tree: (((the largest) (volume increase)) ((<unk> (shares to)) (<unk> (were posted))))
+
+('the', 'bolar', 'N0')
+('largest', 'bolar', 'N0')
+('volume', 'bolar', 'N0')
+('increase', 'bolar', 'N0')
+('<unk>', 'bolar', 'N0')
+('shares', 'bolar', 'N0')
+('to', 'bolar', 'N0')
+('<unk>', 'bolar', 'N0')
+('were', 'posted', 'N2')
+('posted', 'posted', 'N7')
+('by', 'posted', 'N1')
+('bolar', 'bolar', 'N7')
+('pharmaceutical', 'bolar', 'N0')
+('co.', 'bolar', 'N0')
+('posted by', 'posted the largest volume increase <unk>', 'N0')
+('pharmaceutical co.', 'pharmaceutical co.', 'N7')
+('shares to <unk>', 'shares to <unk>', 'N7')
+('were posted by', 'posted the largest volume increase <unk>', 'N1')
+('bolar pharmaceutical co.', 'bolar pharmaceutical co.', 'N3')
+('the largest volume increase <unk>', 'the largest volume increase <unk>', 'N7')
+('were posted by bolar pharmaceutical co.', 'bolar pharmaceutical co. posted the largest volume increase <unk>', 'N0')
+('the largest volume increase <unk> shares to <unk>', 'bolar pharmaceutical co. posted the largest volume increase <unk> shares to <unk>', 'N6')
+('the largest volume increase <unk> shares to <unk> were posted by bolar pharmaceutical co.', 'bolar pharmaceutical co. posted the largest volume increase <unk> shares to <unk>', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.1699
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 19000/2462, |EncParam|: 106.3346, |DecParam|: 133.6653, |ParserParam|: 71.5031, LR: 0.0005, SrcPPL: 454.9106, PPL: 1.5575, ValPPL: 2.0864, Throughput: 3.06 examples/sec
+--------------------------------------------------------------------------------
+
+Source: at his first chicago press conference he <unk> the reporters
+Target: at his first chicago press conference the reporters were <unk> by him
+Source Tree: ((at his) ((((first chicago) press) (conference (he <unk>))) (the reporters)))
+
+QCFG Tree: (((at his) (((first chicago) press) (conference the))) ((reporters (were <unk>)) by))
+
+('at', 'at', 'N0')
+('his', 'at', 'N0')
+('first', 'at', 'N0')
+('chicago', 'at', 'N0')
+('press', 'at', 'N0')
+('conference', 'conference', 'N7')
+('the', 'at', 'N0')
+('reporters', 'at', 'N0')
+('were', '<unk>', 'N2')
+('<unk>', '<unk>', 'N5')
+('by', '<unk>', 'N1')
+('him', 'he', 'N6')
+('at his', 'at his', 'N7')
+('the reporters', 'the reporters', 'N7')
+('<unk> by', 'he <unk>', 'N0')
+('first chicago press', 'first chicago press', 'N7')
+('were <unk> by', 'he <unk>', 'N1')
+('first chicago press conference', 'first chicago press conference he <unk>', 'N6')
+('were <unk> by him', 'first chicago press conference he <unk> the reporters', 'N0')
+('first chicago press conference the reporters', 'first chicago press conference he <unk> the reporters', 'N6')
+('at his first chicago press conference the reporters', 'at his first chicago press conference he <unk> the reporters', 'N6')
+('at his first chicago press conference the reporters were <unk> by him', 'at his first chicago press conference he <unk> the reporters', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.1792
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 19500/2462, |EncParam|: 107.0889, |DecParam|: 133.3885, |ParserParam|: 71.7916, LR: 0.0005, SrcPPL: 459.1702, PPL: 1.5579, ValPPL: 2.0864, Throughput: 3.04 examples/sec
+--------------------------------------------------------------------------------
+
+Source: this year the nation 's largest steelmaker <unk> its overseas sales operation
+Target: its overseas sales operation the nation 's largest steelmaker was <unk> by this year
+Source Tree: ((this (year (the (nation 's)))) (largest ((((steelmaker <unk>) (its overseas)) sales) operation)))
+
+QCFG Tree: ((((its overseas) sales) operation) ((((the nation) ('s largest)) (steelmaker (was <unk>))) (by this)))
+
+('its', 'this', 'N0')
+('overseas', 'this', 'N0')
+('sales', 'sales', 'N7')
+('operation', 'operation', 'N7')
+('the', 'this', 'N0')
+('nation', 'this', 'N0')
+("'s", 'this', 'N0')
+('largest', 'largest', 'N7')
+('steelmaker', 'steelmaker', 'N7')
+('was', '<unk>', 'N2')
+('<unk>', '<unk>', 'N5')
+('by', '<unk>', 'N1')
+('this', 'this', 'N7')
+('year', 'year', 'N7')
+('its overseas', 'its overseas', 'N7')
+('largest steelmaker', 'largest steelmaker <unk> its overseas sales operation', 'N6')
+('<unk> by', 'steelmaker <unk>', 'N0')
+('this year', "this year the nation 's", 'N3')
+('its overseas sales', 'steelmaker <unk> its overseas sales', 'N6')
+("the nation 's", "the nation 's", 'N7')
+('was <unk> by', 'steelmaker <unk>', 'N1')
+('its overseas sales operation', 'steelmaker <unk> its overseas sales operation', 'N6')
+("the nation 's largest steelmaker", "this year the nation 's largest steelmaker <unk> its overseas sales operation", 'N3')
+("the nation 's largest steelmaker was <unk> by", "this year the nation 's largest steelmaker <unk> its overseas sales operation", 'N1')
+("the nation 's largest steelmaker was <unk> by this year", "this year the nation 's largest steelmaker <unk> its overseas sales operation", 'N0')
+("its overseas sales operation the nation 's largest steelmaker was <unk> by this year", "this year the nation 's largest steelmaker <unk> its overseas sales operation", 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.1720
+--------------------------------
+Starting epoch: 9
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 20000/2462, |EncParam|: 107.5760, |DecParam|: 133.1250, |ParserParam|: 72.0717, LR: 0.0005, SrcPPL: 473.1752, PPL: 1.4579, ValPPL: 2.0864, Throughput: 3.44 examples/sec
+--------------------------------------------------------------------------------
+
+Source: earlier this month mr. icahn boosted his usx stake to <unk> %
+Target: his usx stake mr. icahn was boosted by earlier this month to <unk> %
+Source Tree: (((((earlier (this month)) mr.) icahn) boosted) ((his usx) ((stake (to <unk>)) %)))
+
+QCFG Tree: ((((his usx) stake) (((mr. icahn) (was (boosted by))) (earlier this))) ((month to) <unk>))
+
+('his', 'earlier', 'N0')
+('usx', 'earlier', 'N0')
+('stake', 'stake', 'N7')
+('mr.', 'mr.', 'N7')
+('icahn', 'icahn', 'N7')
+('was', 'boosted', 'N2')
+('boosted', 'boosted', 'N7')
+('by', 'boosted', 'N1')
+('earlier', 'earlier', 'N0')
+('this', 'earlier', 'N0')
+('month', 'earlier', 'N0')
+('to', 'earlier', 'N0')
+('<unk>', 'earlier', 'N0')
+('%', '%', 'N7')
+('his usx', 'his usx', 'N7')
+('mr. icahn', 'earlier this month mr. icahn', 'N6')
+('boosted by', 'earlier this month mr. icahn boosted', 'N0')
+('to <unk>', 'to <unk>', 'N7')
+('his usx stake', 'his usx stake to <unk> %', 'N6')
+('was boosted by', 'earlier this month mr. icahn boosted', 'N1')
+('earlier this month', 'earlier this month', 'N7')
+('to <unk> %', 'stake to <unk> %', 'N3')
+('mr. icahn was boosted by', 'earlier this month mr. icahn boosted', 'N2')
+('mr. icahn was boosted by earlier this month', 'earlier this month mr. icahn boosted his usx stake to <unk> %', 'N0')
+('his usx stake mr. icahn was boosted by earlier this month', 'earlier this month mr. icahn boosted his usx stake to <unk> %', 'N2')
+('his usx stake mr. icahn was boosted by earlier this month to <unk> %', 'earlier this month mr. icahn boosted his usx stake to <unk> %', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.2349
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 20500/2462, |EncParam|: 108.1217, |DecParam|: 133.0153, |ParserParam|: 72.2572, LR: 0.0005, SrcPPL: 463.4790, PPL: 1.4761, ValPPL: 2.0864, Throughput: 3.12 examples/sec
+--------------------------------------------------------------------------------
+
+Source: revenue gained <unk> % to <unk> million from <unk> million
+Target: <unk> % is gained by revenue to <unk> million from <unk> million
+Source Tree: ((((((((revenue gained) <unk>) %) to) <unk>) million) from) (<unk> million))
+
+QCFG Tree: (((<unk> %) ((is (gained by)) revenue)) ((((to <unk>) million) from) (<unk> million)))
+
+('<unk>', '<unk>', 'N7')
+('%', '%', 'N7')
+('is', 'gained', 'N2')
+('gained', 'gained', 'N7')
+('by', 'gained', 'N1')
+('revenue', 'revenue', 'N7')
+('to', 'to', 'N7')
+('<unk>', '<unk>', 'N7')
+('million', 'million', 'N7')
+('from', 'from', 'N7')
+('<unk>', 'revenue', 'N0')
+('million', 'revenue', 'N0')
+('<unk> %', 'revenue gained <unk> %', 'N6')
+('gained by', 'revenue gained', 'N0')
+('to <unk>', 'revenue gained <unk> % to <unk>', 'N3')
+('<unk> million', '<unk> million', 'N7')
+('is gained by', 'revenue gained', 'N1')
+('to <unk> million', 'revenue gained <unk> % to <unk> million', 'N3')
+('is gained by revenue', 'revenue gained <unk> %', 'N0')
+('to <unk> million from', 'revenue gained <unk> % to <unk> million from', 'N3')
+('<unk> % is gained by revenue', 'revenue gained <unk> %', 'N2')
+('to <unk> million from <unk> million', 'revenue gained <unk> % to <unk> million from <unk> million', 'N3')
+('<unk> % is gained by revenue to <unk> million from <unk> million', 'revenue gained <unk> % to <unk> million from <unk> million', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.2970
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 21000/2462, |EncParam|: 108.7036, |DecParam|: 132.6348, |ParserParam|: 72.4591, LR: 0.0005, SrcPPL: 454.8797, PPL: 1.4853, ValPPL: 2.0864, Throughput: 3.06 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the suit filed in u.s. district court in manhattan seeks <unk> status
+Target: <unk> status is seeked by the suit filed in u.s. district court in manhattan
+Source Tree: ((the suit) ((filed (((in ((u.s. (district court)) in)) manhattan) (seeks <unk>))) status))
+
+QCFG Tree: ((<unk> status) ((is (seeked by)) ((the suit) (filed (in u.s.)))))
+
+('<unk>', '<unk>', 'N7')
+('status', 'status', 'N7')
+('is', 'seeks', 'N2')
+('seeked', 'seeks', 'N5')
+('by', '<unk>', 'N1')
+('the', 'the', 'N0')
+('suit', 'the', 'N0')
+('filed', 'filed', 'N7')
+('in', 'the', 'N0')
+('u.s.', 'the', 'N0')
+('district', 'the', 'N0')
+('court', 'the', 'N0')
+('in', 'the', 'N0')
+('manhattan', 'the', 'N0')
+('<unk> status', 'filed in u.s. district court in manhattan seeks <unk> status', 'N6')
+('seeked by', 'seeks <unk>', 'N0')
+('the suit', 'the suit', 'N7')
+('is seeked by', 'seeks <unk>', 'N1')
+('in u.s. district court in manhattan', 'in u.s. district court in manhattan', 'N7')
+('filed in u.s. district court in manhattan', 'filed in u.s. district court in manhattan seeks <unk>', 'N3')
+('the suit filed in u.s. district court in manhattan', 'the suit filed in u.s. district court in manhattan seeks <unk> status', 'N3')
+('is seeked by the suit filed in u.s. district court in manhattan', 'the suit filed in u.s. district court in manhattan seeks <unk> status', 'N0')
+('<unk> status is seeked by the suit filed in u.s. district court in manhattan', 'the suit filed in u.s. district court in manhattan seeks <unk> status', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.2349
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 21500/2462, |EncParam|: 109.1733, |DecParam|: 132.4137, |ParserParam|: 72.6320, LR: 0.0005, SrcPPL: 458.0441, PPL: 1.4900, ValPPL: 2.0864, Throughput: 3.05 examples/sec
+--------------------------------------------------------------------------------
+
+Source: but our <unk> show voters do n't like the <unk> <unk>
+Target: but our <unk> show the <unk> <unk> is n't liked by voters
+Source Tree: (((but ((our ((<unk> show) ((voters do) n't))) like)) the) (<unk> <unk>))
+
+QCFG Tree: ((((but (our (<unk> show))) the) (<unk> <unk>)) (((is n't) (liked by)) voters))
+
+('but', 'but', 'N7')
+('our', 'our', 'N7')
+('<unk>', 'but', 'N0')
+('show', 'but', 'N0')
+('the', 'the', 'N7')
+('<unk>', 'but', 'N0')
+('<unk>', 'but', 'N0')
+('is', "n't", 'N3')
+("n't", "n't", 'N7')
+('liked', 'like', 'N5')
+('by', 'voters', 'N1')
+('voters', 'voters', 'N7')
+('<unk> show', '<unk> show', 'N7')
+('<unk> <unk>', '<unk> <unk>', 'N7')
+("is n't", "voters do n't", 'N6')
+('liked by', "but our <unk> show voters do n't like the", 'N0')
+('our <unk> show', "our <unk> show voters do n't", 'N6')
+('but our <unk> show', "but our <unk> show voters do n't like", 'N6')
+("is n't liked by", "but our <unk> show voters do n't like the", 'N1')
+('but our <unk> show the', "but our <unk> show voters do n't like the", 'N6')
+("is n't liked by voters", "but our <unk> show voters do n't like the <unk> <unk>", 'N0')
+('but our <unk> show the <unk> <unk>', "but our <unk> show voters do n't like the <unk> <unk>", 'N6')
+("but our <unk> show the <unk> <unk> is n't liked by voters", "but our <unk> show voters do n't like the <unk> <unk>", 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.1113
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 22000/2462, |EncParam|: 109.7445, |DecParam|: 132.4443, |ParserParam|: 72.7934, LR: 0.0005, SrcPPL: 452.2946, PPL: 1.5023, ValPPL: 2.0864, Throughput: 3.04 examples/sec
+--------------------------------------------------------------------------------
+
+Source: quarterly revenue rose 4.5 % to <unk> billion from 2.2 billion
+Target: 4.5 % was risen by quarterly revenue to <unk> billion from 2.2 billion
+Source Tree: (((quarterly revenue) (((rose 4.5) %) (to (<unk> (billion from))))) (2.2 billion))
+
+QCFG Tree: (((4.5 %) ((was (risen by)) (quarterly revenue))) ((to <unk>) (billion from)))
+
+('4.5', '4.5', 'N7')
+('%', '%', 'N7')
+('was', 'rose', 'N2')
+('risen', 'rose', 'N5')
+('by', '4.5', 'N1')
+('quarterly', 'quarterly', 'N0')
+('revenue', 'quarterly', 'N0')
+('to', 'quarterly', 'N0')
+('<unk>', 'quarterly', 'N0')
+('billion', 'quarterly', 'N0')
+('from', 'quarterly', 'N0')
+('2.2', 'quarterly', 'N0')
+('billion', 'quarterly', 'N0')
+('4.5 %', 'rose 4.5 %', 'N6')
+('risen by', 'rose 4.5', 'N0')
+('quarterly revenue', 'quarterly revenue', 'N7')
+('2.2 billion', '2.2 billion', 'N7')
+('was risen by', 'rose 4.5', 'N1')
+('to <unk> billion from', 'to <unk> billion from', 'N7')
+('was risen by quarterly revenue', 'quarterly revenue rose 4.5 % to <unk> billion from', 'N0')
+('to <unk> billion from 2.2 billion', 'quarterly revenue rose 4.5 % to <unk> billion from 2.2 billion', 'N3')
+('4.5 % was risen by quarterly revenue', 'quarterly revenue rose 4.5 % to <unk> billion from', 'N2')
+('4.5 % was risen by quarterly revenue to <unk> billion from 2.2 billion', 'quarterly revenue rose 4.5 % to <unk> billion from 2.2 billion', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.2153
+--------------------------------
+Starting epoch: 10
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 22500/2462, |EncParam|: 110.1703, |DecParam|: 131.9860, |ParserParam|: 73.1300, LR: 0.0005, SrcPPL: 450.0242, PPL: 1.3866, ValPPL: 2.0864, Throughput: 3.50 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he previously held similar responsibilities
+Target: similar responsibilities previously were held by him
+Source Tree: ((he previously) (held (similar responsibilities)))
+
+QCFG Tree: ((similar responsibilities) ((previously (were (held by))) him))
+
+('similar', 'he', 'N0')
+('responsibilities', 'he', 'N0')
+('previously', 'previously', 'N7')
+('were', 'held', 'N2')
+('held', 'held', 'N7')
+('by', 'held', 'N1')
+('him', 'he', 'N6')
+('similar responsibilities', 'similar responsibilities', 'N7')
+('held by', 'held similar responsibilities', 'N0')
+('were held by', 'held similar responsibilities', 'N1')
+('previously were held by', 'he previously held similar responsibilities', 'N1')
+('previously were held by him', 'he previously held similar responsibilities', 'N0')
+('similar responsibilities previously were held by him', 'he previously held similar responsibilities', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.0550
+--------------------------------
+Saving checkpoint to styleptb-atp-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 23000/2462, |EncParam|: 110.6991, |DecParam|: 131.7174, |ParserParam|: 73.3746, LR: 0.0005, SrcPPL: 426.9601, PPL: 1.4119, ValPPL: 2.0550, Throughput: 3.17 examples/sec
+--------------------------------------------------------------------------------
+
+Source: mccaw 's bid also has a similar <unk>
+Target: a similar <unk> also is had by mccaw 's bid
+Source Tree: (((((mccaw ('s bid)) also) has) a) (similar <unk>))
+
+QCFG Tree: ((a (similar <unk>)) ((also (is (had by))) (mccaw ('s bid))))
+
+('a', 'a', 'N7')
+('similar', 'mccaw', 'N0')
+('<unk>', 'mccaw', 'N0')
+('also', 'also', 'N7')
+('is', 'has', 'N2')
+('had', 'has', 'N5')
+('by', 'has', 'N1')
+('mccaw', 'mccaw', 'N7')
+("'s", 'mccaw', 'N0')
+('bid', 'mccaw', 'N0')
+('similar <unk>', 'similar <unk>', 'N7')
+('had by', "mccaw 's bid also has", 'N0')
+("'s bid", "'s bid", 'N7')
+('a similar <unk>', "mccaw 's bid also has a similar <unk>", 'N6')
+('is had by', "mccaw 's bid also has", 'N1')
+("mccaw 's bid", "mccaw 's bid", 'N3')
+('also is had by', "mccaw 's bid also has", 'N2')
+("also is had by mccaw 's bid", "mccaw 's bid also has a similar <unk>", 'N0')
+("a similar <unk> also is had by mccaw 's bid", "mccaw 's bid also has a similar <unk>", 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.0832
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 23500/2462, |EncParam|: 111.2893, |DecParam|: 131.6716, |ParserParam|: 73.5841, LR: 0.0005, SrcPPL: 438.1088, PPL: 1.4156, ValPPL: 2.0550, Throughput: 3.11 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> with 35 lawyers has lost several partners during the past year
+Target: several partners have been lost by <unk> with 35 lawyers during the past year
+Source Tree: ((<unk> (((with 35) lawyers) ((has (lost several)) (partners (during the))))) (past year))
+
+QCFG Tree: (((several partners) ((have (been (lost by))) (<unk> (with 35)))) ((lawyers during) (the past)))
+
+('several', 'several', 'N7')
+('partners', 'partners', 'N7')
+('have', 'has', 'N6')
+('been', 'lost', 'N2')
+('lost', 'lost', 'N7')
+('by', 'lost', 'N1')
+('<unk>', '<unk>', 'N7')
+('with', '<unk>', 'N0')
+('35', '<unk>', 'N0')
+('lawyers', '<unk>', 'N0')
+('during', '<unk>', 'N0')
+('the', '<unk>', 'N0')
+('past', '<unk>', 'N0')
+('year', '<unk>', 'N0')
+('several partners', 'has lost several partners during the', 'N6')
+('lost by', 'lost several', 'N0')
+('during the', 'during the', 'N7')
+('past year', 'past year', 'N7')
+('been lost by', 'lost several', 'N1')
+('with 35 lawyers', 'with 35 lawyers', 'N7')
+('have been lost by', 'has lost several', 'N2')
+('<unk> with 35 lawyers', '<unk> with 35 lawyers has lost several partners during the', 'N3')
+('during the past year', '<unk> with 35 lawyers has lost several partners during the past year', 'N3')
+('have been lost by <unk> with 35 lawyers', '<unk> with 35 lawyers has lost several partners during the', 'N0')
+('several partners have been lost by <unk> with 35 lawyers', '<unk> with 35 lawyers has lost several partners during the', 'N2')
+('several partners have been lost by <unk> with 35 lawyers during the past year', '<unk> with 35 lawyers has lost several partners during the past year', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.2161
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 24000/2462, |EncParam|: 111.6788, |DecParam|: 131.4912, |ParserParam|: 73.8153, LR: 0.0005, SrcPPL: 437.1382, PPL: 1.4225, ValPPL: 2.0550, Throughput: 3.07 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he also cited <unk> <unk> rates and a lower tax rate
+Target: <unk> <unk> rates and a lower tax rate also was cited by him
+Source Tree: ((he ((also (cited ((<unk> <unk>) (rates and)))) a)) (lower (tax rate)))
+
+QCFG Tree: ((((<unk> <unk>) rates) (and a)) ((lower (tax (rate also))) was))
+
+('<unk>', 'he', 'N0')
+('<unk>', 'he', 'N0')
+('rates', 'he', 'N0')
+('and', 'he', 'N0')
+('a', 'a', 'N7')
+('lower', 'he', 'N0')
+('tax', 'he', 'N0')
+('rate', 'he', 'N0')
+('also', 'also', 'N7')
+('was', 'cited', 'N2')
+('cited', 'cited', 'N7')
+('by', 'cited', 'N1')
+('him', 'he', 'N6')
+('cited by', 'cited <unk> <unk> rates and', 'N0')
+('lower tax rate', 'lower tax rate', 'N7')
+('was cited by', 'also cited <unk> <unk> rates and', 'N1')
+('<unk> <unk> rates and', '<unk> <unk> rates and', 'N7')
+('also was cited by', 'also cited <unk> <unk> rates and', 'N2')
+('<unk> <unk> rates and a', 'also cited <unk> <unk> rates and a', 'N6')
+('also was cited by him', 'he also cited <unk> <unk> rates and a lower tax rate', 'N0')
+('<unk> <unk> rates and a lower tax rate', 'he also cited <unk> <unk> rates and a lower tax rate', 'N6')
+('<unk> <unk> rates and a lower tax rate also was cited by him', 'he also cited <unk> <unk> rates and a lower tax rate', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.3022
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 24500/2462, |EncParam|: 112.0450, |DecParam|: 131.2389, |ParserParam|: 73.9570, LR: 0.0005, SrcPPL: 438.4355, PPL: 1.4251, ValPPL: 2.0550, Throughput: 3.05 examples/sec
+--------------------------------------------------------------------------------
+
+Source: other companies figure they ca n't avoid the market
+Target: other companies figure the market ca n't be avoided by them
+Source Tree: ((other (((companies figure) ((they ca) n't)) avoid)) (the market))
+
+QCFG Tree: (((other (companies figure)) (the market)) (((ca n't) (be (avoided by))) them))
+
+('other', 'other', 'N7')
+('companies', 'other', 'N0')
+('figure', 'other', 'N0')
+('the', 'the', 'N7')
+('market', 'market', 'N7')
+('ca', 'ca', 'N7')
+("n't", "n't", 'N7')
+('be', "n't", 'N2')
+('avoided', 'avoid', 'N5')
+('by', 'avoid', 'N1')
+('them', 'they', 'N6')
+('companies figure', 'companies figure', 'N7')
+('the market', 'the market', 'N6')
+("ca n't", "they ca n't", 'N3')
+('avoided by', "companies figure they ca n't avoid", 'N0')
+('other companies figure', "other companies figure they ca n't avoid", 'N6')
+('be avoided by', "companies figure they ca n't avoid", 'N1')
+('other companies figure the market', "other companies figure they ca n't avoid the market", 'N6')
+("ca n't be avoided by", "companies figure they ca n't avoid", 'N2')
+("ca n't be avoided by them", "other companies figure they ca n't avoid the market", 'N0')
+("other companies figure the market ca n't be avoided by them", "other companies figure they ca n't avoid the market", 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.2365
+--------------------------------
+Starting epoch: 11
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 25000/2462, |EncParam|: 112.4713, |DecParam|: 131.0521, |ParserParam|: 74.1593, LR: 0.0005, SrcPPL: 435.1711, PPL: 1.3738, ValPPL: 2.0550, Throughput: 3.49 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the last six months has established the quality of the collection
+Target: the quality of the collection has been established by the last six months
+Source Tree: ((((the last) six) ((months (has (established (the quality)))) of)) (the collection))
+
+QCFG Tree: ((((the quality) of) (the collection)) ((has (been (established by))) ((the last) six)))
+
+('the', 'the', 'N0')
+('quality', 'the', 'N0')
+('of', 'of', 'N7')
+('the', 'the', 'N0')
+('collection', 'the', 'N0')
+('has', 'has', 'N7')
+('been', 'established', 'N2')
+('established', 'established', 'N7')
+('by', 'established', 'N1')
+('the', 'the', 'N0')
+('last', 'the', 'N0')
+('six', 'the', 'N0')
+('months', 'months', 'N7')
+('the quality', 'the quality', 'N7')
+('the collection', 'the collection', 'N7')
+('established by', 'established the quality', 'N0')
+('the quality of', 'months has established the quality of', 'N6')
+('been established by', 'has established the quality', 'N1')
+('the last six', 'the last six', 'N7')
+('has been established by', 'has established the quality', 'N2')
+('the last six months', 'the last six months has established the quality of', 'N3')
+('the quality of the collection', 'the last six months has established the quality of the collection', 'N6')
+('has been established by the last six months', 'the last six months has established the quality of', 'N0')
+('the quality of the collection has been established by the last six months', 'the last six months has established the quality of the collection', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.1553
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 25500/2462, |EncParam|: 112.6373, |DecParam|: 130.9252, |ParserParam|: 74.3962, LR: 0.0005, SrcPPL: 434.8101, PPL: 1.3755, ValPPL: 2.0550, Throughput: 3.19 examples/sec
+--------------------------------------------------------------------------------
+
+Source: advancing otc stocks outpaced decliners by <unk> to <unk>
+Target: decliners was outpaced by advancing otc stocks by <unk> to <unk>
+Source Tree: (((advancing otc) stocks) ((outpaced (decliners (by <unk>))) (to <unk>)))
+
+QCFG Tree: ((decliners ((was (outpaced by)) (advancing otc))) ((stocks by) (<unk> to)))
+
+('decliners', 'decliners', 'N7')
+('was', 'outpaced', 'N2')
+('outpaced', 'outpaced', 'N7')
+('by', 'outpaced', 'N1')
+('advancing', 'advancing', 'N0')
+('otc', 'advancing', 'N0')
+('stocks', 'advancing', 'N0')
+('by', 'advancing', 'N0')
+('<unk>', 'advancing', 'N0')
+('to', 'advancing', 'N0')
+('<unk>', 'advancing', 'N0')
+('outpaced by', 'outpaced decliners by <unk>', 'N0')
+('by <unk>', 'by <unk>', 'N7')
+('to <unk>', 'to <unk>', 'N7')
+('was outpaced by', 'outpaced decliners by <unk>', 'N1')
+('advancing otc stocks', 'advancing otc stocks', 'N7')
+('by <unk> to <unk>', 'outpaced decliners by <unk> to <unk>', 'N3')
+('was outpaced by advancing otc stocks', 'advancing otc stocks outpaced decliners by <unk> to <unk>', 'N0')
+('decliners was outpaced by advancing otc stocks', 'advancing otc stocks outpaced decliners by <unk> to <unk>', 'N2')
+('decliners was outpaced by advancing otc stocks by <unk> to <unk>', 'advancing otc stocks outpaced decliners by <unk> to <unk>', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.2739
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 26000/2462, |EncParam|: 113.0302, |DecParam|: 130.8324, |ParserParam|: 74.5510, LR: 0.0005, SrcPPL: 423.9338, PPL: 1.3853, ValPPL: 2.0550, Throughput: 3.10 examples/sec
+--------------------------------------------------------------------------------
+
+Source: it also will hand <unk> new markets
+Target: <unk> also will be <unk> by it new markets
+Source Tree: (((it also) (will (hand <unk>))) (new markets))
+
+QCFG Tree: ((<unk> ((also (will (be (<unk> by)))) it)) (new markets))
+
+('<unk>', '<unk>', 'N7')
+('also', 'also', 'N7')
+('will', 'will', 'N7')
+('be', 'hand', 'N2')
+('<unk>', 'hand', 'N5')
+('by', 'hand', 'N1')
+('it', 'it', 'N7')
+('new', 'it', 'N0')
+('markets', 'it', 'N0')
+('<unk> by', 'hand <unk>', 'N0')
+('new markets', 'new markets', 'N7')
+('be <unk> by', 'will hand <unk>', 'N1')
+('will be <unk> by', 'will hand <unk>', 'N2')
+('also will be <unk> by', 'it also will hand <unk>', 'N2')
+('also will be <unk> by it', 'it also will hand <unk> new markets', 'N0')
+('<unk> also will be <unk> by it', 'it also will hand <unk> new markets', 'N2')
+('<unk> also will be <unk> by it new markets', 'it also will hand <unk> new markets', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.1286
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 26500/2462, |EncParam|: 113.4171, |DecParam|: 130.5200, |ParserParam|: 74.6987, LR: 0.0005, SrcPPL: 426.1741, PPL: 1.3915, ValPPL: 2.0550, Throughput: 3.07 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the transaction also would <unk> fresenius usa and delmed
+Target: fresenius usa and delmed also would be combined by the transaction
+Source Tree: ((((the transaction) ((also would) <unk>)) fresenius) (usa (and delmed)))
+
+QCFG Tree: ((fresenius (usa and)) (((delmed also) (would (be combined))) (by the)))
+
+('fresenius', 'fresenius', 'N7')
+('usa', 'the', 'N0')
+('and', 'the', 'N0')
+('delmed', 'the', 'N0')
+('also', 'also', 'N7')
+('would', 'would', 'N7')
+('be', 'would', 'N2')
+('combined', '<unk>', 'N5')
+('by', '<unk>', 'N1')
+('the', 'the', 'N0')
+('transaction', 'the', 'N0')
+('also would', 'also would', 'N3')
+('combined by', 'also would <unk>', 'N0')
+('the transaction', 'the transaction', 'N7')
+('usa and delmed', 'usa and delmed', 'N7')
+('be combined by', 'also would <unk>', 'N1')
+('fresenius usa and delmed', 'the transaction also would <unk> fresenius usa and delmed', 'N6')
+('also would be combined by', 'also would <unk>', 'N2')
+('also would be combined by the transaction', 'the transaction also would <unk> fresenius usa and delmed', 'N0')
+('fresenius usa and delmed also would be combined by the transaction', 'the transaction also would <unk> fresenius usa and delmed', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.3470
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 27000/2462, |EncParam|: 113.8501, |DecParam|: 130.2309, |ParserParam|: 74.9027, LR: 0.0005, SrcPPL: 428.0625, PPL: 1.3956, ValPPL: 2.0550, Throughput: 3.04 examples/sec
+--------------------------------------------------------------------------------
+
+Source: his ability to match any bid has scared off many potential buyers
+Target: many potential buyers have been scared off by his ability to match any bid
+Source Tree: ((his ability) (to (((match (any bid)) ((has scared) (off many))) (potential buyers))))
+
+QCFG Tree: ((many (potential buyers)) ((have (been (scared (off by)))) ((his ability) (to (match any)))))
+
+('many', 'many', 'N7')
+('potential', 'his', 'N0')
+('buyers', 'his', 'N0')
+('have', 'has', 'N6')
+('been', 'scared', 'N2')
+('scared', 'scared', 'N7')
+('off', 'off', 'N7')
+('by', 'many', 'N1')
+('his', 'his', 'N0')
+('ability', 'his', 'N0')
+('to', 'to', 'N7')
+('match', 'his', 'N0')
+('any', 'his', 'N0')
+('bid', 'his', 'N0')
+('potential buyers', 'potential buyers', 'N7')
+('off by', 'off many', 'N0')
+('his ability', 'his ability', 'N7')
+('many potential buyers', 'match any bid has scared off many potential buyers', 'N6')
+('scared off by', 'has scared off many', 'N0')
+('match any bid', 'match any bid', 'N7')
+('been scared off by', 'has scared off many', 'N1')
+('to match any bid', 'to match any bid has scared off many potential buyers', 'N6')
+('have been scared off by', 'has scared off many', 'N2')
+('his ability to match any bid', 'his ability to match any bid has scared off many potential buyers', 'N3')
+('have been scared off by his ability to match any bid', 'his ability to match any bid has scared off many potential buyers', 'N0')
+('many potential buyers have been scared off by his ability to match any bid', 'his ability to match any bid has scared off many potential buyers', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.3095
+--------------------------------
+Starting epoch: 12
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 27500/2462, |EncParam|: 114.2279, |DecParam|: 129.9692, |ParserParam|: 75.0967, LR: 0.0005, SrcPPL: 436.3587, PPL: 1.3743, ValPPL: 2.0550, Throughput: 3.48 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> of young aids <unk> expressed <unk> satisfaction
+Target: <unk> satisfaction was expressed by <unk> of young aids <unk>
+Source Tree: ((<unk> (of ((young aids) <unk>))) ((expressed <unk>) satisfaction))
+
+QCFG Tree: ((<unk> satisfaction) ((was (expressed by)) (<unk> of)))
+
+('<unk>', '<unk>', 'N7')
+('satisfaction', 'satisfaction', 'N7')
+('was', 'expressed', 'N2')
+('expressed', 'expressed', 'N7')
+('by', 'expressed', 'N1')
+('<unk>', '<unk>', 'N0')
+('of', '<unk>', 'N0')
+('young', '<unk>', 'N0')
+('aids', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('<unk> satisfaction', 'expressed <unk> satisfaction', 'N6')
+('expressed by', 'expressed <unk>', 'N0')
+('was expressed by', 'expressed <unk>', 'N1')
+('<unk> of young aids <unk>', '<unk> of young aids <unk>', 'N7')
+('was expressed by <unk> of young aids <unk>', '<unk> of young aids <unk> expressed <unk> satisfaction', 'N0')
+('<unk> satisfaction was expressed by <unk> of young aids <unk>', '<unk> of young aids <unk> expressed <unk> satisfaction', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.8200
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 28000/2462, |EncParam|: 114.5993, |DecParam|: 129.6413, |ParserParam|: 75.2527, LR: 0.0005, SrcPPL: 420.6563, PPL: 1.3539, ValPPL: 2.0550, Throughput: 3.18 examples/sec
+--------------------------------------------------------------------------------
+
+Source: in national over-the-counter trading friday <unk> shares tumbled 2.75 to 43
+Target: in national over-the-counter trading 2.75 <unk> shares were tumbled by friday to 43
+Source Tree: ((((((in national) (over-the-counter (trading friday))) <unk>) shares) (tumbled 2.75)) (to 43))
+
+QCFG Tree: (((((in national) (over-the-counter trading)) 2.75) (((<unk> shares) (were (tumbled by))) friday)) (to 43))
+
+('in', 'in', 'N0')
+('national', 'in', 'N0')
+('over-the-counter', 'over-the-counter', 'N7')
+('trading', 'trading', 'N7')
+('2.75', '2.75', 'N7')
+('<unk>', '<unk>', 'N7')
+('shares', 'shares', 'N7')
+('were', 'tumbled', 'N2')
+('tumbled', 'tumbled', 'N7')
+('by', 'tumbled', 'N1')
+('friday', 'friday', 'N7')
+('to', 'to', 'N7')
+('43', '43', 'N7')
+('in national', 'in national', 'N7')
+('over-the-counter trading', 'over-the-counter trading friday', 'N6')
+('<unk> shares', 'in national over-the-counter trading friday <unk> shares', 'N3')
+('tumbled by', 'tumbled 2.75', 'N0')
+('to 43', 'to 43', 'N3')
+('were tumbled by', 'tumbled 2.75', 'N1')
+('in national over-the-counter trading', 'in national over-the-counter trading friday', 'N6')
+('in national over-the-counter trading 2.75', 'in national over-the-counter trading friday <unk> shares tumbled 2.75', 'N6')
+('<unk> shares were tumbled by', 'in national over-the-counter trading friday <unk> shares tumbled 2.75', 'N1')
+('<unk> shares were tumbled by friday', 'in national over-the-counter trading friday <unk> shares tumbled 2.75', 'N0')
+('in national over-the-counter trading 2.75 <unk> shares were tumbled by friday', 'in national over-the-counter trading friday <unk> shares tumbled 2.75', 'N2')
+('in national over-the-counter trading 2.75 <unk> shares were tumbled by friday to 43', 'in national over-the-counter trading friday <unk> shares tumbled 2.75 to 43', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.5723
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 28500/2462, |EncParam|: 114.9124, |DecParam|: 129.4697, |ParserParam|: 75.3929, LR: 0.0005, SrcPPL: 420.5916, PPL: 1.3588, ValPPL: 2.0550, Throughput: 3.10 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the company could command a good price in the market
+Target: a good price could be <unk> by the company in the market
+Source Tree: ((the (company (could command))) (a ((good price) (in (the market)))))
+
+QCFG Tree: (((a (good price)) ((could (be (<unk> by))) (the company))) (in (the market)))
+
+('a', 'a', 'N7')
+('good', 'the', 'N0')
+('price', 'the', 'N0')
+('could', 'could', 'N7')
+('be', 'command', 'N2')
+('<unk>', 'command', 'N5')
+('by', 'command', 'N1')
+('the', 'the', 'N7')
+('company', 'company', 'N7')
+('in', 'in', 'N7')
+('the', 'the', 'N0')
+('market', 'the', 'N0')
+('good price', 'good price', 'N7')
+('<unk> by', 'could command', 'N0')
+('the company', 'the company could command', 'N3')
+('the market', 'the market', 'N7')
+('a good price', 'a good price in the market', 'N6')
+('be <unk> by', 'could command', 'N1')
+('in the market', 'in the market', 'N3')
+('could be <unk> by', 'could command', 'N2')
+('could be <unk> by the company', 'the company could command a good price in the market', 'N0')
+('a good price could be <unk> by the company', 'the company could command a good price in the market', 'N2')
+('a good price could be <unk> by the company in the market', 'the company could command a good price in the market', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.4533
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 29000/2462, |EncParam|: 115.2637, |DecParam|: 129.3296, |ParserParam|: 75.5773, LR: 0.0005, SrcPPL: 421.0460, PPL: 1.3754, ValPPL: 2.0550, Throughput: 3.08 examples/sec
+--------------------------------------------------------------------------------
+
+Source: ms. <unk> had been executive financial assistant to the chairman
+Target: executive financial assistant to the chairman had been executive financial assistant to the chairman
+Source Tree: (((((ms. <unk>) (had been)) (executive (financial assistant))) to) (the chairman))
+
+QCFG Tree: ((((executive financial) assistant) (to the)) ((chairman had) (((been executive) financial) (assistant to))))
+
+('executive', 'ms.', 'N0')
+('financial', 'ms.', 'N0')
+('assistant', 'ms.', 'N0')
+('to', 'to', 'N7')
+('the', 'ms.', 'N0')
+('chairman', 'ms.', 'N0')
+('had', 'had', 'N7')
+('been', 'been', 'N7')
+('executive', 'ms.', 'N0')
+('financial', 'ms.', 'N0')
+('assistant', 'ms.', 'N0')
+('to', 'to', 'N7')
+('the', 'ms.', 'N0')
+('chairman', 'ms.', 'N0')
+('the chairman', 'the chairman', 'N7')
+('had been', 'had been', 'N2')
+('the chairman', 'the chairman', 'N7')
+('executive financial assistant', 'executive financial assistant', 'N7')
+('executive financial assistant', 'executive financial assistant', 'N7')
+('executive financial assistant to', 'ms. <unk> had been executive financial assistant to', 'N6')
+('executive financial assistant to', 'ms. <unk> had been executive financial assistant to', 'N3')
+('executive financial assistant to the chairman', 'ms. <unk> had been executive financial assistant to the chairman', 'N6')
+('executive financial assistant to the chairman', 'ms. <unk> had been executive financial assistant to the chairman', 'N3')
+('had been executive financial assistant to the chairman', 'ms. <unk> had been executive financial assistant to the chairman', 'N0')
+('executive financial assistant to the chairman had been executive financial assistant to the chairman', 'ms. <unk> had been executive financial assistant to the chairman', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.3102
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 29500/2462, |EncParam|: 115.6295, |DecParam|: 129.0929, |ParserParam|: 75.7723, LR: 0.0005, SrcPPL: 420.0403, PPL: 1.3685, ValPPL: 2.0550, Throughput: 3.05 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> <unk> jumped 2 to 18 3\/8
+Target: 2 were jumped by <unk> <unk> to 18 3\/8
+Source Tree: (((<unk> (<unk> jumped)) 2) ((to 18) 3\/8))
+
+QCFG Tree: ((2 ((were (jumped by)) (<unk> <unk>))) ((to 18) 3\/8))
+
+('2', '2', 'N7')
+('were', 'jumped', 'N2')
+('jumped', 'jumped', 'N7')
+('by', 'jumped', 'N1')
+('<unk>', '<unk>', 'N7')
+('<unk>', '<unk>', 'N7')
+('to', '<unk>', 'N0')
+('18', '<unk>', 'N0')
+('3\\/8', '3\\/8', 'N7')
+('jumped by', '<unk> jumped', 'N0')
+('<unk> <unk>', '<unk> <unk> jumped', 'N3')
+('to 18', 'to 18', 'N7')
+('were jumped by', '<unk> jumped', 'N1')
+('to 18 3\\/8', 'to 18 3\\/8', 'N3')
+('were jumped by <unk> <unk>', '<unk> <unk> jumped 2', 'N0')
+('2 were jumped by <unk> <unk>', '<unk> <unk> jumped 2 to 18 3\\/8', 'N2')
+('2 were jumped by <unk> <unk> to 18 3\\/8', '<unk> <unk> jumped 2 to 18 3\\/8', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.4893
+--------------------------------
+Starting epoch: 13
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 30000/2462, |EncParam|: 115.7932, |DecParam|: 128.8267, |ParserParam|: 76.0222, LR: 0.0005, SrcPPL: 400.3155, PPL: 1.3346, ValPPL: 2.0550, Throughput: 3.51 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he <unk> all these new forces to the <unk> gulf
+Target: all these new forces were <unk> by him to the <unk> gulf
+Source Tree: (((he <unk>) (all (((these new) forces) to))) ((the <unk>) gulf))
+
+QCFG Tree: (((all (these new)) ((forces (were <unk>)) by)) (him (to the)))
+
+('all', 'all', 'N7')
+('these', 'he', 'N0')
+('new', 'he', 'N0')
+('forces', 'he', 'N0')
+('were', '<unk>', 'N2')
+('<unk>', '<unk>', 'N5')
+('by', '<unk>', 'N1')
+('him', 'he', 'N6')
+('to', 'to', 'N7')
+('the', 'he', 'N0')
+('<unk>', 'he', 'N0')
+('gulf', 'he', 'N0')
+('<unk> by', 'he <unk>', 'N0')
+('these new forces', 'these new forces', 'N7')
+('were <unk> by', 'he <unk>', 'N1')
+('the <unk> gulf', 'the <unk> gulf', 'N7')
+('all these new forces', 'all these new forces to', 'N6')
+('were <unk> by him', 'he <unk> all these new forces to', 'N0')
+('to the <unk> gulf', 'he <unk> all these new forces to the <unk> gulf', 'N3')
+('all these new forces were <unk> by him', 'he <unk> all these new forces to', 'N2')
+('all these new forces were <unk> by him to the <unk> gulf', 'he <unk> all these new forces to the <unk> gulf', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.3952
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 30500/2462, |EncParam|: 116.3360, |DecParam|: 128.4974, |ParserParam|: 76.0364, LR: 0.0005, SrcPPL: 405.5105, PPL: 1.3354, ValPPL: 2.0550, Throughput: 3.20 examples/sec
+--------------------------------------------------------------------------------
+
+Source: if mr. dozen has a weakness it may be his <unk> game
+Target: if a weakness is had by mr. dozen it may be his <unk> game
+Source Tree: (((if mr.) (dozen (has (a weakness)))) (((it (may be)) his) (<unk> game)))
+
+QCFG Tree: (((if (a weakness)) ((is (had by)) (mr. dozen))) (it may))
+
+('if', 'if', 'N7')
+('a', 'a', 'N7')
+('weakness', 'weakness', 'N7')
+('is', 'has', 'N2')
+('had', 'has', 'N5')
+('by', 'has', 'N1')
+('mr.', 'mr.', 'N7')
+('dozen', 'dozen', 'N7')
+('it', 'if', 'N0')
+('may', 'if', 'N0')
+('be', 'if', 'N0')
+('his', 'if', 'N0')
+('<unk>', 'if', 'N0')
+('game', 'if', 'N0')
+('a weakness', 'a weakness', 'N6')
+('had by', 'has a weakness', 'N0')
+('mr. dozen', 'if mr. dozen has a weakness', 'N3')
+('if a weakness', 'if mr. dozen has a weakness', 'N6')
+('is had by', 'dozen has a weakness', 'N1')
+('is had by mr. dozen', 'if mr. dozen has a weakness', 'N0')
+('it may be his <unk> game', 'it may be his <unk> game', 'N7')
+('if a weakness is had by mr. dozen', 'if mr. dozen has a weakness', 'N2')
+('if a weakness is had by mr. dozen it may be his <unk> game', 'if mr. dozen has a weakness it may be his <unk> game', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.7559
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 31000/2462, |EncParam|: 116.5139, |DecParam|: 128.5276, |ParserParam|: 76.2435, LR: 0.0005, SrcPPL: 402.0559, PPL: 1.3555, ValPPL: 2.0550, Throughput: 3.12 examples/sec
+--------------------------------------------------------------------------------
+
+Source: it recently cut its work force by 9 % or <unk>
+Target: its work force recently was cut by it by 9 % or <unk>
+Source Tree: ((((it recently) cut) (its work)) (((force ((by 9) %)) or) <unk>))
+
+QCFG Tree: ((((its work) force) ((recently (was (cut by))) it)) (((by 9) %) or))
+
+('its', 'it', 'N0')
+('work', 'it', 'N0')
+('force', 'force', 'N7')
+('recently', 'recently', 'N7')
+('was', 'cut', 'N2')
+('cut', 'cut', 'N7')
+('by', 'cut', 'N1')
+('it', 'it', 'N7')
+('by', 'it', 'N0')
+('9', 'it', 'N0')
+('%', 'it', 'N0')
+('or', 'or', 'N7')
+('<unk>', '<unk>', 'N7')
+('its work', 'its work', 'N7')
+('cut by', 'it recently cut', 'N0')
+('its work force', 'it recently cut its work force by 9 % or <unk>', 'N6')
+('was cut by', 'it recently cut', 'N1')
+('by 9 %', 'by 9 %', 'N7')
+('recently was cut by', 'it recently cut', 'N2')
+('by 9 % or', 'force by 9 % or', 'N3')
+('recently was cut by it', 'it recently cut its work force by 9 % or <unk>', 'N0')
+('by 9 % or <unk>', 'force by 9 % or <unk>', 'N3')
+('its work force recently was cut by it', 'it recently cut its work force by 9 % or <unk>', 'N2')
+('its work force recently was cut by it by 9 % or <unk>', 'it recently cut its work force by 9 % or <unk>', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.2907
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 31500/2462, |EncParam|: 116.8538, |DecParam|: 128.0918, |ParserParam|: 76.5129, LR: 0.0005, SrcPPL: 404.3510, PPL: 1.3439, ValPPL: 2.0550, Throughput: 3.08 examples/sec
+--------------------------------------------------------------------------------
+
+Source: but <unk> has a different spirit
+Target: but a different spirit is had by <unk>
+Source Tree: ((((but <unk>) has) a) (different spirit))
+
+QCFG Tree: (((but a) (different spirit)) ((is (had by)) <unk>))
+
+('but', 'but', 'N7')
+('a', 'a', 'N7')
+('different', 'but', 'N0')
+('spirit', 'but', 'N0')
+('is', 'has', 'N2')
+('had', 'has', 'N5')
+('by', 'has', 'N1')
+('<unk>', '<unk>', 'N7')
+('but a', 'but <unk> has a', 'N6')
+('different spirit', 'different spirit', 'N7')
+('had by', 'but <unk> has', 'N0')
+('is had by', 'but <unk> has', 'N1')
+('but a different spirit', 'but <unk> has a different spirit', 'N6')
+('is had by <unk>', 'but <unk> has a different spirit', 'N0')
+('but a different spirit is had by <unk>', 'but <unk> has a different spirit', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.3364
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 32000/2462, |EncParam|: 117.1361, |DecParam|: 127.8975, |ParserParam|: 76.7147, LR: 0.0005, SrcPPL: 404.4770, PPL: 1.3372, ValPPL: 2.0550, Throughput: 3.06 examples/sec
+--------------------------------------------------------------------------------
+
+Source: other money managers also opened their <unk>
+Target: their <unk> also were opened by other money managers
+Source Tree: (((other money) managers) ((also opened) (their <unk>)))
+
+QCFG Tree: ((their <unk>) ((also (were (opened by))) (other money)))
+
+('their', 'other', 'N0')
+('<unk>', 'other', 'N0')
+('also', 'also', 'N7')
+('were', 'opened', 'N2')
+('opened', 'opened', 'N7')
+('by', 'opened', 'N1')
+('other', 'other', 'N0')
+('money', 'other', 'N0')
+('managers', 'other', 'N0')
+('their <unk>', 'their <unk>', 'N7')
+('opened by', 'also opened', 'N0')
+('were opened by', 'also opened', 'N1')
+('other money managers', 'other money managers', 'N7')
+('also were opened by', 'also opened', 'N2')
+('also were opened by other money managers', 'other money managers also opened their <unk>', 'N0')
+('their <unk> also were opened by other money managers', 'other money managers also opened their <unk>', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.5197
+--------------------------------
+Starting epoch: 14
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 32500/2462, |EncParam|: 117.2914, |DecParam|: 127.8088, |ParserParam|: 76.9199, LR: 0.0005, SrcPPL: 371.1243, PPL: 1.2860, ValPPL: 2.0550, Throughput: 3.47 examples/sec
+--------------------------------------------------------------------------------
+
+Source: to be sure the stock still has a lot of fans
+Target: to be sure a lot of fans still is had by the stock
+Source Tree: (((to be) (sure (((the stock) still) has))) (a ((lot of) fans)))
+
+QCFG Tree: ((((to be) sure) (a lot)) ((of (fans (still is))) (had by)))
+
+('to', 'to', 'N0')
+('be', 'to', 'N0')
+('sure', 'sure', 'N7')
+('a', 'to', 'N0')
+('lot', 'to', 'N0')
+('of', 'to', 'N0')
+('fans', 'to', 'N0')
+('still', 'still', 'N7')
+('is', 'has', 'N2')
+('had', 'has', 'N5')
+('by', 'has', 'N1')
+('the', 'to', 'N0')
+('stock', 'to', 'N0')
+('to be', 'to be', 'N7')
+('had by', 'the stock still has', 'N0')
+('the stock', 'the stock', 'N7')
+('to be sure', 'to be sure the stock still has', 'N6')
+('is had by', 'the stock still has', 'N1')
+('a lot of fans', 'a lot of fans', 'N7')
+('still is had by', 'the stock still has', 'N2')
+('still is had by the stock', 'to be sure the stock still has a lot of fans', 'N0')
+('to be sure a lot of fans', 'to be sure the stock still has a lot of fans', 'N6')
+('to be sure a lot of fans still is had by the stock', 'to be sure the stock still has a lot of fans', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.4591
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 33000/2462, |EncParam|: 117.6557, |DecParam|: 127.3682, |ParserParam|: 77.1894, LR: 0.0005, SrcPPL: 386.9841, PPL: 1.2994, ValPPL: 2.0550, Throughput: 3.20 examples/sec
+--------------------------------------------------------------------------------
+
+Source: that trend could increase demand for <unk> galvanized <unk>
+Target: demand for <unk> galvanized <unk> could be increased by that trend
+Source Tree: ((((that trend) could) (increase demand)) (for ((<unk> galvanized) <unk>)))
+
+QCFG Tree: ((demand (for <unk>)) ((galvanized (<unk> (could be))) (increased by)))
+
+('demand', 'demand', 'N7')
+('for', 'that', 'N0')
+('<unk>', 'that', 'N0')
+('galvanized', 'that', 'N0')
+('<unk>', 'that', 'N0')
+('could', 'could', 'N7')
+('be', 'increase', 'N2')
+('increased', 'increase', 'N5')
+('by', 'increase', 'N1')
+('that', 'that', 'N0')
+('trend', 'that', 'N0')
+('increased by', 'increase demand', 'N0')
+('that trend', 'that trend', 'N7')
+('be increased by', 'increase demand', 'N1')
+('for <unk> galvanized <unk>', 'for <unk> galvanized <unk>', 'N7')
+('could be increased by', 'that trend could increase demand', 'N1')
+('demand for <unk> galvanized <unk>', 'that trend could increase demand for <unk> galvanized <unk>', 'N6')
+('could be increased by that trend', 'that trend could increase demand for <unk> galvanized <unk>', 'N0')
+('demand for <unk> galvanized <unk> could be increased by that trend', 'that trend could increase demand for <unk> galvanized <unk>', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.4360
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 33500/2462, |EncParam|: 117.8937, |DecParam|: 127.2878, |ParserParam|: 77.3537, LR: 0.0005, SrcPPL: 376.3241, PPL: 1.3037, ValPPL: 2.0550, Throughput: 3.12 examples/sec
+--------------------------------------------------------------------------------
+
+Source: federal paper board sells paper and wood products
+Target: paper and wood products are sold by federal paper board
+Source Tree: ((((federal paper) (board sells)) paper) ((and wood) products))
+
+QCFG Tree: ((paper (and wood)) ((products (are sold)) ((by federal) paper)))
+
+('paper', 'paper', 'N7')
+('and', 'federal', 'N0')
+('wood', 'federal', 'N0')
+('products', 'federal', 'N0')
+('are', 'sells', 'N2')
+('sold', 'sells', 'N5')
+('by', 'sells', 'N1')
+('federal', 'federal', 'N0')
+('paper', 'federal', 'N0')
+('board', 'board', 'N7')
+('sold by', 'board sells', 'N0')
+('federal paper', 'federal paper', 'N7')
+('and wood products', 'and wood products', 'N7')
+('are sold by', 'board sells', 'N1')
+('federal paper board', 'federal paper board sells', 'N6')
+('paper and wood products', 'federal paper board sells paper and wood products', 'N6')
+('are sold by federal paper board', 'federal paper board sells paper and wood products', 'N0')
+('paper and wood products are sold by federal paper board', 'federal paper board sells paper and wood products', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.6615
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 34000/2462, |EncParam|: 118.1464, |DecParam|: 127.1140, |ParserParam|: 77.5415, LR: 0.0005, SrcPPL: 385.2015, PPL: 1.3064, ValPPL: 2.0550, Throughput: 3.08 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the only time the violin has it is right at the end
+Target: the only time it is had by the violin is right at the end
+Source Tree: (((the only) ((time (the violin)) has)) ((it is) (right (at (the end)))))
+
+QCFG Tree: (((((the only) time) it) ((is (had by)) (the violin))) (is (right at)))
+
+('the', 'the', 'N0')
+('only', 'the', 'N0')
+('time', 'time', 'N7')
+('it', 'it', 'N7')
+('is', 'has', 'N2')
+('had', 'has', 'N5')
+('by', 'has', 'N1')
+('the', 'the', 'N0')
+('violin', 'the', 'N0')
+('is', 'is', 'N7')
+('right', 'the', 'N0')
+('at', 'the', 'N0')
+('the', 'the', 'N0')
+('end', 'the', 'N0')
+('the only', 'the only', 'N7')
+('had by', 'time the violin has', 'N0')
+('the violin', 'the violin', 'N7')
+('the only time', 'the only time the violin has', 'N6')
+('is had by', 'time the violin has', 'N1')
+('the only time it', 'the only time the violin has it is right at the end', 'N6')
+('right at the end', 'right at the end', 'N7')
+('is had by the violin', 'the only time the violin has it is right at the end', 'N0')
+('is right at the end', 'it is right at the end', 'N3')
+('the only time it is had by the violin', 'the only time the violin has it is right at the end', 'N2')
+('the only time it is had by the violin is right at the end', 'the only time the violin has it is right at the end', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.4995
+--------------------------------
+Starting epoch: 15
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 34500/2462, |EncParam|: 118.3052, |DecParam|: 127.0137, |ParserParam|: 77.6491, LR: 0.0005, SrcPPL: 404.3771, PPL: 1.2843, ValPPL: 2.0550, Throughput: 3.67 examples/sec
+--------------------------------------------------------------------------------
+
+Source: we will vigorously <unk> the bill he says
+Target: the bill will be vigorously opposed by us he says
+Source Tree: (((we will) (vigorously <unk>)) (((the bill) he) says))
+
+QCFG Tree: (((the bill) ((will ((be vigorously) (opposed by))) us)) (he says))
+
+('the', 'the', 'N7')
+('bill', 'bill', 'N7')
+('will', 'will', 'N7')
+('be', 'vigorously', 'N2')
+('vigorously', 'vigorously', 'N7')
+('opposed', '<unk>', 'N5')
+('by', '<unk>', 'N1')
+('us', 'we', 'N6')
+('he', 'he', 'N7')
+('says', 'says', 'N7')
+('the bill', 'the bill', 'N6')
+('be vigorously', 'vigorously <unk>', 'N6')
+('opposed by', 'vigorously <unk>', 'N0')
+('he says', 'the bill he says', 'N3')
+('be vigorously opposed by', 'vigorously <unk>', 'N5')
+('will be vigorously opposed by', 'we will vigorously <unk>', 'N4')
+('will be vigorously opposed by us', 'we will vigorously <unk> the bill he says', 'N0')
+('the bill will be vigorously opposed by us', 'we will vigorously <unk> the bill he says', 'N2')
+('the bill will be vigorously opposed by us he says', 'we will vigorously <unk> the bill he says', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.4507
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 35000/2462, |EncParam|: 118.5662, |DecParam|: 126.7084, |ParserParam|: 77.7634, LR: 0.0005, SrcPPL: 361.2709, PPL: 1.2803, ValPPL: 2.0550, Throughput: 3.02 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> may not benefit when men do <unk>
+Target: <unk> may not benefit when <unk> is <unk> by men
+Source Tree: (((<unk> (may not)) (benefit when)) ((men do) <unk>))
+
+QCFG Tree: ((((<unk> may) (not benefit)) when) ((<unk> (is <unk>)) by))
+
+('<unk>', '<unk>', 'N0')
+('may', '<unk>', 'N0')
+('not', '<unk>', 'N0')
+('benefit', 'benefit', 'N7')
+('when', 'when', 'N7')
+('<unk>', '<unk>', 'N7')
+('is', 'do', 'N2')
+('<unk>', 'men', 'N5')
+('by', 'do', 'N1')
+('men', 'men', 'N7')
+('benefit when', 'benefit when', 'N6')
+('<unk> by', 'men do', 'N0')
+('<unk> may not', '<unk> may not', 'N7')
+('is <unk> by', 'men do', 'N1')
+('is <unk> by men', 'men do <unk>', 'N0')
+('<unk> may not benefit when', '<unk> may not benefit when', 'N6')
+('<unk> may not benefit when <unk>', '<unk> may not benefit when men do <unk>', 'N6')
+('<unk> may not benefit when <unk> is <unk> by men', '<unk> may not benefit when men do <unk>', 'N5')
+--------------------------------
+Checking validation perf...
+PPL: 2.5269
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 35500/2462, |EncParam|: 118.8273, |DecParam|: 126.4458, |ParserParam|: 77.8703, LR: 0.0005, SrcPPL: 359.3531, PPL: 1.2836, ValPPL: 2.0550, Throughput: 3.01 examples/sec
+--------------------------------------------------------------------------------
+
+Source: they estimate the value of the transaction at close to 100 million
+Target: the value of the transaction is estimated by them at close to 100 million
+Source Tree: ((((they (estimate (the value))) (of (the transaction))) (at close)) ((to 100) million))
+
+QCFG Tree: ((((the value) (of the)) ((transaction (is estimated)) by)) ((them at) (close to)))
+
+('the', 'they', 'N0')
+('value', 'they', 'N0')
+('of', 'they', 'N0')
+('the', 'they', 'N0')
+('transaction', 'they', 'N0')
+('is', 'estimate', 'N2')
+('estimated', 'estimate', 'N5')
+('by', 'estimate', 'N1')
+('them', 'they', 'N6')
+('at', 'they', 'N0')
+('close', 'they', 'N0')
+('to', 'they', 'N0')
+('100', 'they', 'N0')
+('million', 'they', 'N0')
+('the value', 'the value', 'N7')
+('estimated by', 'estimate the value', 'N0')
+('at close', 'at close', 'N7')
+('of the transaction', 'of the transaction', 'N7')
+('is estimated by', 'estimate the value', 'N1')
+('to 100 million', 'to 100 million', 'N7')
+('is estimated by them', 'they estimate the value of the transaction', 'N0')
+('the value of the transaction', 'they estimate the value of the transaction', 'N6')
+('at close to 100 million', 'they estimate the value of the transaction at close to 100 million', 'N3')
+('the value of the transaction is estimated by them', 'they estimate the value of the transaction', 'N2')
+('the value of the transaction is estimated by them at close to 100 million', 'they estimate the value of the transaction at close to 100 million', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.6166
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 36000/2462, |EncParam|: 119.1293, |DecParam|: 126.3223, |ParserParam|: 77.9924, LR: 0.0005, SrcPPL: 359.4037, PPL: 1.2890, ValPPL: 2.0550, Throughput: 3.00 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i show it to my friends and they all say <unk>
+Target: it is shown by me to my friends and <unk> are said by them all
+Source Tree: ((((i show) it) ((to my) friends)) ((and (they (all say))) <unk>))
+
+QCFG Tree: ((it ((is (shown by)) me)) ((to my) (((friends and) ((<unk> (are said)) by)) them)))
+
+('it', 'it', 'N7')
+('is', 'show', 'N2')
+('shown', 'show', 'N5')
+('by', 'show', 'N1')
+('me', 'i', 'N6')
+('to', 'i', 'N0')
+('my', 'i', 'N0')
+('friends', 'i', 'N0')
+('and', 'and', 'N7')
+('<unk>', 'all', 'N0')
+('are', 'all', 'N2')
+('said', 'say', 'N5')
+('by', 'say', 'N1')
+('them', 'they', 'N6')
+('all', 'all', 'N7')
+('shown by', 'i show', 'N0')
+('and <unk>', 'and they all say', 'N6')
+('said by', 'all say', 'N0')
+('is shown by', 'i show', 'N1')
+('to my friends', 'to my friends', 'N7')
+('are said by', 'all say', 'N1')
+('is shown by me', 'i show it to my friends and they all say <unk>', 'N0')
+('are said by them', 'they all say', 'N0')
+('it is shown by me', 'i show it to my friends and they all say <unk>', 'N2')
+('and <unk> are said by them', 'and they all say', 'N2')
+('and <unk> are said by them all', 'and they all say', 'N4')
+('to my friends and <unk> are said by them all', 'i show it to my friends and they all say <unk>', 'N3')
+('it is shown by me to my friends and <unk> are said by them all', 'i show it to my friends and they all say <unk>', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.5870
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 36500/2462, |EncParam|: 119.3015, |DecParam|: 126.2758, |ParserParam|: 78.1676, LR: 0.0005, SrcPPL: 357.6363, PPL: 1.2871, ValPPL: 2.0550, Throughput: 2.99 examples/sec
+--------------------------------------------------------------------------------
+
+Source: international business machines dropped 7\/8 to 99 7\/8
+Target: 7\/8 were dropped by international business machines to 99 7\/8
+Source Tree: (((international (business machines)) (dropped 7\/8)) ((to 99) 7\/8))
+
+QCFG Tree: ((7\/8 ((were (dropped by)) (international (business machines)))) (to 99))
+
+('7\\/8', '7\\/8', 'N7')
+('were', 'dropped', 'N2')
+('dropped', 'dropped', 'N7')
+('by', '7\\/8', 'N1')
+('international', 'international', 'N7')
+('business', 'international', 'N0')
+('machines', 'international', 'N0')
+('to', 'international', 'N0')
+('99', 'international', 'N0')
+('7\\/8', 'international', 'N0')
+('dropped by', 'dropped 7\\/8', 'N0')
+('business machines', 'business machines', 'N7')
+('were dropped by', 'dropped 7\\/8', 'N1')
+('international business machines', 'international business machines', 'N3')
+('to 99 7\\/8', 'to 99 7\\/8', 'N7')
+('were dropped by international business machines', 'international business machines dropped 7\\/8 to 99 7\\/8', 'N0')
+('7\\/8 were dropped by international business machines', 'international business machines dropped 7\\/8 to 99 7\\/8', 'N2')
+('7\\/8 were dropped by international business machines to 99 7\\/8', 'international business machines dropped 7\\/8 to 99 7\\/8', 'N4')
+--------------------------------
+Checking validation perf...
+PPL: 2.3898
+--------------------------------

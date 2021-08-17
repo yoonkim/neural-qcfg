@@ -1,0 +1,1111 @@
+Num sents: 2162, Vocab Size Before prune: 3193, After prune: 1311
+Starting epoch: 1
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 500/1081, |EncParam|: 73.0289, |DecParam|: 140.1666, |ParserParam|: 57.0161, LR: 0.0005, SrcPPL: 759.5072, PPL: 40.1917, ValPPL: 100000.0000, Throughput: 4.03 examples/sec
+--------------------------------------------------------------------------------
+
+Source: white children empty the wastepaper baskets and squeegee the windows
+Target: <unk> of the windows is done by white children who empty the wastepaper baskets
+Source Tree: (((white children) ((empty the) (wastepaper baskets))) ((and squeegee) (the windows)))
+
+QCFG Tree: (((<unk> of) (the windows)) (((((is done) by) (white children)) who) (empty the)))
+
+('<unk>', 'the', 'N3')
+('of', 'the', 'N4')
+('the', 'white', 'N0')
+('windows', 'white', 'N0')
+('is', 'and', 'N3')
+('done', 'squeegee', 'N4')
+('by', 'the', 'N4')
+('white', 'white', 'N0')
+('children', 'white', 'N0')
+('who', 'and', 'N0')
+('empty', 'white', 'N0')
+('the', 'white', 'N0')
+('wastepaper', 'white', 'N0')
+('baskets', 'white', 'N0')
+('<unk> of', 'and squeegee the windows', 'N2')
+('the windows', 'the windows', 'N7')
+('is done', 'and squeegee', 'N2')
+('white children', 'white children', 'N7')
+('is done by', 'white children empty the wastepaper baskets and squeegee the windows', 'N2')
+('<unk> of the windows', 'white children empty the wastepaper baskets and squeegee the windows', 'N0')
+('empty the wastepaper baskets', 'empty the wastepaper baskets', 'N7')
+('is done by white children', 'white children empty the wastepaper baskets and squeegee the windows', 'N0')
+('is done by white children who', 'white children empty the wastepaper baskets and squeegee the windows', 'N5')
+('is done by white children who empty the wastepaper baskets', 'white children empty the wastepaper baskets and squeegee the windows', 'N5')
+('<unk> of the windows is done by white children who empty the wastepaper baskets', 'white children empty the wastepaper baskets and squeegee the windows', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 23.8722
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 1, Batch: 1000/1081, |EncParam|: 72.4018, |DecParam|: 140.6517, |ParserParam|: 57.1971, LR: 0.0005, SrcPPL: 626.5629, PPL: 30.1848, ValPPL: 23.8722, Throughput: 3.81 examples/sec
+--------------------------------------------------------------------------------
+
+Source: it adds something to the market
+Target: the adding of it to the market is something
+Source Tree: ((it (adds (something (to the)))) market)
+
+QCFG Tree: ((((((the adding) of) it) (to the)) market) (is something))
+
+('the', 'the', 'N3')
+('adding', 'to', 'N5')
+('of', 'the', 'N4')
+('it', 'it', 'N7')
+('to', 'it', 'N0')
+('the', 'it', 'N0')
+('market', 'market', 'N7')
+('is', 'it', 'N3')
+('something', 'adds', 'N5')
+('the adding', 'to the', 'N2')
+('to the', 'to the', 'N7')
+('is something', 'it adds something to the', 'N2')
+('the adding of', 'to the', 'N0')
+('the adding of it', 'it adds something to the', 'N0')
+('the adding of it to the', 'it adds something to the market', 'N0')
+('the adding of it to the market', 'it adds something to the market', 'N4')
+('the adding of it to the market is something', 'it adds something to the market', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 17.2879
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+Starting epoch: 2
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 1500/1081, |EncParam|: 72.3390, |DecParam|: 141.3921, |ParserParam|: 57.6097, LR: 0.0005, SrcPPL: 461.8084, PPL: 18.2691, ValPPL: 17.2879, Throughput: 3.88 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the house just settled right down into the <unk>
+Target: settling right down into the <unk> is what the house just did
+Source Tree: (the (house (((((just settled) right) down) (into the)) <unk>)))
+
+QCFG Tree: (((((settling right) down) (into the)) <unk>) (((((is what) the) house) just) did))
+
+('settling', 'just', 'N1')
+('right', 'right', 'N7')
+('down', 'down', 'N7')
+('into', 'the', 'N0')
+('the', 'the', 'N0')
+('<unk>', '<unk>', 'N7')
+('is', 'just', 'N3')
+('what', 'settled', 'N5')
+('the', 'the', 'N7')
+('house', 'house', 'N7')
+('just', 'just', 'N7')
+('did', 'just', 'N0')
+('settling right', 'just settled right down', 'N0')
+('into the', 'into the', 'N7')
+('is what', 'the house just settled right down into the <unk>', 'N2')
+('settling right down', 'just settled right down', 'N4')
+('is what the', 'the house just settled right down into the <unk>', 'N0')
+('is what the house', 'the house just settled right down into the <unk>', 'N4')
+('settling right down into the', 'just settled right down into the <unk>', 'N0')
+('is what the house just', 'the house just settled right down into the <unk>', 'N5')
+('settling right down into the <unk>', 'just settled right down into the <unk>', 'N4')
+('is what the house just did', 'the house just settled right down into the <unk>', 'N5')
+('settling right down into the <unk> is what the house just did', 'the house just settled right down into the <unk>', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 16.2651
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 2, Batch: 2000/1081, |EncParam|: 73.2362, |DecParam|: 141.6682, |ParserParam|: 58.2648, LR: 0.0005, SrcPPL: 460.4546, PPL: 16.4152, ValPPL: 16.2651, Throughput: 3.74 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> of the <unk> are playing <unk>
+Target: the playing of <unk> was done by the <unk> of the <unk>
+Source Tree: (((<unk> of) (the (<unk> are))) (playing <unk>))
+
+QCFG Tree: ((((the playing) of) <unk>) ((((((was done) by) the) (<unk> of)) the) <unk>))
+
+('the', '<unk>', 'N3')
+('playing', 'playing', 'N5')
+('of', '<unk>', 'N4')
+('<unk>', '<unk>', 'N7')
+('was', '<unk>', 'N3')
+('done', 'are', 'N5')
+('by', 'the', 'N4')
+('the', 'the', 'N7')
+('<unk>', '<unk>', 'N0')
+('of', '<unk>', 'N0')
+('the', 'the', 'N7')
+('<unk>', '<unk>', 'N0')
+('the playing', 'playing <unk>', 'N2')
+('was done', '<unk> are', 'N2')
+('<unk> of', '<unk> of', 'N7')
+('the playing of', 'playing <unk>', 'N0')
+('was done by', 'the <unk> are', 'N0')
+('the playing of <unk>', 'playing <unk>', 'N4')
+('was done by the', 'the <unk> are', 'N4')
+('was done by the <unk> of', '<unk> of the <unk> are playing <unk>', 'N0')
+('was done by the <unk> of the', '<unk> of the <unk> are playing <unk>', 'N4')
+('was done by the <unk> of the <unk>', '<unk> of the <unk> are playing <unk>', 'N5')
+('the playing of <unk> was done by the <unk> of the <unk>', '<unk> of the <unk> are playing <unk>', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 14.6597
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+Starting epoch: 3
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 2500/1081, |EncParam|: 73.8430, |DecParam|: 142.0202, |ParserParam|: 58.8348, LR: 0.0005, SrcPPL: 453.4353, PPL: 12.7080, ValPPL: 14.6597, Throughput: 3.91 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the merksamer bankruptcy-law filing appears to <unk> that agreement
+Target: the appearance of <unk> that agreement is caused by the merksamer bankruptcy-law filing
+Source Tree: ((the ((merksamer ((bankruptcy-law filing) ((appears to) <unk>))) that)) agreement)
+
+QCFG Tree: ((((((the appearance) of) <unk>) that) agreement) (((((is caused) by) the) merksamer) (bankruptcy-law filing)))
+
+('the', 'to', 'N3')
+('appearance', 'to', 'N5')
+('of', 'to', 'N4')
+('<unk>', '<unk>', 'N0')
+('that', 'that', 'N7')
+('agreement', 'agreement', 'N7')
+('is', 'bankruptcy-law', 'N3')
+('caused', 'bankruptcy-law', 'N5')
+('by', 'bankruptcy-law', 'N4')
+('the', 'the', 'N7')
+('merksamer', 'merksamer', 'N7')
+('bankruptcy-law', 'the', 'N0')
+('filing', 'the', 'N0')
+('the appearance', 'appears to', 'N2')
+('is caused', 'bankruptcy-law filing', 'N2')
+('bankruptcy-law filing', 'bankruptcy-law filing', 'N7')
+('the appearance of', 'appears to', 'N0')
+('is caused by', 'bankruptcy-law filing', 'N0')
+('the appearance of <unk>', 'appears to <unk>', 'N4')
+('is caused by the', 'the merksamer bankruptcy-law filing appears to <unk> that', 'N0')
+('the appearance of <unk> that', 'merksamer bankruptcy-law filing appears to <unk> that', 'N4')
+('is caused by the merksamer', 'the merksamer bankruptcy-law filing appears to <unk> that', 'N4')
+('the appearance of <unk> that agreement', 'the merksamer bankruptcy-law filing appears to <unk> that agreement', 'N4')
+('is caused by the merksamer bankruptcy-law filing', 'the merksamer bankruptcy-law filing appears to <unk> that', 'N5')
+('the appearance of <unk> that agreement is caused by the merksamer bankruptcy-law filing', 'the merksamer bankruptcy-law filing appears to <unk> that agreement', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 12.0997
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 3, Batch: 3000/1081, |EncParam|: 74.3099, |DecParam|: 142.1357, |ParserParam|: 59.2380, LR: 0.0005, SrcPPL: 475.4142, PPL: 12.4266, ValPPL: 12.0997, Throughput: 3.75 examples/sec
+--------------------------------------------------------------------------------
+
+Source: american home products corp. <unk> to acquire the company
+Target: the acquiring of the company was <unk> by american home products corp
+Source Tree: ((american home) ((products corp.) ((<unk> ((to acquire) the)) company)))
+
+QCFG Tree: (((((the acquiring) of) the) company) (((((was <unk>) by) (american home)) products) corp))
+
+('the', 'acquire', 'N3')
+('acquiring', 'the', 'N5')
+('of', 'the', 'N4')
+('the', 'the', 'N7')
+('company', 'company', 'N7')
+('was', '<unk>', 'N3')
+('<unk>', 'the', 'N5')
+('by', '<unk>', 'N4')
+('american', 'american', 'N0')
+('home', 'american', 'N0')
+('products', 'products', 'N7')
+('corp', '<unk>', 'N0')
+('the acquiring', 'to acquire the', 'N2')
+('was <unk>', '<unk> to acquire the', 'N2')
+('american home', 'american home', 'N7')
+('the acquiring of', 'to acquire the', 'N0')
+('was <unk> by', '<unk> to acquire the', 'N0')
+('the acquiring of the', 'to acquire the', 'N4')
+('the acquiring of the company', '<unk> to acquire the company', 'N4')
+('was <unk> by american home', 'american home products corp. <unk> to acquire the company', 'N0')
+('was <unk> by american home products', 'american home products corp. <unk> to acquire the company', 'N4')
+('was <unk> by american home products corp', 'american home products corp. <unk> to acquire the company', 'N5')
+('the acquiring of the company was <unk> by american home products corp', 'american home products corp. <unk> to acquire the company', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 12.5438
+--------------------------------
+Starting epoch: 4
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 3500/1081, |EncParam|: 74.6968, |DecParam|: 141.9796, |ParserParam|: 59.6800, LR: 0.0005, SrcPPL: 500.6611, PPL: 10.1951, ValPPL: 12.0997, Throughput: 3.90 examples/sec
+--------------------------------------------------------------------------------
+
+Source: that division 's <unk> has been <unk>
+Target: the <unk> of the <unk> was from that division
+Source Tree: (that (division ('s ((<unk> has) (been <unk>)))))
+
+QCFG Tree: (((the <unk>) of) (((((the <unk>) was) from) that) division))
+
+('the', 'been', 'N3')
+('<unk>', 'been', 'N5')
+('of', 'been', 'N4')
+('the', 'been', 'N3')
+('<unk>', 'been', 'N5')
+('was', 'been', 'N4')
+('from', 'been', 'N4')
+('that', 'that', 'N7')
+('division', 'division', 'N7')
+('the <unk>', 'been <unk>', 'N2')
+('the <unk>', 'been <unk>', 'N2')
+('the <unk> of', 'been <unk>', 'N4')
+('the <unk> was', 'been <unk>', 'N0')
+('the <unk> was from', 'been <unk>', 'N0')
+('the <unk> was from that', "that division 's <unk> has been <unk>", 'N0')
+('the <unk> was from that division', "that division 's <unk> has been <unk>", 'N4')
+('the <unk> of the <unk> was from that division', "that division 's <unk> has been <unk>", 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 12.2308
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 4, Batch: 4000/1081, |EncParam|: 75.3777, |DecParam|: 141.9355, |ParserParam|: 60.0651, LR: 0.0005, SrcPPL: 567.2517, PPL: 9.7551, ValPPL: 12.0997, Throughput: 3.68 examples/sec
+--------------------------------------------------------------------------------
+
+Source: and <unk> <unk> <unk> that they do
+Target: and <unk> that they do are <unk> <unk>
+Source Tree: (((and <unk>) <unk>) (<unk> ((that they) do)))
+
+QCFG Tree: (((and <unk>) (that they)) ((do are) <unk>))
+
+('and', '<unk>', 'N3')
+('<unk>', '<unk>', 'N5')
+('that', 'and', 'N0')
+('they', 'and', 'N0')
+('do', 'and', 'N0')
+('are', '<unk>', 'N2')
+('<unk>', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('and <unk>', '<unk> that they do', 'N2')
+('are <unk>', 'and <unk>', 'N5')
+('that they do', 'that they do', 'N7')
+('are <unk> <unk>', 'and <unk> <unk> <unk> that they do', 'N5')
+('and <unk> that they do', '<unk> that they do', 'N4')
+('and <unk> that they do are <unk> <unk>', 'and <unk> <unk> <unk> that they do', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 10.4054
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+Starting epoch: 5
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 4500/1081, |EncParam|: 76.0163, |DecParam|: 141.7271, |ParserParam|: 60.5125, LR: 0.0005, SrcPPL: 794.9242, PPL: 8.3393, ValPPL: 10.4054, Throughput: 3.85 examples/sec
+--------------------------------------------------------------------------------
+
+Source: nekoosa also is being advised by goldman sachs & co
+Target: being advised by goldman sachs & co is what nekoosa is also doing
+Source Tree: (nekoosa (also (is ((being (advised by)) (((goldman sachs) &) co)))))
+
+QCFG Tree: (((being (advised by)) (goldman sachs)) (((((& co) is) what) nekoosa) is))
+
+('being', 'being', 'N7')
+('advised', 'nekoosa', 'N0')
+('by', 'nekoosa', 'N0')
+('goldman', 'nekoosa', 'N0')
+('sachs', 'nekoosa', 'N0')
+('&', 'nekoosa', 'N0')
+('co', 'nekoosa', 'N0')
+('is', 'nekoosa', 'N3')
+('what', 'nekoosa', 'N5')
+('nekoosa', 'nekoosa', 'N7')
+('is', 'is', 'N7')
+('also', 'also', 'N7')
+('doing', 'nekoosa', 'N0')
+('advised by', 'advised by', 'N7')
+('is what', 'nekoosa also is being advised by goldman sachs & co', 'N2')
+('being advised by', 'being advised by', 'N4')
+('is what nekoosa', 'nekoosa also is being advised by goldman sachs & co', 'N0')
+('goldman sachs & co', 'goldman sachs & co', 'N7')
+('is what nekoosa is', 'nekoosa also is being advised by goldman sachs & co', 'N4')
+('is what nekoosa is also', 'nekoosa also is being advised by goldman sachs & co', 'N4')
+('is what nekoosa is also doing', 'nekoosa also is being advised by goldman sachs & co', 'N5')
+('being advised by goldman sachs & co', 'being advised by goldman sachs & co', 'N4')
+('being advised by goldman sachs & co is what nekoosa is also doing', 'nekoosa also is being advised by goldman sachs & co', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 10.3681
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 5, Batch: 5000/1081, |EncParam|: 76.2755, |DecParam|: 141.4034, |ParserParam|: 60.8524, LR: 0.0005, SrcPPL: 883.8288, PPL: 8.2911, ValPPL: 10.3681, Throughput: 3.71 examples/sec
+--------------------------------------------------------------------------------
+
+Source: take your <unk> in a hurricane <unk>
+Target: the taking of a <unk> is in a hurricane <unk>
+Source Tree: ((take your) ((<unk> (in a)) (hurricane <unk>)))
+
+QCFG Tree: ((((the taking) of) (a <unk>)) (is ((in a) (hurricane <unk>))))
+
+('the', 'take', 'N3')
+('taking', 'take', 'N5')
+('of', 'take', 'N4')
+('a', 'your', 'N2')
+('<unk>', 'take', 'N0')
+('is', 'your', 'N6')
+('in', 'in', 'N7')
+('a', 'a', 'N7')
+('hurricane', 'take', 'N0')
+('<unk>', 'take', 'N0')
+('the taking', 'take your', 'N2')
+('a <unk>', 'take your', 'N5')
+('in a', 'in a', 'N4')
+('hurricane <unk>', 'hurricane <unk>', 'N7')
+('the taking of', 'take your', 'N0')
+('in a hurricane <unk>', '<unk> in a hurricane <unk>', 'N4')
+('the taking of a <unk>', 'take your', 'N4')
+('is in a hurricane <unk>', 'take your <unk> in a hurricane <unk>', 'N5')
+('the taking of a <unk> is in a hurricane <unk>', 'take your <unk> in a hurricane <unk>', 'N3')
+--------------------------------
+Checking validation perf...
+PPL: 9.8605
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+Starting epoch: 6
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 5500/1081, |EncParam|: 76.6234, |DecParam|: 141.1900, |ParserParam|: 61.0946, LR: 0.0005, SrcPPL: 1814.9204, PPL: 8.7803, ValPPL: 9.8605, Throughput: 3.93 examples/sec
+--------------------------------------------------------------------------------
+
+Source: mr. bush <unk> to washington saturday night
+Target: returning to washington saturday night was what mr bush did
+Source Tree: ((mr. bush) ((<unk> to) ((washington saturday) night)))
+
+QCFG Tree: (((returning to) (washington saturday)) ((((night was) what) mr) bush))
+
+('returning', 'to', 'N1')
+('to', 'to', 'N7')
+('washington', 'mr.', 'N0')
+('saturday', 'mr.', 'N0')
+('night', 'mr.', 'N0')
+('was', 'bush', 'N3')
+('what', 'mr.', 'N5')
+('mr', 'mr.', 'N0')
+('bush', 'bush', 'N7')
+('did', 'bush', 'N0')
+('returning to', '<unk> to', 'N4')
+('was what', 'mr. bush', 'N2')
+('washington saturday night', 'washington saturday night', 'N7')
+('was what mr', 'mr. bush', 'N0')
+('was what mr bush', 'mr. bush', 'N4')
+('returning to washington saturday night', '<unk> to washington saturday night', 'N4')
+('was what mr bush did', 'mr. bush', 'N5')
+('returning to washington saturday night was what mr bush did', 'mr. bush <unk> to washington saturday night', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 9.9142
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 6, Batch: 6000/1081, |EncParam|: 77.4200, |DecParam|: 140.7869, |ParserParam|: 61.2954, LR: 0.0005, SrcPPL: 1521.8393, PPL: 7.2898, ValPPL: 9.8605, Throughput: 3.71 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> <unk> <unk> <unk> <unk>
+Target: the trying of <unk> cell <unk> is done by <unk> <unk>
+Source Tree: (<unk> (((<unk> <unk>) <unk>) <unk>))
+
+QCFG Tree: (((((the trying) of) (<unk> cell)) <unk>) ((((is done) by) <unk>) <unk>))
+
+('the', '<unk>', 'N3')
+('trying', '<unk>', 'N5')
+('of', '<unk>', 'N4')
+('<unk>', '<unk>', 'N6')
+('cell', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('is', '<unk>', 'N3')
+('done', '<unk>', 'N5')
+('by', '<unk>', 'N4')
+('<unk>', '<unk>', 'N7')
+('<unk>', '<unk>', 'N0')
+('the trying', '<unk> <unk> <unk>', 'N2')
+('<unk> cell', '<unk> <unk> <unk>', 'N5')
+('is done', '<unk> <unk>', 'N2')
+('the trying of', '<unk> <unk> <unk>', 'N0')
+('is done by', '<unk> <unk>', 'N0')
+('is done by <unk>', '<unk> <unk> <unk> <unk> <unk>', 'N0')
+('the trying of <unk> cell', '<unk> <unk> <unk>', 'N4')
+('is done by <unk> <unk>', '<unk> <unk> <unk> <unk> <unk>', 'N5')
+('the trying of <unk> cell <unk>', '<unk> <unk> <unk> <unk>', 'N4')
+('the trying of <unk> cell <unk> is done by <unk> <unk>', '<unk> <unk> <unk> <unk> <unk>', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 10.7200
+--------------------------------
+Starting epoch: 7
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 6500/1081, |EncParam|: 78.1099, |DecParam|: 140.4181, |ParserParam|: 61.4831, LR: 0.0005, SrcPPL: 3568.6207, PPL: 8.5720, ValPPL: 9.8605, Throughput: 3.72 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> programs and <unk> have followed the <unk> television show
+Target: following the <unk> television show were <unk> programs and <unk>
+Source Tree: (((<unk> programs) and) (<unk> ((have followed) (((the <unk>) television) show))))
+
+QCFG Tree: ((following (the <unk>)) ((television (show were)) <unk>))
+
+('following', 'followed', 'N1')
+('the', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('television', '<unk>', 'N0')
+('show', '<unk>', 'N0')
+('were', '<unk>', 'N6')
+('<unk>', '<unk>', 'N0')
+('programs', '<unk>', 'N0')
+('and', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('<unk> programs and', '<unk> programs and', 'N7')
+('the <unk> television show', 'the <unk> television show', 'N7')
+('were <unk> programs and', '<unk> programs and <unk> have followed the <unk> television show', 'N0')
+('following the <unk> television show', 'have followed the <unk> television show', 'N4')
+('were <unk> programs and <unk>', '<unk> programs and <unk> have followed the <unk> television show', 'N5')
+('following the <unk> television show were <unk> programs and <unk>', '<unk> programs and <unk> have followed the <unk> television show', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 9.7306
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 7000/1081, |EncParam|: 78.8458, |DecParam|: 139.9931, |ParserParam|: 61.6247, LR: 0.0005, SrcPPL: 1563.9999, PPL: 6.5306, ValPPL: 9.7306, Throughput: 3.66 examples/sec
+--------------------------------------------------------------------------------
+
+Source: but <unk> expect <unk> <unk>
+Target: the expecting of <unk> <unk> comes from <unk>
+Source Tree: (((but <unk>) (expect <unk>)) <unk>)
+
+QCFG Tree: (((((the expecting) of) <unk>) <unk>) ((comes from) <unk>))
+
+('the', 'expect', 'N3')
+('expecting', 'expect', 'N5')
+('of', 'expect', 'N4')
+('<unk>', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('comes', '<unk>', 'N1')
+('from', '<unk>', 'N4')
+('<unk>', '<unk>', 'N0')
+('the expecting', 'expect <unk>', 'N2')
+('comes from', 'but <unk>', 'N0')
+('the expecting of', 'expect <unk>', 'N0')
+('comes from <unk>', 'but <unk> expect <unk>', 'N5')
+('the expecting of <unk>', 'expect <unk>', 'N4')
+('the expecting of <unk> <unk>', 'but <unk> expect <unk> <unk>', 'N4')
+('the expecting of <unk> <unk> comes from <unk>', 'but <unk> expect <unk> <unk>', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 8.7771
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 7, Batch: 7500/1081, |EncParam|: 79.3501, |DecParam|: 139.7474, |ParserParam|: 61.7658, LR: 0.0005, SrcPPL: 1496.8497, PPL: 6.5331, ValPPL: 8.7771, Throughput: 3.67 examples/sec
+--------------------------------------------------------------------------------
+
+Source: but burger king operators independently <unk> using <unk> 's product
+Target: the using of <unk> product is independently <unk> by burger king operators
+Source Tree: (but (burger ((king (operators independently)) ((<unk> using) (<unk> ('s product))))))
+
+QCFG Tree: ((((the using) of) (<unk> product)) ((((((is independently) <unk>) by) burger) king) operators))
+
+('the', 'using', 'N3')
+('using', 'using', 'N7')
+('of', 'using', 'N4')
+('<unk>', '<unk>', 'N2')
+('product', 'product', 'N7')
+('is', 'independently', 'N2')
+('independently', 'independently', 'N7')
+('<unk>', 'independently', 'N0')
+('by', 'operators', 'N4')
+('burger', 'burger', 'N7')
+('king', 'king', 'N7')
+('operators', 'operators', 'N7')
+('the using', '<unk> using', 'N6')
+('<unk> product', "<unk> 's product", 'N4')
+('is independently', 'operators independently', 'N6')
+('the using of', '<unk> using', 'N0')
+('is independently <unk>', 'operators independently', 'N5')
+('is independently <unk> by', 'king operators independently', 'N0')
+('the using of <unk> product', "<unk> using <unk> 's product", 'N4')
+('is independently <unk> by burger', "burger king operators independently <unk> using <unk> 's product", 'N0')
+('is independently <unk> by burger king', "burger king operators independently <unk> using <unk> 's product", 'N4')
+('is independently <unk> by burger king operators', "burger king operators independently <unk> using <unk> 's product", 'N5')
+('the using of <unk> product is independently <unk> by burger king operators', "but burger king operators independently <unk> using <unk> 's product", 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 10.0229
+--------------------------------
+Starting epoch: 8
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 8000/1081, |EncParam|: 80.1592, |DecParam|: 139.4157, |ParserParam|: 61.9141, LR: 0.0005, SrcPPL: 1452.8650, PPL: 5.8626, ValPPL: 8.7771, Throughput: 3.90 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> rose 2 7\/8 to 100 for <unk>
+Target: the rising <unk> from <unk> was 2 7v8 to 100
+Source Tree: (<unk> ((rose ((2 (7\/8 (to 100))) for)) <unk>))
+
+QCFG Tree: ((((the rising) <unk>) (from <unk>)) (was (2 (7v8 (to 100)))))
+
+('the', 'rose', 'N3')
+('rising', 'rose', 'N5')
+('<unk>', '<unk>', 'N0')
+('from', '2', 'N0')
+('<unk>', '<unk>', 'N0')
+('was', '2', 'N6')
+('2', '2', 'N7')
+('7v8', '7\\/8', 'N2')
+('to', '<unk>', 'N0')
+('100', '<unk>', 'N0')
+('the rising', 'rose 2 7\\/8 to 100 for', 'N2')
+('from <unk>', '<unk> rose 2 7\\/8 to 100 for <unk>', 'N6')
+('to 100', 'to 100', 'N7')
+('the rising <unk>', '<unk> rose 2 7\\/8 to 100 for <unk>', 'N0')
+('7v8 to 100', '7\\/8 to 100', 'N5')
+('2 7v8 to 100', '2 7\\/8 to 100', 'N5')
+('the rising <unk> from <unk>', '<unk> rose 2 7\\/8 to 100 for <unk>', 'N4')
+('was 2 7v8 to 100', 'rose 2 7\\/8 to 100 for', 'N5')
+('the rising <unk> from <unk> was 2 7v8 to 100', '<unk> rose 2 7\\/8 to 100 for <unk>', 'N3')
+--------------------------------
+Checking validation perf...
+PPL: 9.0597
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 8, Batch: 8500/1081, |EncParam|: 80.7443, |DecParam|: 139.1729, |ParserParam|: 62.0419, LR: 0.0005, SrcPPL: 1431.1517, PPL: 5.8645, ValPPL: 8.7771, Throughput: 3.79 examples/sec
+--------------------------------------------------------------------------------
+
+Source: i 've surrendered to the circumstances mr. fedders says
+Target: <unk> to the circumstances is what <unk> done mr. fedders says
+Source Tree: ((((i 've) (surrendered ((to the) circumstances))) (mr. fedders)) says)
+
+QCFG Tree: (((<unk> (to the)) (((circumstances is) what) <unk>)) ((done mr.) fedders))
+
+('<unk>', 'surrendered', 'N1')
+('to', 'i', 'N0')
+('the', 'i', 'N0')
+('circumstances', 'i', 'N0')
+('is', 'mr.', 'N3')
+('what', 'mr.', 'N5')
+('<unk>', 'fedders', 'N0')
+('done', 'fedders', 'N0')
+('mr.', 'i', 'N0')
+('fedders', 'i', 'N0')
+('says', 'says', 'N7')
+('is what', 'mr. fedders', 'N2')
+('mr. fedders', 'mr. fedders', 'N7')
+('to the circumstances', 'to the circumstances', 'N7')
+('is what <unk>', 'mr. fedders', 'N4')
+('mr. fedders says', "i 've surrendered to the circumstances mr. fedders says", 'N5')
+('<unk> to the circumstances', 'surrendered to the circumstances', 'N4')
+('is what <unk> done', 'mr. fedders', 'N5')
+('<unk> to the circumstances is what <unk> done', "i 've surrendered to the circumstances mr. fedders", 'N4')
+('<unk> to the circumstances is what <unk> done mr. fedders says', "i 've surrendered to the circumstances mr. fedders says", 'N3')
+--------------------------------
+Checking validation perf...
+PPL: 8.7320
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+Starting epoch: 9
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 9000/1081, |EncParam|: 81.1939, |DecParam|: 138.8103, |ParserParam|: 62.2013, LR: 0.0005, SrcPPL: 1356.6443, PPL: 5.4006, ValPPL: 8.7320, Throughput: 3.88 examples/sec
+--------------------------------------------------------------------------------
+
+Source: some in <unk> think that may be optimistic
+Target: thinking that may be optimistic is what some in <unk> are doing
+Source Tree: (some (in ((<unk> ((think (that may)) be)) optimistic)))
+
+QCFG Tree: ((((thinking (that may)) be) optimistic) ((((is what) some) (in <unk>)) (are doing)))
+
+('thinking', 'think', 'N1')
+('that', 'some', 'N0')
+('may', 'some', 'N0')
+('be', 'be', 'N7')
+('optimistic', 'optimistic', 'N7')
+('is', 'some', 'N3')
+('what', 'some', 'N5')
+('some', 'some', 'N7')
+('in', 'in', 'N7')
+('<unk>', '<unk>', 'N7')
+('are', 'in', 'N2')
+('doing', '<unk>', 'N0')
+('that may', 'that may', 'N7')
+('is what', 'some in <unk> think that may be optimistic', 'N2')
+('in <unk>', 'in <unk> think that may be optimistic', 'N6')
+('are doing', 'in <unk> think that may be optimistic', 'N5')
+('thinking that may', 'think that may', 'N4')
+('is what some', 'some in <unk> think that may be optimistic', 'N0')
+('thinking that may be', 'think that may be', 'N4')
+('thinking that may be optimistic', '<unk> think that may be optimistic', 'N4')
+('is what some in <unk>', 'some in <unk> think that may be optimistic', 'N4')
+('is what some in <unk> are doing', 'some in <unk> think that may be optimistic', 'N5')
+('thinking that may be optimistic is what some in <unk> are doing', 'some in <unk> think that may be optimistic', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 9.5050
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 9, Batch: 9500/1081, |EncParam|: 81.9916, |DecParam|: 138.5094, |ParserParam|: 62.3815, LR: 0.0005, SrcPPL: 1226.5127, PPL: 5.2884, ValPPL: 8.7320, Throughput: 3.76 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> <unk> more than tripled
+Target: more than tripling was <unk> <unk>
+Source Tree: ((<unk> (<unk> (more than))) tripled)
+
+QCFG Tree: (((more than) tripling) ((was <unk>) <unk>))
+
+('more', 'more', 'N7')
+('than', 'than', 'N7')
+('tripling', 'tripled', 'N0')
+('was', 'more', 'N6')
+('<unk>', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('more than', 'more than', 'N4')
+('was <unk>', '<unk> <unk> more than', 'N0')
+('more than tripling', '<unk> <unk> more than tripled', 'N4')
+('was <unk> <unk>', '<unk> <unk> more than', 'N4')
+('more than tripling was <unk> <unk>', '<unk> <unk> more than tripled', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 8.8191
+--------------------------------
+Starting epoch: 10
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 10000/1081, |EncParam|: 82.6301, |DecParam|: 138.3651, |ParserParam|: 62.5820, LR: 0.0005, SrcPPL: 1338.8331, PPL: 4.6352, ValPPL: 8.7320, Throughput: 3.87 examples/sec
+--------------------------------------------------------------------------------
+
+Source: and ibm said it expects the costs to continue climbing
+Target: the continuing of climbing costs are expected by ibm
+Source Tree: (((and ibm) ((((said (it expects)) the) costs) to)) (continue climbing))
+
+QCFG Tree: ((((the continuing) of) climbing) (costs (((are expected) by) ibm)))
+
+('the', 'continue', 'N3')
+('continuing', 'continue', 'N5')
+('of', 'continue', 'N4')
+('climbing', 'climbing', 'N7')
+('costs', 'costs', 'N7')
+('are', 'said', 'N3')
+('expected', 'said', 'N5')
+('by', 'to', 'N4')
+('ibm', 'ibm', 'N7')
+('the continuing', 'continue climbing', 'N2')
+('are expected', 'said it expects', 'N2')
+('the continuing of', 'continue climbing', 'N0')
+('are expected by', 'said it expects the costs to', 'N0')
+('the continuing of climbing', 'continue climbing', 'N4')
+('are expected by ibm', 'and ibm said it expects the costs to continue climbing', 'N5')
+('costs are expected by ibm', 'and ibm said it expects the costs to continue climbing', 'N5')
+('the continuing of climbing costs are expected by ibm', 'and ibm said it expects the costs to continue climbing', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 8.1286
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 10, Batch: 10500/1081, |EncParam|: 83.3881, |DecParam|: 138.1187, |ParserParam|: 62.7241, LR: 0.0005, SrcPPL: 1282.1216, PPL: 4.8406, ValPPL: 8.1286, Throughput: 3.75 examples/sec
+--------------------------------------------------------------------------------
+
+Source: and the <unk> <unk> have done a pretty good <unk>
+Target: and doing a pretty good <unk> were the <unk> <unk>
+Source Tree: (((((and the) <unk>) <unk>) have) (done (((a pretty) good) <unk>)))
+
+QCFG Tree: (((and doing) (a pretty)) (((good <unk>) were) the))
+
+('and', 'done', 'N3')
+('doing', 'done', 'N5')
+('a', 'and', 'N0')
+('pretty', 'and', 'N0')
+('good', 'and', 'N0')
+('<unk>', 'and', 'N0')
+('were', 'and', 'N1')
+('the', 'the', 'N7')
+('<unk>', '<unk>', 'N0')
+('<unk>', '<unk>', 'N0')
+('and doing', 'done a pretty good <unk>', 'N2')
+('were the', 'and the', 'N4')
+('were the <unk>', 'and the <unk> <unk>', 'N4')
+('a pretty good <unk>', 'a pretty good <unk>', 'N7')
+('were the <unk> <unk>', 'and the <unk> <unk> have done a pretty good <unk>', 'N5')
+('and doing a pretty good <unk>', 'done a pretty good <unk>', 'N4')
+('and doing a pretty good <unk> were the <unk> <unk>', 'and the <unk> <unk> have done a pretty good <unk>', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 8.7015
+--------------------------------
+Starting epoch: 11
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 11000/1081, |EncParam|: 84.3102, |DecParam|: 137.9669, |ParserParam|: 62.8041, LR: 0.0005, SrcPPL: 1204.2887, PPL: 4.6079, ValPPL: 8.1286, Throughput: 3.92 examples/sec
+--------------------------------------------------------------------------------
+
+Source: cincinnati bell inc. said net declined 1.8 %
+Target: declining 1.8 % was what net did cincinnati bell inc. said
+Source Tree: ((cincinnati ((bell (inc. (said net))) (declined 1.8))) %)
+
+QCFG Tree: (((declining 1.8) %) ((((was what) (net did)) cincinnati) (bell (inc. said))))
+
+('declining', 'declined', 'N1')
+('1.8', '1.8', 'N7')
+('%', '%', 'N7')
+('was', 'cincinnati', 'N3')
+('what', 'cincinnati', 'N5')
+('net', 'net', 'N7')
+('did', 'net', 'N0')
+('cincinnati', 'cincinnati', 'N7')
+('bell', 'bell', 'N7')
+('inc.', 'inc.', 'N7')
+('said', 'said', 'N7')
+('declining 1.8', 'declined 1.8', 'N4')
+('was what', 'cincinnati bell inc. said net declined 1.8', 'N2')
+('net did', 'said net', 'N5')
+('inc. said', 'inc. said net', 'N5')
+('declining 1.8 %', 'cincinnati bell inc. said net declined 1.8 %', 'N4')
+('bell inc. said', 'bell inc. said net', 'N6')
+('was what net did', 'cincinnati bell inc. said net declined 1.8', 'N5')
+('was what net did cincinnati', 'cincinnati bell inc. said net declined 1.8', 'N0')
+('was what net did cincinnati bell inc. said', 'cincinnati bell inc. said net declined 1.8', 'N4')
+('declining 1.8 % was what net did cincinnati bell inc. said', 'cincinnati bell inc. said net declined 1.8 %', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 8.5449
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 11, Batch: 11500/1081, |EncParam|: 85.0052, |DecParam|: 137.7323, |ParserParam|: 62.9928, LR: 0.0005, SrcPPL: 1361.0183, PPL: 4.4674, ValPPL: 8.1286, Throughput: 3.74 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the <unk> <unk> funds add <unk> billion
+Target: adding <unk> billion is what the <unk> <unk> funds do
+Source Tree: ((the <unk>) ((<unk> ((funds add) <unk>)) billion))
+
+QCFG Tree: (((adding <unk>) billion) (((is what) (the <unk>)) (<unk> (funds do))))
+
+('adding', 'add', 'N1')
+('<unk>', '<unk>', 'N7')
+('billion', 'billion', 'N7')
+('is', 'the', 'N3')
+('what', 'the', 'N5')
+('the', 'the', 'N0')
+('<unk>', 'the', 'N0')
+('<unk>', '<unk>', 'N7')
+('funds', 'funds', 'N7')
+('do', 'funds', 'N0')
+('adding <unk>', 'funds add <unk>', 'N4')
+('is what', 'the <unk> <unk> funds add <unk> billion', 'N2')
+('the <unk>', 'the <unk>', 'N7')
+('funds do', 'funds add', 'N5')
+('adding <unk> billion', '<unk> funds add <unk> billion', 'N4')
+('<unk> funds do', '<unk> funds add <unk>', 'N6')
+('is what the <unk>', 'the <unk> <unk> funds add <unk> billion', 'N0')
+('is what the <unk> <unk> funds do', 'the <unk> <unk> funds add <unk> billion', 'N4')
+('adding <unk> billion is what the <unk> <unk> funds do', 'the <unk> <unk> funds add <unk> billion', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 8.7153
+--------------------------------
+Starting epoch: 12
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 12000/1081, |EncParam|: 85.6118, |DecParam|: 137.6281, |ParserParam|: 63.3276, LR: 0.0005, SrcPPL: 1029.9859, PPL: 3.3859, ValPPL: 8.1286, Throughput: 3.95 examples/sec
+--------------------------------------------------------------------------------
+
+Source: the contract settled at <unk> a ton off <unk>
+Target: the settling of the contract at <unk> was a ton off <unk>
+Source Tree: ((the ((contract settled) (((at <unk>) (a ton)) off))) <unk>)
+
+QCFG Tree: (((((the settling) of) the) contract) ((((at <unk>) (was (a ton))) off) <unk>))
+
+('the', 'settled', 'N3')
+('settling', 'settled', 'N5')
+('of', 'settled', 'N4')
+('the', 'the', 'N7')
+('contract', 'contract', 'N7')
+('at', 'at', 'N7')
+('<unk>', '<unk>', 'N2')
+('was', 'at', 'N6')
+('a', 'the', 'N0')
+('ton', 'the', 'N0')
+('off', 'off', 'N7')
+('<unk>', '<unk>', 'N0')
+('the settling', 'contract settled at <unk> a ton off', 'N2')
+('at <unk>', 'at <unk>', 'N4')
+('a ton', 'a ton', 'N7')
+('the settling of', 'contract settled at <unk> a ton off', 'N0')
+('was a ton', 'at <unk> a ton', 'N5')
+('the settling of the', 'the contract settled at <unk> a ton off', 'N0')
+('the settling of the contract', 'the contract settled at <unk> a ton off', 'N4')
+('at <unk> was a ton', 'at <unk> a ton', 'N1')
+('at <unk> was a ton off', 'at <unk> a ton off', 'N5')
+('at <unk> was a ton off <unk>', 'the contract settled at <unk> a ton off <unk>', 'N5')
+('the settling of the contract at <unk> was a ton off <unk>', 'the contract settled at <unk> a ton off <unk>', 'N3')
+--------------------------------
+Checking validation perf...
+PPL: 8.1113
+--------------------------------
+Saving checkpoint to styleptb-vem-seed3435.pt
+--------------------------------------------------------------------------------
+Epoch: 12, Batch: 12500/1081, |EncParam|: 86.2770, |DecParam|: 137.4516, |ParserParam|: 63.5854, LR: 0.0005, SrcPPL: 957.5607, PPL: 4.0629, ValPPL: 8.1113, Throughput: 3.70 examples/sec
+--------------------------------------------------------------------------------
+
+Source: mr. bush <unk> to washington saturday night
+Target: returning to washington saturday night was what mr bush did
+Source Tree: (((mr. bush) <unk>) ((to (washington saturday)) night))
+
+QCFG Tree: ((returning (to washington)) (((saturday night) (was what)) mr))
+
+('returning', '<unk>', 'N1')
+('to', 'mr.', 'N0')
+('washington', 'mr.', 'N0')
+('saturday', 'mr.', 'N0')
+('night', 'mr.', 'N0')
+('was', 'mr.', 'N3')
+('what', 'mr.', 'N5')
+('mr', 'mr.', 'N2')
+('bush', 'bush', 'N7')
+('did', 'bush', 'N0')
+('was what', 'mr. bush <unk>', 'N2')
+('mr bush', 'mr. bush', 'N6')
+('to washington saturday night', 'to washington saturday night', 'N7')
+('was what mr bush', 'mr. bush <unk>', 'N0')
+('returning to washington saturday night', 'mr. bush <unk> to washington saturday night', 'N4')
+('was what mr bush did', 'mr. bush <unk>', 'N5')
+('returning to washington saturday night was what mr bush did', 'mr. bush <unk> to washington saturday night', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 8.9263
+--------------------------------
+Starting epoch: 13
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 13000/1081, |EncParam|: 86.9870, |DecParam|: 137.4183, |ParserParam|: 63.8716, LR: 0.0005, SrcPPL: 686.6461, PPL: 2.9322, ValPPL: 8.1113, Throughput: 3.78 examples/sec
+--------------------------------------------------------------------------------
+
+Source: <unk> <unk> went up 1 1\/8 to 37 7\/8
+Target: going up 1 1\/8 to 37 7\/8 was what <unk> <unk> did
+Source Tree: (<unk> (<unk> (((went up) (1 1\/8)) (to (37 7\/8)))))
+
+QCFG Tree: ((((going up) (1 1\/8)) (to 37)) ((((7\/8 was) what) <unk>) <unk>))
+
+('going', 'went', 'N1')
+('up', 'up', 'N7')
+('1', '<unk>', 'N0')
+('1\\/8', '<unk>', 'N0')
+('to', '<unk>', 'N0')
+('37', '<unk>', 'N0')
+('7\\/8', '<unk>', 'N0')
+('was', '<unk>', 'N3')
+('what', '<unk>', 'N5')
+('<unk>', '<unk>', 'N0')
+('<unk>', '<unk>', 'N7')
+('did', '<unk>', 'N0')
+('going up', 'went up', 'N4')
+('1 1\\/8', '1 1\\/8', 'N7')
+('was what', '<unk> <unk> went up 1 1\\/8 to 37 7\\/8', 'N2')
+('to 37 7\\/8', 'to 37 7\\/8', 'N7')
+('was what <unk>', '<unk> <unk> went up 1 1\\/8 to 37 7\\/8', 'N0')
+('going up 1 1\\/8', 'went up 1 1\\/8', 'N4')
+('was what <unk> <unk>', '<unk> <unk> went up 1 1\\/8 to 37 7\\/8', 'N4')
+('was what <unk> <unk> did', '<unk> <unk> went up 1 1\\/8 to 37 7\\/8', 'N5')
+('going up 1 1\\/8 to 37 7\\/8', 'went up 1 1\\/8 to 37 7\\/8', 'N4')
+('going up 1 1\\/8 to 37 7\\/8 was what <unk> <unk> did', '<unk> <unk> went up 1 1\\/8 to 37 7\\/8', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 9.2927
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 13500/1081, |EncParam|: 87.4361, |DecParam|: 137.2967, |ParserParam|: 64.0834, LR: 0.0005, SrcPPL: 689.0899, PPL: 3.7905, ValPPL: 8.1113, Throughput: 3.67 examples/sec
+--------------------------------------------------------------------------------
+
+Source: revenue rose 3 % to <unk> million from 8.8 million
+Target: the rising of revenue was 3 percent from 8.8 million to <unk> million
+Source Tree: ((revenue rose) ((((3 %) (to <unk>)) (million from)) (8.8 million)))
+
+QCFG Tree: ((((the rising) of) revenue) (was ((((3 percent) (from 8.8)) (million to)) (<unk> million))))
+
+('the', 'rose', 'N3')
+('rising', 'rose', 'N5')
+('of', 'rose', 'N4')
+('revenue', 'revenue', 'N7')
+('was', 'revenue', 'N6')
+('3', '3', 'N7')
+('percent', '%', 'N2')
+('from', 'to', 'N2')
+('8.8', 'to', 'N5')
+('million', 'million', 'N7')
+('to', 'from', 'N0')
+('<unk>', '8.8', 'N2')
+('million', 'million', 'N7')
+('the rising', 'revenue rose', 'N2')
+('3 percent', '3 %', 'N6')
+('from 8.8', 'to <unk>', 'N2')
+('million to', 'million from', 'N5')
+('<unk> million', '8.8 million', 'N5')
+('the rising of', 'revenue rose', 'N0')
+('the rising of revenue', 'revenue rose', 'N4')
+('3 percent from 8.8', '3 % to <unk>', 'N6')
+('3 percent from 8.8 million to', '3 % to <unk> million from', 'N6')
+('3 percent from 8.8 million to <unk> million', '3 % to <unk> million from 8.8 million', 'N6')
+('was 3 percent from 8.8 million to <unk> million', 'revenue rose 3 % to <unk> million from 8.8 million', 'N5')
+('the rising of revenue was 3 percent from 8.8 million to <unk> million', 'revenue rose 3 % to <unk> million from 8.8 million', 'N3')
+--------------------------------
+Checking validation perf...
+PPL: 9.1197
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 13, Batch: 14000/1081, |EncParam|: 87.8100, |DecParam|: 137.1086, |ParserParam|: 64.2872, LR: 0.0005, SrcPPL: 706.8386, PPL: 3.8835, ValPPL: 8.1113, Throughput: 3.66 examples/sec
+--------------------------------------------------------------------------------
+
+Source: integrated made its announcement after the market closed
+Target: the closing of the market is when integrated made its announcement
+Source Tree: (((integrated made) its) ((announcement after) (the (market closed))))
+
+QCFG Tree: ((((the closing) of) (the market)) (((is when) (integrated made)) its))
+
+('the', 'closed', 'N3')
+('closing', 'closed', 'N5')
+('of', 'the', 'N4')
+('the', 'the', 'N7')
+('market', 'market', 'N7')
+('is', 'integrated', 'N3')
+('when', 'integrated', 'N5')
+('integrated', 'integrated', 'N0')
+('made', 'integrated', 'N0')
+('its', 'integrated', 'N0')
+('announcement', 'announcement', 'N7')
+('the closing', 'announcement after the market closed', 'N2')
+('the market', 'the market closed', 'N6')
+('is when', 'integrated made its announcement after the market closed', 'N2')
+('the closing of', 'announcement after the market closed', 'N0')
+('integrated made its', 'integrated made its', 'N7')
+('the closing of the market', 'announcement after the market closed', 'N4')
+('is when integrated made its', 'integrated made its announcement after the market closed', 'N0')
+('is when integrated made its announcement', 'integrated made its announcement after the market closed', 'N4')
+('the closing of the market is when integrated made its announcement', 'integrated made its announcement after the market closed', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 8.4315
+--------------------------------
+Starting epoch: 14
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 14500/1081, |EncParam|: 88.4150, |DecParam|: 137.0788, |ParserParam|: 64.4536, LR: 0.0005, SrcPPL: 617.6319, PPL: 3.5235, ValPPL: 8.1113, Throughput: 3.93 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he explains that companies with real estate give security
+Target: giving security he explains is what companies with real estate do
+Source Tree: ((he explains) ((that ((companies with) (real estate))) (give security)))
+
+QCFG Tree: ((giving security) ((he explains) ((((is what) (companies with)) (real estate)) do)))
+
+('giving', 'give', 'N1')
+('security', 'security', 'N7')
+('he', 'he', 'N0')
+('explains', 'he', 'N0')
+('is', 'companies', 'N3')
+('what', 'companies', 'N5')
+('companies', 'he', 'N0')
+('with', 'he', 'N0')
+('real', 'he', 'N0')
+('estate', 'he', 'N0')
+('do', 'estate', 'N0')
+('giving security', 'give security', 'N4')
+('he explains', 'he explains', 'N7')
+('is what', 'companies with real estate', 'N2')
+('companies with', 'companies with', 'N7')
+('real estate', 'real estate', 'N7')
+('is what companies with', 'companies with real estate', 'N0')
+('is what companies with real estate', 'companies with real estate', 'N4')
+('is what companies with real estate do', 'that companies with real estate give security', 'N5')
+('he explains is what companies with real estate do', 'he explains that companies with real estate give security', 'N6')
+('giving security he explains is what companies with real estate do', 'he explains that companies with real estate give security', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 9.4019
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 14, Batch: 15000/1081, |EncParam|: 88.9884, |DecParam|: 136.9704, |ParserParam|: 64.6623, LR: 0.0005, SrcPPL: 635.7471, PPL: 3.6199, ValPPL: 8.1113, Throughput: 3.79 examples/sec
+--------------------------------------------------------------------------------
+
+Source: he intends to add to the litigation staff
+Target: adding to the litigation staff is what he intends to do
+Source Tree: ((he intends) ((to ((add to) the)) (litigation staff)))
+
+QCFG Tree: ((((adding to) the) (litigation staff)) ((((is what) he) intends) (to do)))
+
+('adding', 'add', 'N1')
+('to', 'to', 'N7')
+('the', 'the', 'N7')
+('litigation', 'he', 'N0')
+('staff', 'he', 'N0')
+('is', 'he', 'N3')
+('what', 'he', 'N5')
+('he', 'he', 'N7')
+('intends', 'intends', 'N7')
+('to', 'to', 'N7')
+('do', 'to', 'N0')
+('adding to', 'add to', 'N4')
+('litigation staff', 'litigation staff', 'N7')
+('is what', 'he intends', 'N2')
+('to do', 'to add to the', 'N5')
+('adding to the', 'add to the', 'N4')
+('is what he', 'he intends', 'N0')
+('is what he intends', 'he intends', 'N4')
+('adding to the litigation staff', 'to add to the litigation staff', 'N4')
+('is what he intends to do', 'he intends to add to the litigation staff', 'N5')
+('adding to the litigation staff is what he intends to do', 'he intends to add to the litigation staff', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 8.5814
+--------------------------------
+Starting epoch: 15
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 15500/1081, |EncParam|: 89.3877, |DecParam|: 136.8811, |ParserParam|: 64.9608, LR: 0.0005, SrcPPL: 574.4089, PPL: 3.2052, ValPPL: 8.1113, Throughput: 3.93 examples/sec
+--------------------------------------------------------------------------------
+
+Source: blue <unk> <unk> the march up in <unk> trading
+Target: leading the march up in <unk> trading were blue <unk>
+Source Tree: (((((blue <unk>) (<unk> the)) (march up)) in) (<unk> trading))
+
+QCFG Tree: (((((leading the) (march up)) in) (<unk> trading)) (were (blue <unk>)))
+
+('leading', '<unk>', 'N1')
+('the', 'the', 'N7')
+('march', 'blue', 'N0')
+('up', 'blue', 'N0')
+('in', 'in', 'N7')
+('<unk>', 'blue', 'N0')
+('trading', 'blue', 'N0')
+('were', 'blue', 'N6')
+('blue', 'blue', 'N0')
+('<unk>', 'blue', 'N0')
+('leading the', '<unk> the', 'N4')
+('march up', 'march up', 'N7')
+('<unk> trading', '<unk> trading', 'N7')
+('blue <unk>', 'blue <unk>', 'N7')
+('were blue <unk>', 'blue <unk> <unk> the', 'N5')
+('leading the march up', 'blue <unk> <unk> the march up', 'N4')
+('leading the march up in', 'blue <unk> <unk> the march up in', 'N4')
+('leading the march up in <unk> trading', 'blue <unk> <unk> the march up in <unk> trading', 'N4')
+('leading the march up in <unk> trading were blue <unk>', 'blue <unk> <unk> the march up in <unk> trading', 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 10.3403
+--------------------------------
+--------------------------------------------------------------------------------
+Epoch: 15, Batch: 16000/1081, |EncParam|: 90.0747, |DecParam|: 136.9175, |ParserParam|: 65.0815, LR: 0.0005, SrcPPL: 596.5715, PPL: 3.3920, ValPPL: 8.1113, Throughput: 3.77 examples/sec
+--------------------------------------------------------------------------------
+
+Source: that division 's <unk> has been <unk>
+Target: the <unk> of the <unk> was from that division
+Source Tree: (((that (((division 's) <unk>) has)) been) <unk>)
+
+QCFG Tree: ((((the <unk>) of) (the <unk>)) (((was from) that) division))
+
+('the', '<unk>', 'N3')
+('<unk>', '<unk>', 'N5')
+('of', '<unk>', 'N4')
+('the', '<unk>', 'N3')
+('<unk>', '<unk>', 'N5')
+('was', 'division', 'N1')
+('from', 'division', 'N4')
+('that', 'that', 'N7')
+('division', 'division', 'N7')
+('the <unk>', "that division 's <unk> has been <unk>", 'N2')
+('the <unk>', "that division 's <unk> has been <unk>", 'N6')
+('was from', "division 's", 'N0')
+('the <unk> of', "that division 's <unk> has been <unk>", 'N0')
+('was from that', "that division 's <unk> has", 'N0')
+('was from that division', "that division 's <unk> has", 'N4')
+('the <unk> of the <unk>', "that division 's <unk> has been <unk>", 'N4')
+('the <unk> of the <unk> was from that division', "that division 's <unk> has been <unk>", 'N1')
+--------------------------------
+Checking validation perf...
+PPL: 11.2064
+--------------------------------
