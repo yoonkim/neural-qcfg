@@ -11,10 +11,10 @@ cd pytorch-struct
 python setup.py install
 ```
 
-## Training 
-
-### Data
+## Data
 For convenience we include the datasets used in the paper in the `data/` folder. Please cite the original papers when using the data (i.e. [Lake and Baroni 2018](https://arxiv.org/abs/1711.00350) for SCAN/MT, and [Lyu et al. 2021](https://arxiv.org/abs/2104.05196) for StylePTB).
+
+## Training 
 
 
 ### SCAN
@@ -40,6 +40,7 @@ python predict_styleptb.py --data_file data/StylePTB/ATP/test.tsv --model_path s
 We use the [nlg-eval](https://github.com/Maluuba/nlg-eval) package to calculate the various metrics.
 
 ### Machine Translation
+To train on MT:
 ```
 python train_mt.py --train_file_src data/MT/train.en --train_file_tgt data/MT/train.fr 
 --dev_file_src data/MT/dev.en --dev_file_tgt data/MT/dev.fr --save_path mt.pt
