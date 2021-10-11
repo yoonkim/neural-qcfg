@@ -2,7 +2,7 @@
 Code for the paper:  
 [Sequence-to-Sequence Learning with Latent Neural Grammars](https://arxiv.org/abs/2109.01135)  
 Yoon Kim  
-arXiv Preprint
+NeurIPS 2021
 
 ## Dependencies
 The code was tested in `python 3.7` and `pytorch 1.5`. We also use a slightly modified version of the [Torch-Struct](https://github.com/harvardnlp/pytorch-struct) library, which is included in the repo and can be installed via:
